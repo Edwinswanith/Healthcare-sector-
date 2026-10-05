@@ -29,14 +29,15 @@ Checked: 2026-10-05, cloud session, branch `claude/admiring-darwin-m2s4u3`.
 | Preserve source section order | yes, S00-S11 (CONTENT_MAP.md) | confirmed |
 | Builder skill | tech-cogniverse-healthcare-motion | confirmed (override) |
 | Market | UK private practice (source JSON-LD areaServed GB) | source-confirmed |
-| Public brand | Plainsight Medical, a studio of CogniVerse | proposed (retain) |
-| Enquiry mechanism | mailto composer to raghul@cogniversetech.com, nothing stored (as source) | proposed (retain) |
-| Route scope v1 | Home + /contact/ rebuilt; other nav targets link to the live Plainsight pages until rebuilt | proposed |
-| Media reuse | Plainsight's own films, posters, shorts, captures, body.bin | proposed, needs owner confirmation |
-| Visual direction | "One film, every frame" (STORYBOARD.md) | proposed |
-| Generation budget | sample USD 10, total USD 40 ceiling, prices unverified | proposed |
-| Rive | not used (no authoring tool); SVG + GSAP equivalents | proposed |
+| Public brand | Plainsight is the content/structure reference only; new site represents broader healthcare capability | **unresolved, asking** |
+| Enquiry mechanism | Swappable submission adapter; mailto composer as the safe fallback until a real destination is confirmed; never a fake success | confirmed |
+| Route scope v1 | Home + /contact/. Other nav targets: only to approved pages that still fit the final brand; no broken links | confirmed |
+| Media reuse | Only assets with confirmed reuse; explicit per-asset permission status; unconfirmed = labelled placeholder or original concept, section kept in place | confirmed rule |
+| Visual direction | "One film, every frame" (STORYBOARD.md), 5 signature moments, visually aggressive | confirmed |
+| Loader | No minimum duration; enter as soon as ready; full assembly first visit only, repeat visits skip; enhancements activate progressively | confirmed |
+| Generation budget | sample USD 10, total USD 40 ceiling; generate only where it materially improves a scene; show batch, reason, cost, attempts before each paid batch | confirmed |
+| Rive / 3D tooling | No Rive runtime. Match the experience with Three.js (field), canvas, GSAP, sticky, masks, frame sequences | confirmed |
 
 ## Current milestone
 
-B: storyboard, signature moments, asset plan, architecture written. Awaiting one approval. No scaffolding, no generation.
+B approved with adjustments (2026-10-05). Blocked only on the public brand name. Next: vertical slice (nav, preloader/hero SM1, SM2, one content section, one media/portfolio interaction).

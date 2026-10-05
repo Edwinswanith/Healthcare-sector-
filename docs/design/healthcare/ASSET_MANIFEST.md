@@ -12,7 +12,20 @@ Status values: `planned` · `approved` · `generated` · `rejected` · `final`. 
 
 Generation scripts will run server-side from `scripts/media/`, read `GEMINI_API_KEY`-style credentials from the environment only, store outputs under `media-src/` (not public), and log job IDs to `ASSET_LOG.json`. The public site never calls a generator.
 
-## A. Real assets (reuse from Plainsight, permission required)
+## Permission register (explicit status per item)
+| Item | Status | If unconfirmed |
+|---|---|---|
+| `body.bin` anatomy points (Z-Anatomy/BodyParts3D CC BY-SA derivative) | unconfirmed | original procedural field (P01), the default |
+| Prof. Hemant Sheth name, site capture, film credits, case statistics (22 pages, 7 films) | unconfirmed for new site | Work slot keeps position; labelled "Case study pending approval" placeholder with original concept frame |
+| HeartLink name/brand, shorts, case statistics | unconfirmed for new site | same placeholder treatment |
+| Dr Harmandeep Singh likeness / AI clone video | unconfirmed for new site | presenter scene uses an original non-person treatment (silhouette/frame) labelled "Example layout", no generated face |
+| Patient-education film footage (16 films, posters, VTT) | unconfirmed | film titles and durations kept as text; frames are original code-rendered anatomy posters labelled "Preview" |
+| Specialty template captures (12) | unconfirmed | original wireframe captures built in code, labelled "Concept" |
+| Testimonials | none exist in source | none shown |
+| Third-party logos (Instagram, TikTok, YouTube, Facebook) | not used as logos | platform names as text |
+| Generated media (G1-G3) | ours once generated | n/a |
+
+## A. Real assets (reuse from Plainsight, ONLY when the register above says confirmed)
 | ID | Section | Source path | Use | Format target | Fallback |
 |---|---|---|---|---|---|
 | R01 | S01/S02/S11 | `/atlas/body.bin` (324 KB) | Anatomy Field points | binary, lazy | procedural field (P01) |
@@ -35,8 +48,8 @@ Rules: captions (VTT) ship with every playable film; real clinician likeness onl
 | P05 | all | Posters, AVIF/webp ladders (480/960/1440/1920) | FFmpeg / sharp |
 | P06 | S00 | Favicon / OG image | Built from wordmark + field render |
 
-## C. Generated assets (approval needed before any spend)
-Only three. Everything else is real media or code.
+## C. Generated assets (announce each paid batch first)
+Candidates, not a fixed list: add a brief here whenever generation materially improves an approved scene.
 
 ### G2 (required) Process: "The signed script" (S09)
 - Purpose: makes "You approve. We do the rest." physical; background for the sign-off timeline.

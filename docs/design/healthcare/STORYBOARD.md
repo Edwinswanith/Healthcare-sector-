@@ -1,7 +1,17 @@
-# Medical experience storyboard (PROPOSED, awaiting approval)
+# Medical experience storyboard (APPROVED 2026-10-05, with adjustments below)
 
 Content and order: `CONTENT_MAP.md` (S00-S11, locked). Motion principles: `ONTRACK_MOTION_SYSTEM.md`.
-Everything in this file is **PROPOSED**. Timings are design proposals, not measurements.
+Direction, order, signature moments and technology approach are **APPROVED**. Timings are design proposals, not measurements.
+
+## Approved adjustments (override anything below)
+1. **Brand:** Plainsight is the content/structure reference and the source of existing work, not automatically the public brand. Brand name, wordmark and copy voice follow the confirmed public brand. Copy may be rewritten for broader healthcare positioning; no capability is removed and the order S00-S11 is unchanged.
+2. **Media Frame** is one persistent object: a single fixed stage element driven by one controller, with section "slots" that it travels between using matched geometry (Flip), clip-path masks and aspect morphs, so it reads as one thing across boundaries. Never a fresh card per section.
+3. **Anatomy Field** does not depend on `body.bin`. Default is an original procedural particle anatomy (our own sampled geometry). `body.bin` is used only if reuse rights are confirmed. The field evolves through the whole page (assemble, form, quieten under reading, react on transitions, resolve to heart) and text legibility always wins.
+4. **Rights:** real people, client media, case statistics, logos and likeness material appear only with confirmed permission (see ASSET_MANIFEST). Otherwise the section stays in place with a labelled placeholder or original concept treatment. No invented clients, no generated people presented as real.
+5. **Generated media:** used wherever it materially improves an approved scene, in priority order real media → code motion → generated. No fixed count. USD 10 sample / USD 40 total ceiling; each paid batch is announced first.
+6. **Loader:** no minimum time. Enters as soon as the hero is usable; first visit plays the full assembly, repeat visits skip it; expensive layers activate progressively after entry.
+7. **Contact:** submission goes through a swappable adapter. Until a real destination is confirmed, the fallback is the mailto composer with honest wording; no fake success.
+8. **Ambition:** visually aggressive at the signature moments. Missing Rive/3D specialists do not lower the target; use Three.js, canvas, GSAP, sticky, masks, frame sequences, real and generated media.
 
 ## Direction: "One film, every frame"
 
@@ -57,7 +67,7 @@ Scenes alternate paper and ink; transitions between them are scrubbed theme cros
 - **Implementation:** Three.js Points + custom shader (morph targets), GSAP timeline, SplitText.
 - **Mobile:** field below the H1 at 60% density, no pointer parallax; frame shown full-width under CTAs.
 - **Reduced motion:** no loader, static rendered field frame (pre-rendered PNG), text present immediately.
-- **Performance fallback:** if WebGL unavailable or low-end (deviceMemory ≤ 4 or a failed 30-frame probe), show the poster PNG of the assembled body. Loader capped at 1.6 s, skipped on repeat visits (sessionStorage), never blocks interaction (CTAs clickable under it).
+- **Performance fallback:** if WebGL unavailable or low-end (deviceMemory ≤ 4 or a failed 30-frame probe), show the poster PNG of the assembled body. No minimum loader time: it exits as soon as fonts + hero poster are ready; skipped on repeat visits (sessionStorage); never blocks interaction (CTAs clickable under it).
 
 ## S03 offer (SM2 "Frame takeover", SIGNATURE)
 - **Content:** WHAT WE DO, H2, four services 01-04 with copy and anchor links.
@@ -134,7 +144,7 @@ Note: SM2 ends at state 04 (short). Handing state 01 forward to S04 contradicts 
 - **Mobile:** links above headline (On Track pattern), heart smaller. **Reduced motion:** static heart image. **Fallback:** static heart PNG.
 
 ## /contact/ (enquiry route)
-Built in scope: same fields as source, client + server-free validation, builds a `mailto:` to the confirmed address and says honestly that the visitor's mail app opens. No storage, no fake success. "Please do not send patient information" kept prominent.
+Built in scope: same fields as source, client-side validation, a swappable `submitEnquiry` adapter. Current adapter: mailto composer (honest copy: your mail app opens, nothing is stored). A future API/email adapter replaces it without UI changes. Success is only shown when the adapter confirms acceptance. "Please do not send patient information" kept prominent.
 
 ## Signature moments (summary)
 | # | Name | Sections | Why it matters | Core tech |
