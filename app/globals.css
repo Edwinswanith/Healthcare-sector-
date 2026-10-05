@@ -576,9 +576,9 @@ main:focus { outline: none; }
 .platforms-chips .mono { color: var(--signal); }
 .motion .s-social .stage-wrap { height: 340vh; }
 .motion .stage--social { position: sticky; top: 0; height: 100vh; display: block; }
-.motion .social-copy { position: absolute; left: var(--g); top: calc(var(--hdr) + 3vh); width: 31vw; z-index: 7; }
+.motion .social-copy { position: absolute; left: var(--g); top: calc(var(--hdr) + 3vh); width: 33vw; z-index: 7; }
 .motion .slot--short { position: absolute; left: 20vw; top: 16vh; width: 60vw; height: 33.75vw; }
-.motion .fan-phone { position: absolute; left: 60%; top: 15vh; width: 39.4vh; height: 70vh; margin-left: -19.7vh; opacity: 0; z-index: 5; }
+.motion .fan-phone { position: absolute; left: 64%; top: 15vh; width: 39.4vh; height: 70vh; margin-left: -19.7vh; opacity: 0; z-index: 5; }
 .motion .platforms-chips { position: absolute; left: 34vw; right: 0; bottom: 5vh; z-index: 7; }
 .motion .platforms-chips li { opacity: 0; }
 

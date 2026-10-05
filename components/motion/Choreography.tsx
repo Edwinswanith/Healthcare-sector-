@@ -303,8 +303,8 @@ export function Choreography() {
         const phoneH = () => window.innerHeight * (isDesk ? 0.7 : 0.5);
         const phoneW = () => (phoneH() * 9) / 16;
         const top = () => window.innerHeight * (isDesk ? 0.15 : 0.34);
-        const wideW = () => window.innerWidth * (isDesk ? 0.58 : 0.9);
-        const cx = () => window.innerWidth * (isDesk ? 0.6 : 0.5);
+        const wideW = () => window.innerWidth * (isDesk ? 0.5 : 0.9);
+        const cx = () => window.innerWidth * (isDesk ? 0.64 : 0.5);
         const wide = { left: () => cx() - wideW() / 2, top: () => window.innerHeight * (isDesk ? 0.16 : 0.34), width: wideW, height: () => (wideW() * 9) / 16 };
         const tall = { left: () => cx() - phoneW() / 2, top, width: phoneW, height: phoneH };
         const sizePhones = () => phones.forEach((ph) => ph.style.setProperty("--s", (phoneH() / 960).toFixed(4)));
