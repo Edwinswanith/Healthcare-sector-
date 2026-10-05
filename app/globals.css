@@ -792,3 +792,11 @@ a:hover .roll-b, a:focus-visible .roll-b, button:hover .roll-b { transform: tran
   .script--footer { right: 2%; top: -6vh; width: 52vw; }
   .s-footer > .heart-gl--footer { left: 0; width: 100vw; height: 60vh; opacity: 0.85; }
 }
+
+/* ============ v7: photoreal turntable heart ============ */
+.heart-spin { display: block; cursor: grab; touch-action: pan-y; -webkit-mask-image: radial-gradient(closest-side, #000 62%, transparent 100%); mask-image: radial-gradient(closest-side, #000 62%, transparent 100%); }
+.heart-spin.is-drag { cursor: grabbing; }
+.heart-spin:focus-visible { outline: 2px solid var(--signal); outline-offset: -8px; border-radius: 50%; }
+.s-footer > .heart-spin--footer { position: absolute; left: 0; top: 6vh; width: 40vw; height: 40vw; max-height: 82vh; z-index: 1; }
+.heart-hint { position: absolute; z-index: 2; }
+@media (max-width: 899px) { .s-footer > .heart-spin--footer { left: 10vw; top: 2vh; width: 80vw; height: 80vw; opacity: 0.9; } }

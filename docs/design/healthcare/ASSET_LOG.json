@@ -596,5 +596,56 @@
   "filtered": null,
   "file": "media-src/gen/v-clinic-1.mp4",
   "bytes": 2644484
+ },
+ {
+  "id": "g-heart3d",
+  "attempt": 1,
+  "model": "gemini-3-pro-image",
+  "status": 200,
+  "ms": 24202,
+  "at": "2026-10-05T11:45:47.105Z",
+  "aspect": "16:9",
+  "size": "2K",
+  "prompt": "A photoreal anatomical human heart, medical-illustration accuracy: aorta and aortic arch, pulmonary trunk, superior vena cava, clearly visible coronary arteries and veins on the surface, glossy moist tissue with subtle subsurface glow. Seen from the front, perfectly centred, occupying about 55% of the frame height, isolated on a perfectly uniform flat deep navy background (#0D1524), no floor, no shadow, no reflection, no particles. Warm key light from upper left, a red-orange rim light from behind. Photoreal medical visualisation, studio product photography lighting. No text, no labels, no logos, no watermark.",
+  "usage": {
+   "promptTokenCount": 129,
+   "candidatesTokenCount": 1293,
+   "totalTokenCount": 1718,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 129
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 296,
+   "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-pro-image",
+  "responseId": "043Data5JKCxsOIP1MSFgAk",
+  "file": "media-src/gen/g-heart3d-1.jpg"
+ },
+ {
+  "id": "v-heart360",
+  "attempt": 1,
+  "model": "veo-3.1-fast-generate-preview",
+  "kind": "video",
+  "startFrame": "media-src/final/g-heart3d.jpg",
+  "aspect": "16:9",
+  "durationSeconds": 8,
+  "prompt": "Turntable product shot: the heart rotates slowly and steadily around its vertical axis, a full smooth rotation at constant speed, staying perfectly centred and the same size, with a gentle heartbeat. The camera is locked off. The flat deep navy background stays completely unchanged and uniform, no floor, no shadow, no particles, no cuts. Cinematic, premium, calm. Deep navy-ink background and shadows, warm bone-cream highlights, one red-orange accent. Smooth slow camera motion, no cuts. No text, no captions, no logos, no watermarks.",
+  "negativePrompt": "text, captions, subtitles, logos, watermark, gore, blood, surgery footage, distorted anatomy, extra fingers, flicker, jump cut",
+  "submitStatus": 200,
+  "operation": "models/veo-3.1-fast-generate-preview/operations/470lj71oynvs",
+  "at": "2026-10-05T11:46:02.180Z",
+  "ms": 54348,
+  "filtered": null,
+  "file": "media-src/gen/v-heart360-1.mp4",
+  "bytes": 1823714
  }
 ]

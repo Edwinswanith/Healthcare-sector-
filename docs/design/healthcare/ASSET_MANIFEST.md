@@ -146,3 +146,8 @@ Stills: `gemini-3-pro-image`. Videos: `veo-3.1-fast-generate-preview`, image-to-
 Lettering processed locally: inverted luminance → alpha, cropped, recoloured signal / paper, WebP 47-74 KB. Videos 254-578 KB (WebM/MP4) + posters.
 3D heart: no asset; procedural ray-marched shader (`components/motion/HeartGL.tsx`).
 Cost: **not verified**. Estimate: 8 images ≈ USD 1.05 + 16 s Veo Fast ≈ USD 2.40 → batch ≈ USD 3.45; running total ≈ USD 8 of USD 40. Confirm in Google Cloud billing.
+
+## J. Photoreal turntable heart (user request 2026-10-05: "use Gemini and Veo" for the 3D object)
+Gemini and Veo do not output 3D model files, so the object is a turntable: `g-heart3d` (gemini-3-pro-image, 1 attempt) → `v-heart360` (veo-3.1-fast, image-to-video from that still, 1 attempt, ~180° orbit in 8 s) → 48 square frames (640 px WebP, 788 KB total) in `public/media/heart/`.
+Played by `components/motion/HeartSpin.tsx`: ping-pong frame index driven by scroll position, pointer drag, arrow keys and a slow idle drift; frames load only when the footer is within ~2 viewports; reduced motion shows frame 1. Labelled as an AI-generated illustration (aria-label). Replaces the ray-marched shader heart.
+Cost: not verified; estimate ≈ USD 0.13 + 8 s Veo Fast ≈ USD 1.20. Running total ≈ USD 9.4 of USD 40.

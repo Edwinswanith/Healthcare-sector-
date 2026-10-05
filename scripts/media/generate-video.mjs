@@ -10,6 +10,7 @@ const STYLE = "Cinematic, premium, calm. Deep navy-ink background and shadows, w
 const NEG = "text, captions, subtitles, logos, watermark, gore, blood, surgery footage, distorted anatomy, extra fingers, flicker, jump cut";
 
 export const BRIEFS = {
+  "v-heart360": { aspect: "16:9", image: "media-src/final/g-heart3d.jpg", prompt: "Turntable product shot: the heart rotates slowly and steadily around its vertical axis, a full smooth rotation at constant speed, staying perfectly centred and the same size, with a gentle heartbeat. The camera is locked off. The flat deep navy background stays completely unchanged and uniform, no floor, no shadow, no particles, no cuts." },
   "v-theatre": { aspect: "16:9", image: "media-src/final/g-theatre.jpg", prompt: "The surgical lights slowly brighten, a soft haze drifts through the beams, the camera makes a slow, steady push forward into the empty theatre." },
   "v-clinic": { aspect: "16:9", image: "media-src/final/g-clinic.jpg", prompt: "Blue hour deepens, the warm window light glows brighter, light rain sparkles on the wet pavement, the camera performs a slow lateral dolly to the right." },
   "v-film": { aspect: "16:9", prompt: "A polished 3D medical explainer animation: a slow orbit around a translucent stylised human digestive system floating in darkness, the liver and stomach rendered as soft glassy forms, the gallbladder glowing red-orange, gentle volumetric light, tiny floating particles." },

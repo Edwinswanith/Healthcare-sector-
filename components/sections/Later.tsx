@@ -8,7 +8,7 @@ import { Wordmark } from "@/components/ui/Wordmark";
 import { ConceptCard } from "./ConceptCard";
 import { Interlude, SceneImage } from "./Interlude";
 import { Script } from "@/components/ui/Script";
-import { HeartGL } from "@/components/motion/HeartGL";
+import { HeartSpin } from "@/components/motion/HeartSpin";
 
 export function Presenter() {
   return (
@@ -169,7 +169,7 @@ export function Footer() {
   return (
     <footer id="footer" className="s s-footer" data-theme="ink" data-field="drift">
       <SceneImage id="g-room" className="scene-img--footer" />
-      <HeartGL className="heart-gl--footer" />
+      <HeartSpin className="heart-spin--footer" />
       <div className="footer-panel" data-footer-panel>
         <span className="mono footer-tab">03:00 / 03:00</span>
         <Script name="letstalk" className="script--footer" />
