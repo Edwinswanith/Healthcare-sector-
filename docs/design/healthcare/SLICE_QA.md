@@ -30,7 +30,7 @@ Not available here: Firefox, WebKit/Safari, physical iOS/Android devices, a real
 ## Visual / motion review (stepped captures)
 Evidence: `evidence/build/slice/{desktop,mobile,reduced}/` (frames + `log.json` with scroll Y and timestamps), `evidence/build/slice/*.mp4` (continuous recordings).
 
-Fixed during review: frame geometry never written (NaN cache), frame entrance target missing, field too faint, hero taller than viewport, takeover too brief, offer headline wrapping, presenter crop in 9:16, frame crossing copy during long slot gaps, header unreadable on ink in reduced motion, strip overflow without motion, mobile 20 px overflow (eyebrow, headline minimum size, header grid).
+Fixed during review: transparent header overlapping content (added translucent backdrop), frame geometry never written (NaN cache), frame entrance target missing, field too faint, hero taller than viewport, takeover too brief, offer headline wrapping, presenter crop in 9:16, frame crossing copy during long slot gaps, header unreadable on ink in reduced motion, strip overflow without motion, mobile 20 px overflow (eyebrow, headline minimum size, header grid).
 
 Known weaknesses still open:
 - Film-card and concept-site organ studies are small and pale on light palettes.
