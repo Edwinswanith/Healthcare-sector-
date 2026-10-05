@@ -6,6 +6,7 @@ import { Footer, Packages, Presenter, Process, Social, Work } from "@/components
 import { Preloader } from "@/components/sections/Preloader";
 import { MediaFrame } from "@/components/frame/MediaFrame";
 import { Choreography } from "@/components/motion/Choreography";
+import { HeaderTheme } from "@/components/motion/HeaderTheme";
 
 // Runs before the hero is parsed: hides hero type only when motion will run,
 // marks first visits for the loader, and restores everything after 4 s if the
@@ -33,6 +34,7 @@ export default function Home() {
       <Footer />
       <MediaFrame />
       <Choreography />
+      <HeaderTheme />
     </>
   );
 }

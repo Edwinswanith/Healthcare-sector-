@@ -61,12 +61,10 @@ export function Choreography() {
     } else root.classList.add("no-webgl");
 
     const backdrop = document.querySelector<HTMLElement>(".backdrop");
-    const header = document.querySelector<HTMLElement>("[data-header]");
     const timecode = document.querySelector<HTMLElement>("[data-timecode]");
     let sections = Array.from(document.querySelectorAll<HTMLElement>("[data-field]"));
     const assemble = { v: 0 };
     let lastT = performance.now();
-    let lastHeaderTheme = "";
     let lastTime = "";
 
     const tick = () => {
@@ -86,16 +84,6 @@ export function Choreography() {
       const theme = lerp(ta, tb, m);
       if (backdrop) backdrop.style.backgroundColor = mixHex("#F3F0E8", "#0D1524", theme);
 
-      // Header follows the section under it.
-      let headerTheme = "paper";
-      for (let k = 0; k < sections.length; k++) {
-        const r = sections[k].getBoundingClientRect();
-        if (r.top <= 40 && r.bottom > 40) headerTheme = sections[k].dataset.theme ?? "paper";
-      }
-      if (header && headerTheme !== lastHeaderTheme) {
-        header.dataset.theme = headerTheme;
-        lastHeaderTheme = headerTheme;
-      }
       if (timecode) {
         const max = document.documentElement.scrollHeight - vh;
         const sec = Math.round((window.scrollY / Math.max(1, max)) * 180);

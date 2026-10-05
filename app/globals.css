@@ -214,6 +214,7 @@ main:focus { outline: none; }
 /* ============ S02 Hero ============ */
 .s-hero { min-height: 100svh; padding-top: calc(var(--hdr) + 3vh); padding-bottom: 5vh; display: flex; flex-direction: column; justify-content: space-between; gap: 4vh; }
 .hero-eyebrow i { font-style: normal; opacity: 0.5; margin-right: 0.6em; }
+.hero-eyebrow { flex-wrap: wrap; row-gap: 0.3em; }
 .hero-eyebrow span { white-space: nowrap; }
 .hero-bottom { display: block; max-width: 44vw; }
 .proof { display: flex; gap: 0.8rem; align-items: baseline; margin-top: 2rem; font-size: 0.88rem; opacity: 0.75; }
@@ -325,7 +326,7 @@ main:focus { outline: none; }
 .motion .stage--offer { position: sticky; top: 0; height: 100vh; display: block; }
 .motion .slot--offer { position: absolute; left: 47vw; top: 13vh; width: 49vw; height: 32vw; aspect-ratio: auto; }
 .motion .offer-copy { position: absolute; left: var(--g); top: calc(var(--hdr) + 3vh); width: 40vw; }
-.motion .s-offer .hl { font-size: clamp(2rem, 3.15vw, 3.9rem); }
+.s-offer .hl { font-size: clamp(2rem, 3.15vw, 3.9rem); }
 .motion .svc-list { margin-top: 1.6rem; }
 .motion .svc { transition: opacity 0.5s; opacity: 0.32; }
 .motion .svc .svc-body, .motion .svc .link { display: none; }
@@ -382,7 +383,7 @@ main:focus { outline: none; }
 .stat-label { font-family: var(--font-serif); font-style: italic; font-size: clamp(1.4rem, 2.6vw, 2.8rem); max-width: 16em; margin-top: 2vh; }
 .stat:nth-child(2) .stat-label { align-self: flex-end; text-align: right; }
 .strip-stage { margin: 6vh calc(var(--g) * -1) 0; }
-.strip-sticky { padding: 0 var(--g); }
+.strip-sticky { padding: 0 var(--g); overflow-x: auto; }
 .motion .strip-sticky { position: sticky; top: 0; height: 100vh; display: flex; flex-direction: column; justify-content: center; overflow: hidden; }
 .strip-hint { margin-bottom: 2rem; opacity: 0.7; }
 .strip { display: flex; gap: clamp(14px, 1.6vw, 26px); width: max-content; }
@@ -487,10 +488,14 @@ main:focus { outline: none; }
 /* ============ Mobile ============ */
 @media (max-width: 899px) {
   :root { --hdr: 60px; }
-  .hdr { grid-template-columns: auto 1fr auto auto; }
+  .hdr { grid-template-columns: 1fr auto; }
+  .hl { font-size: clamp(2rem, 10vw, 3.4rem); }
+  .hl-in { font-variation-settings: "wdth" 100; }
+  .hl--hero { font-size: clamp(2.3rem, 12.4vw, 4rem); }
+  .s-offer .hl, .s-websites .hl, .s-films .hl, .s-presenter .hl, .s-social .hl, .s-work .hl, .s-process .hl, .s-packages .hl, .contact .hl, .hl--footer { font-size: clamp(2rem, 10vw, 3.4rem); }
   .hdr-nav, .hdr-time { display: none; }
   .hdr-cta { display: none; }
-  .menu-btn { justify-self: end; grid-column: 4; }
+  .menu-btn { justify-self: end; }
   .hero-bottom, .stage--offer, .stage--web, .films-head, .split, .split--rev, .geo, .platforms, .cases, .contact { grid-template-columns: 1fr; }
   .hero-bottom { max-width: none; }
   .hero-media { position: relative; right: auto; bottom: auto; width: 100%; justify-items: stretch; margin-top: 4vh; }
