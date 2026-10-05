@@ -12,7 +12,7 @@ Checked: 2026-10-05, cloud session, branch `claude/admiring-darwin-m2s4u3`.
 | Runtime | available | Node 22.22.0, npm 10.9.4, pnpm 10.28.0. |
 | Browser | available | Playwright Chromium at /opt/pw-browsers. Usable for local preview QA. |
 | FFmpeg | available | /usr/bin/ffmpeg. |
-| landonorris.com/on-track | **partial (round 2)** | Four asset hosts now allowed and loading (CSS, fonts, 78 CDN files, scripts). Page stalls on its loader: Rive WASM denied from unpkg.com and cdn.jsdelivr.net. Analytics hosts intentionally not allowed. |
+| landonorris.com/on-track | available | Renders fully, loader to footer (desktop 1440x900). Required hosts: cdn.prod.website-files.com, lando.itsoffbrand.io, assets.itsoffbrand.io, d3e54v103j8qbb.cloudfront.net, unpkg.com (Rive WASM; cdn.jsdelivr.net is its unused fallback). Only analytics hosts fail, intentionally not allowed. |
 | plainsight-medical.vercel.app | available | HTML, CSS, JS, 43 images, fonts and media all served same-origin (40 requests, 0 failures). Headless Chromium cannot decode its H.264 MP4s (codec limit, not network). |
 | Gemini image | available (cost unverified) | Model list call succeeded: gemini-3-pro-image, gemini-3.1-flash-image, gemini-2.5-flash-image and others. No generation run. |
 | Veo | available (cost unverified) | veo-3.1-generate-preview, veo-3.1-fast-generate-preview, veo-3.1-lite-generate-preview listed. No generation run. |
