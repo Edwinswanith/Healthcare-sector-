@@ -17,7 +17,7 @@ export function Films() {
           <div className="slot slot--film" data-frame-slot="film" data-frame-radius="10">
             <FrameStatic state="film" />
           </div>
-          <p className="mono films-now"><span>{films.nowShowing}</span>Gallstones and robotic gallbladder removal · concept preview</p>
+          <p className="mono films-now"><span>{films.nowShowing}</span>Concept preview</p>
         </div>
       </div>
       <div className="films-stats">

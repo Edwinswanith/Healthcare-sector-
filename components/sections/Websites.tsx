@@ -25,6 +25,7 @@ export function Websites() {
         <div className="geo-head">
           <Eyebrow>{g.eyebrow}</Eyebrow>
           <p className="geo-lead">{g.lead}</p>
+          <p className="mono geo-def">GEO: generative engine optimisation</p>
         </div>
         <figure className="geo-card">
           <div className="geo-q"><span className="mono">A patient asks</span><p>{g.question}</p></div>
@@ -35,12 +36,18 @@ export function Websites() {
           </div>
           <figcaption className="mono geo-caption">{g.caption}</figcaption>
         </figure>
-        <p className="geo-explainer">{g.explainer}</p>
         <ol className="geo-principles">
           {g.principles.map((p) => (
-            <li key={p.index}><span className="mono">{p.index}</span><h3>{p.title}</h3><p>{p.body}</p></li>
+            <li key={p.index} data-geo-chip><span className="mono">{p.index}</span><h3>{p.title}</h3></li>
           ))}
         </ol>
+      </div>
+      <div className="marquee" aria-hidden="true" data-marquee>
+        <div className="marquee-track">
+          {[0, 1].map((k) => (
+            <span key={k}>Cardiology · Orthopaedics · Neurology · Ophthalmology · Respiratory · Upper GI · Urology · Colorectal · Spinal · ENT · Hand · Private GP ·&nbsp;</span>
+          ))}
+        </div>
       </div>
     </section>
   );

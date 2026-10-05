@@ -9,10 +9,10 @@ const ctx = await b.newContext({ viewport: { width, height }, isMobile: mobile, 
 const p = await ctx.newPage();
 await p.goto("http://localhost:3000/", { waitUntil: "commit" });
 await p.waitForTimeout(5500);
-const end = await p.evaluate(() => document.querySelector("#presenter").getBoundingClientRect().top + scrollY);
+const end = await p.evaluate(() => document.documentElement.scrollHeight - innerHeight - 4);
 // Steady scroll: ~1 viewport every 2.5 s of wall clock.
 while ((await p.evaluate(() => scrollY)) < end) {
-  if (mobile) await p.evaluate(() => scrollBy(0, 40)); else await p.mouse.wheel(0, 40);
+  if (mobile) await p.evaluate(() => scrollBy(0, 60)); else await p.mouse.wheel(0, 60);
   await p.waitForTimeout(100);
 }
 await p.waitForTimeout(800);

@@ -23,10 +23,7 @@ export function Hero() {
             <a className="btn btn--signal" href={hero.primary.href}>{hero.primary.label}<Arrow /></a>
             <a className="btn btn--ghost" href={hero.secondary.href}>{hero.secondary.label}<Arrow /></a>
           </div>
-          <p className="proof" data-hero-fade>
-            <span className="mono">{hero.proofLabel}</span>
-            <span>{hero.proofNote}</span>
-          </p>
+
         </div>
         <div className="hero-media">
           <div className="slot slot--hero" data-frame-slot="browser" data-frame-variant="procedure" data-frame-radius="14">

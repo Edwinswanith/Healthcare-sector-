@@ -2,7 +2,7 @@
 import { chromium } from "playwright-core";
 import fs from "fs";
 const mode = process.argv[2] ?? "desktop";
-const out = process.argv[3] ?? "docs/design/healthcare/evidence/build/slice";
+const out = process.argv[3] ?? "docs/design/healthcare/evidence/build/v2";
 fs.mkdirSync(`${out}/${mode}`, { recursive: true });
 const mobile = mode === "mobile";
 const vp = mobile ? { width: 390, height: 844 } : { width: 1440, height: 900 };
@@ -27,9 +27,9 @@ log.push({ docHeight: H, classes: await p.evaluate(() => document.documentElemen
 // Scroll in viewport-fraction steps to the films strip end, wheel input.
 const step = Math.round(vp.height * 0.33);
 const sel = ["#hero", "#offer", "#websites", "#films", "#presenter"];
-const stopAt = await p.evaluate(() => { const e = document.querySelector("#presenter"); return e ? e.getBoundingClientRect().top + scrollY + innerHeight * 0.6 : document.documentElement.scrollHeight; });
+const stopAt = await p.evaluate(() => document.documentElement.scrollHeight - innerHeight - 4);
 let i = 0;
-while ((await p.evaluate(() => scrollY)) < stopAt && i < 140) {
+while ((await p.evaluate(() => scrollY)) < stopAt && i < 260) {
   i++;
   if (mobile) await p.evaluate((d) => scrollBy(0, d), step); else await p.mouse.wheel(0, step);
   await p.waitForTimeout(mobile ? 450 : 650);

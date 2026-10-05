@@ -13,7 +13,7 @@ import { frameStore } from "./store";
 //   el.__statePos  float index into data-frame-states (state morphs inside a slot)
 //   el.__inner     0..1 inner page scroll for the browser layer
 
-export type SlotEl = HTMLElement & { __statePos?: number; __inner?: number };
+export type SlotEl = HTMLElement & { __statePos?: number; __inner?: number; __split?: number };
 
 type Slot = { el: SlotEl; states: FrameState[]; variant: string; radius: number };
 
@@ -30,7 +30,7 @@ export class FrameController {
   private body: HTMLElement;
   private wipe: HTMLElement;
   private tab: HTMLElement;
-  private prev = { x: -1e9, y: -1e9, w: -1e9, h: -1e9, r: -1e9, key: "", clip: "", inner: -1e9, opacity: -1 };
+  private prev = { x: -1e9, y: -1e9, w: -1e9, h: -1e9, r: -1e9, key: "", clip: "", inner: -1e9, split: -1e9, opacity: -1 };
 
   constructor(private frame: HTMLElement) {
     this.body = frame.querySelector(".mframe__body")!;
@@ -78,6 +78,7 @@ export class FrameController {
     const h = lerp(A.height, B.height, e);
     const r = lerp(this.slots[i].radius, this.slots[j].radius, e);
     const inner = lerp(this.slots[i].el.__inner ?? 0, this.slots[j].el.__inner ?? 0, e);
+    const split = lerp(this.slots[i].el.__split ?? 1, this.slots[j].el.__split ?? 1, e);
 
     // Which two visual states are we between, and how far?
     const si = this.stateAt(this.slots[i]);
@@ -127,6 +128,10 @@ export class FrameController {
     if (Math.abs(p.inner - inner) > 0.0005) {
       this.frame.style.setProperty("--inner", inner.toFixed(4));
       p.inner = inner;
+    }
+    if (Math.abs(p.split - split) > 0.0005) {
+      this.frame.style.setProperty("--split", split.toFixed(4));
+      p.split = split;
     }
     if (clip !== p.clip) {
       this.wipe.style.clipPath = clip;

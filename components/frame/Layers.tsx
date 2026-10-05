@@ -85,23 +85,30 @@ export function FilmLayer({ active }: { active: boolean }) {
 export function PresenterLayer({ active }: { active: boolean }) {
   return (
     <div className="ly ly--presenter">
-      <div className="ly-presenter-art"><MiniField organ="bust" active={active} zoom={1.15} /></div>
-      <div className="ly-cutaway"><MiniField organ="heart" active={active} zoom={0.9} /></div>
-      <span className="ly-disclose">Presented by an AI avatar, with consent</span>
-      <div className="ly-lower"><b>Your Name</b><span>Consultant cardiologist</span></div>
+      <div className="ly-half ly-half--ai">
+        <div className="ly-presenter-art"><MiniField organ="bust" active={active} zoom={1.15} /></div>
+        <span className="ly-disclose">Presented by an AI avatar, with consent</span>
+        <div className="ly-lower"><b>Your Name</b><span>Consultant cardiologist</span></div>
+      </div>
+      <div className="ly-half ly-half--narrator">
+        <div className="ly-narr-art"><MiniField organ="heart" active={active} ink="#F3F0E8" zoom={1.25} /></div>
+        <span className="ly-disclose ly-disclose--n">House narrator</span>
+        <div className="ly-wave">{Array.from({ length: 28 }, (_, i) => <i key={i} style={{ ["--h" as string]: `${20 + ((i * 37) % 60)}%` }} />)}</div>
+      </div>
+      <div className="ly-split"><span>AI presenter</span><b /><span>Narrator</span></div>
       <span className="ly-example">Example layout</span>
     </div>
   );
 }
 
-export function ShortLayer({ active }: { active: boolean }) {
+export function ShortLayer({ active, caption = ["Know", "the", "signs"], organ = "heart", meta = "00:35" }: { active: boolean; caption?: string[]; organ?: "heart" | "chest" | "body"; meta?: string }) {
   return (
     <div className="ly ly--short">
       <div className="ly-segs"><i className="on" /><i /><i /></div>
-      <div className="ly-short-art"><MiniField organ="heart" active={active} zoom={1.3} /></div>
-      <p className="ly-burn"><span>Know</span> <span>the</span> <em>signs</em></p>
+      <div className="ly-short-art"><MiniField organ={organ} active={active} zoom={1.3} /></div>
+      <p className="ly-burn">{caption.slice(0, -1).map((w) => <span key={w}>{w} </span>)}<em>{caption[caption.length - 1]}</em></p>
       <div className="ly-rail"><i /><i /><i /></div>
-      <span className="ly-short-meta">00:35 · 9:16 · captions on</span>
+      <span className="ly-short-meta">{meta} · 9:16 · captions on</span>
     </div>
   );
 }

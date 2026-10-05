@@ -15,7 +15,6 @@ export function Offer() {
               <li key={s.index} className="svc" data-svc={i}>
                 <span className="svc-index mono">{s.index}</span>
                 <h3 className="svc-title">{s.title}</h3>
-                <p className="svc-body">{s.body}</p>
                 <a className="link" href={s.link.href}>{s.link.label}<Arrow /></a>
               </li>
             ))}

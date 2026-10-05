@@ -180,3 +180,16 @@ Italic = the source's serif-italic accent word (typographic device in the source
 4. GEO outcome phrasing in S04 (keep verbatim, no strengthening). (proposed)
 5. Counts: 16 films / 75 topics / 14 specialties / 22 pages / 7 films / 21 minutes / 46 minutes. Consistent across pages; owner to confirm current. (source-confirmed)
 6. Enquiry address raghul@cogniversetech.com remains the destination. (source-confirmed, owner to confirm)
+
+## v2 presentation edits (2026-10-05, user direction: less text, more visual)
+Order S00-S11 unchanged; every capability still appears on the page as a title.
+- Hero: body cut to one line; "selected work" note removed.
+- Offer: service descriptions removed; titles + links remain, the Media Frame shows each service.
+- Websites: body cut to one line; GEO explainer paragraph removed (definition kept as one label); principles shown as titles only.
+- Films: body and closing cut to one line.
+- Presenter: body cut to one line; three steps shown as chips; disclosure kept as one line.
+- Social: body one line; platform table replaced by four format chips (full table kept as screen-reader text); inclusions list removed.
+- Work: body one line; case notes removed (cases still pending approval).
+- Process: body one line; step descriptions removed (titles + numbers remain); safeguards kept.
+- Packages: "fit" lines removed; three items per option kept.
+- Longer service descriptions remain in `content/site.ts` and are published in `/llms.txt`.

@@ -48,7 +48,7 @@ export const preloader = {
 export const hero = {
   eyebrow: ["Websites", "Patient films", "AI presenter", "Social"],
   headline: { lead: ["Your healthcare", "media"], accent: "partner." } as Headline,
-  body: "For doctors, clinics and hospitals. We build the website patients and AI assistants can find, put patient-education films inside it, present them in your own voice, and run your content on Instagram, TikTok, YouTube and Facebook.",
+  body: "Websites, patient films, AI presenters and social, for doctors, clinics and hospitals.",
   primary: { label: "Book a call", href: "/contact/" },
   secondary: { label: "See what we make", href: "#offer" },
   proofLabel: "Selected work",
@@ -99,7 +99,7 @@ export const specialties: Specialty[] = [
 export const websites = {
   eyebrow: "Websites",
   headline: { lead: ["Websites that", "get"], accent: "found." } as Headline,
-  body: "Pick your specialty. Each site is organised around the conditions you treat, with a film on the page that explains each one.",
+  body: "Pick a specialty. Watch it build.",
   notListed: { label: "Not listed?", href: "/contact/" },
   conceptLabel: "Concept",
   panelCta: "Ask for this concept",
@@ -126,7 +126,7 @@ export type Film = { duration: string; category: string; title: string; organ: "
 export const films = {
   eyebrow: "The film library",
   headline: { lead: ["A library for your", "specialty. Or we", "make"], accent: "yours." } as Headline,
-  body: "Patient films of two to three minutes, scripted from recognised clinical guidance and signed off by the clinician. They sit inside your website, on the page where the patient needs them.",
+  body: "Two to three minutes. Plain English. Signed off by the clinician.",
   nowShowing: "Now showing",
   stats: [
     { value: "16", label: "films ready" },
@@ -152,7 +152,7 @@ export const films = {
     { duration: "03:02", category: "Cardiology", title: "Chest pain: causes and when to act", organ: "chest" },
     { duration: "02:30", category: "Cardiology", title: "Heart attack: know the signs and act fast", organ: "heart" },
   ] as Film[],
-  closing: "Your specialty not here yet? Tell us the procedure you explain most often and we will script it, or ask for the full topic list.",
+  closing: "Not here yet? We script it.",
   ctas: [
     { label: "Ask for the topic list", href: "/contact/?interest=films" },
     { label: "Ask for a new topic", href: "/contact/?interest=films" },
@@ -162,13 +162,13 @@ export const films = {
 export const presenter = {
   eyebrow: "Your AI presenter",
   headline: { lead: ["Presented by you,", "in your"], accent: "own voice." } as Headline,
-  body: "We create an AI clone of you. It appears on camera and narrates the whole film in your voice, so patients meet the clinician they are about to see.",
+  body: "Your face and voice, from one session. Only with your consent.",
   steps: [
     { index: "01", title: "Consent first", body: "You sign a consent form before anything is recorded." },
     { index: "02", title: "One recording session", body: "A single short session captures your face and your voice." },
     { index: "03", title: "You approve every word", body: "Your clone only speaks scripts you have reviewed and signed off." },
   ],
-  disclosure: "Each film says on screen that it is presented by an AI avatar. Your face and voice stay yours, and the clone is deleted on request.",
+  disclosure: "Every film is labelled as presented by an AI avatar.",
   toggle: ["With your AI presenter", "With our house narrator"],
   caption: "Example layout. Real presenter films are shown only with the clinician's consent.",
 };
@@ -176,7 +176,7 @@ export const presenter = {
 export const social = {
   eyebrow: "Shorts and social",
   headline: { lead: ["Not just your", "website. Every"], accent: "platform." } as Headline,
-  body: "Each film is cut into vertical shorts, and we manage your patient-education content across Instagram, TikTok, YouTube and Facebook, so every channel carries the same clinically approved message.",
+  body: "One film, cut for every feed.",
   shorts: [
     { duration: "00:35", title: "Know the signs" },
     { duration: "00:39", title: "Inside a heart attack" },
@@ -200,7 +200,7 @@ export const social = {
 export const work = {
   eyebrow: "Portfolio",
   headline: { lead: ["Built, launched,"], accent: "in use." } as Headline,
-  body: "Client work is shown only with the client's agreement. The two case studies below are awaiting approval for this site, so their details are held back.",
+  body: "Shown only with client approval.",
   cases: [
     { index: "Case study 01", kind: "Website and films", status: "Awaiting client approval", note: "A specialist surgeon's multi-page website with a patient film for each procedure, plus structured data and llms.txt." },
     { index: "Case study 02", kind: "AI presenter and shorts", status: "Awaiting client approval", note: "A cardiologist's patient film presented by their AI clone, with consent, cut into vertical shorts for every platform." },
@@ -211,7 +211,7 @@ export const work = {
 export const process = {
   eyebrow: "How it works",
   headline: { lead: ["You approve.", "We do"], accent: "the rest." } as Headline,
-  body: "Your time is one call, one recording session if you want an AI presenter, and two reviews per film: the script, then the final cut.",
+  body: "One call. Two reviews per film. Nothing goes live without your signature.",
   steps: [
     { index: "Step 01", title: "A short call", body: "We learn your specialty, your patients and the procedures you explain most often." },
     { index: "Step 02", title: "A plan", body: "The pages, the film topics and the channels, agreed together as one batch." },
@@ -230,7 +230,7 @@ export const process = {
 export const packages = {
   eyebrow: "Ways to start",
   headline: { lead: ["Three ways to"], accent: "begin." } as Headline,
-  sub: "Each is quoted for your practice after a short call.",
+  sub: "Quoted after a short call.",
   options: [
     { tag: "Option 01", title: "Films for your site", fit: "You already have a website you are happy with.", items: ["A batch of films on the procedures you explain most", "Each as a 16:9 master, a 9:16 vertical and a short", "Transcript and markup for your web team to add"], featured: false },
     { tag: "Most complete start", title: "Website with films", fit: "You want a site that patients and AI assistants can find.", items: ["A GEO-friendly website for your specialty", "A film embedded on each procedure page", "Structured data, transcripts and llms.txt built in"], featured: true },

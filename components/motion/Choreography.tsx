@@ -275,6 +275,137 @@ export function Choreography() {
         };
       });
 
+      // ---------- Presenter: AI presenter vs house narrator split ----------
+      mm.add(MQ.any, () => {
+        const slot = document.querySelector<SlotEl>(".slot--presenter");
+        if (!slot) return;
+        const p = { v: 1 };
+        slot.__split = 1;
+        gsap.timeline({
+          scrollTrigger: { trigger: ".s-presenter .stage-wrap", start: "top top", end: "bottom bottom", scrub: 0.6 },
+          onUpdate: () => (slot.__split = p.v),
+        })
+          .to({}, { duration: 0.3 })
+          .to(p, { v: 0.14, duration: 1.2, ease: "power2.inOut" })
+          .to(p, { v: 0.5, duration: 0.8, ease: "power2.inOut" })
+          .to({}, { duration: 0.4 });
+        gsap.from("[data-pres-step]", { y: 24, autoAlpha: 0, stagger: 0.1, duration: 0.7, ease: "power3.out", scrollTrigger: { trigger: ".s-presenter", start: "top 55%", once: true } });
+        return () => { slot.__split = 1; };
+      });
+
+      // ---------- SM4 part 2: 16:9 reframes to 9:16, then fans into three shorts ----------
+      mm.add({ desktop: MQ.desktop, mobile: MQ.mobile }, (c) => {
+        const isDesk = Boolean(c.conditions?.desktop);
+        const slot = document.querySelector<SlotEl>(".slot--short");
+        const phones = gsap.utils.toArray<HTMLElement>("[data-fan]");
+        const chips = gsap.utils.toArray<HTMLElement>("[data-platform]");
+        if (!slot || phones.length < 2) return;
+        const phoneH = () => window.innerHeight * (isDesk ? 0.7 : 0.5);
+        const phoneW = () => (phoneH() * 9) / 16;
+        const top = () => window.innerHeight * (isDesk ? 0.15 : 0.34);
+        const wideW = () => window.innerWidth * (isDesk ? 0.58 : 0.9);
+        const cx = () => window.innerWidth * (isDesk ? 0.6 : 0.5);
+        const wide = { left: () => cx() - wideW() / 2, top: () => window.innerHeight * (isDesk ? 0.16 : 0.34), width: wideW, height: () => (wideW() * 9) / 16 };
+        const tall = { left: () => cx() - phoneW() / 2, top, width: phoneW, height: phoneH };
+        const sizePhones = () => phones.forEach((ph) => ph.style.setProperty("--s", (phoneH() / 960).toFixed(4)));
+        sizePhones();
+        const proxy = { pos: 0 };
+        slot.__statePos = 0;
+        const tl = gsap.timeline({
+          scrollTrigger: { trigger: ".s-social .stage-wrap", start: "top top", end: "bottom bottom", scrub: 0.7, invalidateOnRefresh: true, onRefresh: sizePhones },
+        });
+        tl.set(slot, wide, 0)
+          .to({}, { duration: 0.4 })
+          .to(slot, { ...tall, duration: 1.2, ease: "power3.inOut" })
+          .to(proxy, { pos: 1, duration: 1.2, ease: "power1.inOut", onUpdate: () => (slot.__statePos = proxy.pos) }, "<")
+          .fromTo(
+            phones,
+            { autoAlpha: 0, x: 0, rotate: 0, scale: 0.9 },
+            { autoAlpha: 1, scale: 1, x: (i: number) => (i === 0 ? -1 : 1) * phoneW() * 1.06, rotate: (i: number) => (i === 0 ? -9 : 9), duration: 1, ease: "power3.out" },
+            "+=0.2",
+          )
+          .fromTo(chips, { autoAlpha: 0, y: 30 }, { autoAlpha: 1, y: 0, stagger: 0.12, duration: 0.6 }, "-=0.4")
+          .to({}, { duration: 0.6 });
+        return () => {
+          slot.__statePos = 0;
+          gsap.set([slot, ...phones, ...chips], { clearProps: "all" });
+        };
+      });
+
+      // ---------- Work: case reveals and the tilted concept wall ----------
+      mm.add(MQ.any, () => {
+        gsap.utils.toArray<HTMLElement>("[data-case]").forEach((el) =>
+          gsap.fromTo(el, { clipPath: "inset(18% 8% 18% 8% round 18px)", autoAlpha: 0.4 }, { clipPath: "inset(0% 0% 0% 0% round 0px)", autoAlpha: 1, ease: "power2.out", scrollTrigger: { trigger: el, start: "top 90%", end: "top 45%", scrub: 0.5 } }),
+        );
+        const wall = document.querySelector<HTMLElement>("[data-wall]");
+        if (!wall) return;
+        gsap.fromTo(wall, { rotateX: 30, scale: 0.9 }, { rotateX: 0, scale: 1, ease: "none", scrollTrigger: { trigger: wall, start: "top bottom", end: "top 15%", scrub: 0.6 } });
+        gsap.utils.toArray<HTMLElement>("[data-wall-col]").forEach((col, i) =>
+          gsap.fromTo(col, { yPercent: 0 }, { yPercent: i % 2 ? -16 : -34, ease: "none", scrollTrigger: { trigger: wall, start: "top bottom", end: "bottom top", scrub: 0.4 } }),
+        );
+      });
+
+      // ---------- SM5 part 1: the sign-off stroke draws through the process ----------
+      mm.add(MQ.desktop, () => {
+        const sign = document.querySelector(".proc-sign");
+        const steps = gsap.utils.toArray<HTMLElement>("[data-proc-step]");
+        const stamp = document.querySelector<HTMLElement>("[data-stamp]");
+        const safe = gsap.utils.toArray<HTMLElement>("[data-safe]");
+        if (!sign || !stamp) return;
+        gsap.set(sign, { drawSVG: "0%" });
+        gsap.set(stamp, { autoAlpha: 0, scale: 2.4, rotate: -34 });
+        const draw = gsap.to(sign, {
+          drawSVG: "100%",
+          duration: 3,
+          ease: "none",
+          onUpdate: () => {
+            const pr = draw.progress();
+            steps.forEach((s, i) => s.classList.toggle("is-on", pr >= i / 5 + 0.02));
+          },
+        });
+        gsap.timeline({ scrollTrigger: { trigger: ".s-process .stage-wrap", start: "top top", end: "bottom bottom", scrub: 0.6 } })
+          .add(draw)
+          .to(stamp, { autoAlpha: 1, scale: 1, rotate: -12, duration: 0.5, ease: "back.out(2.2)" })
+          .fromTo(safe, { autoAlpha: 0, y: 16 }, { autoAlpha: 1, y: 0, stagger: 0.1, duration: 0.4 }, "-=0.1")
+          .to({}, { duration: 0.5 });
+        return () => {
+          steps.forEach((s) => s.classList.remove("is-on"));
+          gsap.set([sign, stamp, ...safe], { clearProps: "all" });
+        };
+      });
+
+      // ---------- Packages: a stacked deck spreads into three options ----------
+      mm.add(MQ.desktop, () => {
+        const cards = gsap.utils.toArray<HTMLElement>("[data-card]");
+        const deck = document.querySelector<HTMLElement>("[data-deck]");
+        if (cards.length !== 3 || !deck) return;
+        const off = (i: number) => cards[1].offsetLeft - cards[i].offsetLeft;
+        gsap.fromTo(
+          cards,
+          { x: (i: number) => off(i), rotate: (i: number) => (i - 1) * -7, y: (i: number) => Math.abs(i - 1) * 26, scale: 0.94 },
+          { x: 0, rotate: 0, y: (i: number) => (i === 1 ? -14 : 0), scale: 1, ease: "power2.out", scrollTrigger: { trigger: deck, start: "top 85%", end: "top 30%", scrub: 0.6, invalidateOnRefresh: true } },
+        );
+        return () => gsap.set(cards, { clearProps: "all" });
+      });
+
+      // ---------- SM5 part 2: footer panel rises over the heart ----------
+      gsap.fromTo("[data-footer-panel]", { y: 160, scale: 0.9, autoAlpha: 0.25 }, { y: 0, scale: 1, autoAlpha: 1, ease: "power2.out", scrollTrigger: { trigger: ".s-footer", start: "top bottom", end: "top 20%", scrub: 0.6 } });
+
+      // ---------- Kinetic specialty marquee (scroll + velocity skew) ----------
+      const track = document.querySelector<HTMLElement>("[data-marquee] .marquee-track");
+      if (track) {
+        const skew = gsap.quickTo(track, "skewX", { duration: 0.4, ease: "power3" });
+        gsap.fromTo(track, { xPercent: 0 }, {
+          xPercent: -50,
+          ease: "none",
+          scrollTrigger: { trigger: "[data-marquee]", start: "top bottom", end: "bottom top", scrub: 0.3, onUpdate: (self) => skew(gsap.utils.clamp(-14, 14, self.getVelocity() / -260)) },
+        });
+      }
+
+      // ---------- GEO: answer card wipes open, principles pop in ----------
+      gsap.fromTo(".geo-card", { clipPath: "inset(0% 0% 100% 0% round 18px)" }, { clipPath: "inset(0% 0% 0% 0% round 18px)", duration: 1.1, ease: "expo.inOut", scrollTrigger: { trigger: ".geo-card", start: "top 80%", once: true } });
+      gsap.from("[data-geo-chip]", { y: 50, autoAlpha: 0, scale: 0.9, stagger: 0.08, duration: 0.8, ease: "back.out(1.6)", scrollTrigger: { trigger: ".geo-principles", start: "top 85%", once: true } });
+
       // ---------- Supporting: block-wipe headline reveals ----------
       gsap.utils.toArray<HTMLElement>(".hl[data-reveal]:not(.hl--hero)").forEach((hl) => {
         const ins = hl.querySelectorAll<HTMLElement>(".hl-in");
