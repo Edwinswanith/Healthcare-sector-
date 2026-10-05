@@ -296,5 +296,305 @@
   "filtered": null,
   "file": "media-src/gen/v-short-1.mp4",
   "bytes": 2865393
+ },
+ {
+  "id": "l-madeclear",
+  "attempt": 1,
+  "model": "gemini-3-pro-image",
+  "status": 200,
+  "ms": 18997,
+  "at": "2026-10-05T10:57:45.198Z",
+  "aspect": "21:9",
+  "size": "2K",
+  "prompt": "Confident hand lettering of the words \"made clear\" in flowing connected brush-pen script, lowercase, expressive thick-and-thin strokes, slight forward slant, one continuous signature-like flourish underlining the words. Pure black ink on a pure white background, nothing else in the image: no paper texture, no shadow, no other marks, no border. Centered with generous margins. Very high contrast.",
+  "usage": {
+   "promptTokenCount": 82,
+   "candidatesTokenCount": 1252,
+   "totalTokenCount": 1471,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 82
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 137,
+   "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-pro-image",
+  "responseId": "loLDarfnLpup9MoPyoDckQU",
+  "file": "media-src/gen/l-madeclear-1.jpg"
+ },
+ {
+  "id": "l-plainenglish",
+  "attempt": 1,
+  "model": "gemini-3-pro-image",
+  "status": 200,
+  "ms": 21422,
+  "at": "2026-10-05T10:58:06.763Z",
+  "aspect": "21:9",
+  "size": "2K",
+  "prompt": "Hand lettering of the words \"in plain English\" in fast, loose connected brush-pen script, lowercase except the E, energetic thick-and-thin strokes. Pure black ink on a pure white background, nothing else in the image: no paper texture, no shadow, no other marks, no border. Centered with generous margins. Very high contrast.",
+  "usage": {
+   "promptTokenCount": 73,
+   "candidatesTokenCount": 1240,
+   "totalTokenCount": 1485,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 73
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 172,
+   "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-pro-image",
+  "responseId": "qYLDarq5KIeq1MkP7eCi-As",
+  "file": "media-src/gen/l-plainenglish-1.jpg"
+ },
+ {
+  "id": "l-approved",
+  "attempt": 1,
+  "model": "gemini-3-pro-image",
+  "status": 200,
+  "ms": 20176,
+  "at": "2026-10-05T10:58:27.072Z",
+  "aspect": "21:9",
+  "size": "2K",
+  "prompt": "A handwritten signature-style word \"approved\" written quickly with a brush pen, connected script, lowercase, with a confident underline stroke and a small tick at the end. Pure black ink on a pure white background, nothing else in the image: no paper texture, no shadow, no other marks, no border. Centered with generous margins. Very high contrast.",
+  "usage": {
+   "promptTokenCount": 74,
+   "candidatesTokenCount": 1234,
+   "totalTokenCount": 1513,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 74
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 205,
+   "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-pro-image",
+  "responseId": "v4LDarHUE6Ke9MoPq5W16AM",
+  "file": "media-src/gen/l-approved-1.jpg"
+ },
+ {
+  "id": "l-letstalk",
+  "attempt": 1,
+  "model": "gemini-3-pro-image",
+  "status": 200,
+  "ms": 20015,
+  "at": "2026-10-05T10:58:47.217Z",
+  "aspect": "21:9",
+  "size": "2K",
+  "prompt": "Hand lettering of the words \"let's talk\" in bold expressive connected brush script, lowercase, with a swooping tail on the k. Pure black ink on a pure white background, nothing else in the image: no paper texture, no shadow, no other marks, no border. Centered with generous margins. Very high contrast.",
+  "usage": {
+   "promptTokenCount": 69,
+   "candidatesTokenCount": 1240,
+   "totalTokenCount": 1429,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 69
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 120,
+   "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-pro-image",
+  "responseId": "04LDauqqIeGe1MkPxL-ikA4",
+  "file": "media-src/gen/l-letstalk-1.jpg"
+ },
+ {
+  "id": "l-found",
+  "attempt": 1,
+  "model": "gemini-3-pro-image",
+  "status": 200,
+  "ms": 19009,
+  "at": "2026-10-05T10:59:06.353Z",
+  "aspect": "21:9",
+  "size": "2K",
+  "prompt": "Hand lettering of the single word \"found\" in bold expressive connected brush script, lowercase, with a looping flourish from the d. Pure black ink on a pure white background, nothing else in the image: no paper texture, no shadow, no other marks, no border. Centered with generous margins. Very high contrast.",
+  "usage": {
+   "promptTokenCount": 66,
+   "candidatesTokenCount": 1222,
+   "totalTokenCount": 1440,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 66
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 152,
+   "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-pro-image",
+  "responseId": "54LDaur7LLmm1MkP-_SP8Qg",
+  "file": "media-src/gen/l-found-1.jpg"
+ },
+ {
+  "id": "g-desk",
+  "attempt": 1,
+  "model": "gemini-3-pro-image",
+  "status": 200,
+  "ms": 26263,
+  "at": "2026-10-05T11:01:22.278Z",
+  "aspect": "16:9",
+  "size": "2K",
+  "prompt": "Close-up of a hand holding a red pen and signing the final page of a printed script on a warm wooden desk at night, a laptop glowing softly out of focus, papers with illegible blurred lines. Only the hand and forearm in frame. Cinematic editorial photograph, 35mm, shallow depth of field, soft directional light. Colour palette: deep navy-ink shadows, warm bone-cream highlights, one small signal red-orange accent. Calm, premium, clinical but human. No text, no letters, no logos, no signage, no watermarks, no readable screens. No identifiable faces.",
+  "usage": {
+   "promptTokenCount": 124,
+   "candidatesTokenCount": 1276,
+   "totalTokenCount": 1648,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 124
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 248,
+   "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-pro-image",
+  "responseId": "aIPDaqW0Kp6a9MoP75SSgAc",
+  "file": "media-src/gen/g-desk-1.jpg"
+ },
+ {
+  "id": "g-edit",
+  "attempt": 1,
+  "model": "gemini-3-pro-image",
+  "status": 200,
+  "ms": 20350,
+  "at": "2026-10-05T11:01:42.779Z",
+  "aspect": "16:9",
+  "size": "2K",
+  "prompt": "A dark film editing suite: two monitors showing an abstract glowing anatomy animation and a colourful video timeline, a keyboard and a jog wheel in the foreground, nobody in frame, cinematic low light. Cinematic editorial photograph, 35mm, shallow depth of field, soft directional light. Colour palette: deep navy-ink shadows, warm bone-cream highlights, one small signal red-orange accent. Calm, premium, clinical but human. No text, no letters, no logos, no signage, no watermarks, no readable screens. No identifiable faces.",
+  "usage": {
+   "promptTokenCount": 112,
+   "candidatesTokenCount": 1282,
+   "totalTokenCount": 1662,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 112
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 268,
+   "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-pro-image",
+  "responseId": "goPDarrwLOid1MkP6dyakQ4",
+  "file": "media-src/gen/g-edit-1.jpg"
+ },
+ {
+  "id": "g-glassheart",
+  "attempt": 1,
+  "model": "gemini-3-pro-image",
+  "status": 200,
+  "ms": 22797,
+  "at": "2026-10-05T11:02:05.700Z",
+  "aspect": "16:9",
+  "size": "2K",
+  "prompt": "A sculptural anatomical heart made of frosted glass on a dark navy plinth in a gallery, lit from inside with a warm red-orange glow, soft reflections, minimal composition with negative space on the left. Cinematic editorial photograph, 35mm, shallow depth of field, soft directional light. Colour palette: deep navy-ink shadows, warm bone-cream highlights, one small signal red-orange accent. Calm, premium, clinical but human. No text, no letters, no logos, no signage, no watermarks, no readable screens. No identifiable faces.",
+  "usage": {
+   "promptTokenCount": 115,
+   "candidatesTokenCount": 1291,
+   "totalTokenCount": 1598,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 115
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 192,
+   "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-pro-image",
+  "responseId": "l4PDasbAE7Sh1MkPqO3LkQ4",
+  "file": "media-src/gen/g-glassheart-1.jpg"
+ },
+ {
+  "id": "v-theatre",
+  "attempt": 1,
+  "model": "veo-3.1-fast-generate-preview",
+  "kind": "video",
+  "startFrame": "media-src/final/g-theatre.jpg",
+  "aspect": "16:9",
+  "durationSeconds": 8,
+  "prompt": "The surgical lights slowly brighten, a soft haze drifts through the beams, the camera makes a slow, steady push forward into the empty theatre. Cinematic, premium, calm. Deep navy-ink background and shadows, warm bone-cream highlights, one red-orange accent. Smooth slow camera motion, no cuts. No text, no captions, no logos, no watermarks.",
+  "negativePrompt": "text, captions, subtitles, logos, watermark, gore, blood, surgery footage, distorted anatomy, extra fingers, flicker, jump cut",
+  "submitStatus": 200,
+  "operation": "models/veo-3.1-fast-generate-preview/operations/z41nyg7hhx6m",
+  "at": "2026-10-05T11:02:34.153Z",
+  "ms": 53911,
+  "filtered": null,
+  "file": "media-src/gen/v-theatre-1.mp4",
+  "bytes": 1730457
+ },
+ {
+  "id": "v-clinic",
+  "attempt": 1,
+  "model": "veo-3.1-fast-generate-preview",
+  "kind": "video",
+  "startFrame": "media-src/final/g-clinic.jpg",
+  "aspect": "16:9",
+  "durationSeconds": 8,
+  "prompt": "Blue hour deepens, the warm window light glows brighter, light rain sparkles on the wet pavement, the camera performs a slow lateral dolly to the right. Cinematic, premium, calm. Deep navy-ink background and shadows, warm bone-cream highlights, one red-orange accent. Smooth slow camera motion, no cuts. No text, no captions, no logos, no watermarks.",
+  "negativePrompt": "text, captions, subtitles, logos, watermark, gore, blood, surgery footage, distorted anatomy, extra fingers, flicker, jump cut",
+  "submitStatus": 200,
+  "operation": "models/veo-3.1-fast-generate-preview/operations/3wi0i43uz9wq",
+  "at": "2026-10-05T11:03:28.342Z",
+  "ms": 53614,
+  "filtered": null,
+  "file": "media-src/gen/v-clinic-1.mp4",
+  "bytes": 2644484
  }
 ]

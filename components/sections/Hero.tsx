@@ -3,6 +3,7 @@ import { FrameStatic } from "@/components/frame/FrameStatic";
 import { Arrow } from "@/components/ui/Arrow";
 import { Roll } from "@/components/ui/Roll";
 import { Headline } from "@/components/ui/Headline";
+import { Script } from "@/components/ui/Script";
 
 export function Hero() {
   return (
@@ -15,6 +16,7 @@ export function Hero() {
         </p>
         <div id="hero-title">
           <Headline h={hero.headline} as="h1" className="hl--hero" />
+          <Script name="madeclear" className="script--hero" />
         </div>
       </div>
       <div className="hero-bottom">

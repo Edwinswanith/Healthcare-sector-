@@ -20,7 +20,7 @@ export function FilmStrip() {
             onFocus={() => setActive(i)}
             onBlur={() => setActive(-1)}
           >
-            <span className="film-art">
+            <span className="film-art" data-tilt>
               <MiniField organ={f.organ as OrganKey} active={false} zoom={1.55} />
               {active === i ? <VideoLoop src={f.organ === "heart" || f.organ === "chest" ? "v-short" : "v-film"} active className="film-video" /> : null}
               <span className="film-bar"><span /></span>

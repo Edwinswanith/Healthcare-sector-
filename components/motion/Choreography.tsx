@@ -137,6 +137,7 @@ export function Choreography() {
         .to(assemble, { v: 1, duration: first ? 2.1 : 0.9, ease: "power3.inOut" }, 0)
         .to(lines, { yPercent: 0, "--wdth": 125, duration: 1.25, ease: "expo.out", stagger: 0.09 }, first ? 0.75 : 0.1)
         .to(stroke, { drawSVG: "100%", duration: 0.9, ease: "power2.inOut" }, ">-0.6")
+        .fromTo(".script--hero", { clipPath: "inset(-10% 100% -10% 0%)", rotate: -12, autoAlpha: 1 }, { clipPath: "inset(-10% 0% -10% 0%)", rotate: -7, duration: 1.3, ease: "power2.inOut" }, "<-0.2")
         .to(fades, { autoAlpha: 1, y: 0, duration: 0.9, ease: "power3.out", stagger: 0.07 }, "<-0.4")
         .add(() => {
           // The frame mounts after this effect, so reveal it by lookup at play time.
@@ -417,6 +418,14 @@ export function Choreography() {
           .fromTo(img, { scale: 1.4 }, { scale: 1, duration: 1.4, ease: "none" }, 0)
           .fromTo(word, { yPercent: 70, autoAlpha: 0, "--wdth": 62 }, { yPercent: 0, autoAlpha: 1, "--wdth": 125, duration: 0.7, ease: "expo.out" }, 0.55)
           .to(word, { yPercent: -30, autoAlpha: 0, duration: 0.4, ease: "power2.in" }, 1.3);
+        const sc = il.querySelector(".script--interlude");
+        if (sc) {
+          gsap.set(sc, { clipPath: "inset(-10% 100% -10% 0%)" });
+          gsap.timeline({ scrollTrigger: { trigger: il, start: "top top", end: "bottom bottom", scrub: 0.6 } })
+            .to(sc, { clipPath: "inset(-10% 0% -10% 0%)", duration: 0.45, ease: "power2.inOut" }, 0.7)
+            .to(sc, { autoAlpha: 0, yPercent: -20, duration: 0.3 }, 1.35)
+            .to({}, { duration: 0.05 }, 1.7);
+        }
       });
       gsap.utils.toArray<HTMLElement>("[data-scene-img] img").forEach((img) =>
         gsap.fromTo(img, { scale: 1.18 }, { scale: 1, ease: "none", scrollTrigger: { trigger: img.closest("section, footer"), start: "top bottom", end: "bottom top", scrub: 0.5 } }),
@@ -469,6 +478,11 @@ export function Choreography() {
       gsap.fromTo(".s-footer", { "--glow": 0 }, { "--glow": 1, ease: "none", scrollTrigger: { trigger: ".s-footer", start: "top bottom", end: "bottom bottom", scrub: 0.5 } });
       const line = document.querySelector<HTMLElement>("[data-scroll-line]");
       if (line) ScrollTrigger.create({ start: 0, end: "max", onUpdate: (self) => (line.style.transform = `scaleY(${self.progress.toFixed(4)})`) });
+
+      // ---------- Hand-lettering writes itself in on scroll ----------
+      gsap.utils.toArray<HTMLElement>("[data-script]:not(.script--hero):not(.script--interlude)").forEach((sc) => {
+        gsap.fromTo(sc, { clipPath: "inset(-10% 100% -10% 0%)", rotate: "-=5" }, { clipPath: "inset(-10% 0% -10% 0%)", rotate: "+=5", duration: 1.4, ease: "power2.inOut", scrollTrigger: { trigger: sc, start: "top 85%", once: true } });
+      });
 
       // ---------- Supporting: block-wipe headline reveals ----------
       gsap.utils.toArray<HTMLElement>(".hl[data-reveal]:not(.hl--hero)").forEach((hl) => {

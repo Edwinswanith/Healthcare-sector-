@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { enquire, nav } from "@/content/site";
 import { Roll } from "./Roll";
 
-const GRID = ["g-studio", "g-theatre", "g-phone", "g-clinic"];
+const GRID = ["g-studio", "g-glassheart", "g-edit", "g-clinic"];
 
 type LenisLike = { stop: () => void; start: () => void };
 const lenis = () => (window as Window & { __lenis?: LenisLike }).__lenis;

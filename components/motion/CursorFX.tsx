@@ -23,6 +23,28 @@ export function CursorFX() {
     const rTo = gsap.quickTo(el, "rotate", { duration: 0.8, ease: "power3" });
     let lastX = 0, current = "", active = false;
 
+    // 3D tilt with glare on [data-tilt] cards
+    type Tilt = { rx: (v: number) => void; ry: (v: number) => void };
+    const tilts = new WeakMap<HTMLElement, Tilt>();
+    let tilted: HTMLElement | null = null;
+    const tiltOf = (t: HTMLElement) => {
+      let q = tilts.get(t);
+      if (!q) {
+        gsap.set(t, { transformPerspective: 900 });
+        q = { rx: gsap.quickTo(t, "rotationX", { duration: 0.6, ease: "power3" }), ry: gsap.quickTo(t, "rotationY", { duration: 0.6, ease: "power3" }) };
+        tilts.set(t, q);
+      }
+      return q;
+    };
+    const untilt = () => {
+      if (!tilted) return;
+      const q = tiltOf(tilted);
+      q.rx(0);
+      q.ry(0);
+      tilted.style.setProperty("--go", "0");
+      tilted = null;
+    };
+
     const show = (src: string) => {
       if (src !== current) {
         current = src;
@@ -44,6 +66,19 @@ export function CursorFX() {
       yTo(e.clientY);
       rTo(gsap.utils.clamp(-12, 12, (e.clientX - lastX) * 0.6));
       lastX = e.clientX;
+      const tt = (e.target as Element | null)?.closest?.("[data-tilt]") as HTMLElement | null;
+      if (tt !== tilted) untilt();
+      if (tt) {
+        tilted = tt;
+        const r = tt.getBoundingClientRect();
+        const nx = (e.clientX - r.left) / r.width - 0.5, ny = (e.clientY - r.top) / r.height - 0.5;
+        const q = tiltOf(tt);
+        q.ry(nx * 12);
+        q.rx(-ny * 9);
+        tt.style.setProperty("--gx", `${((nx + 0.5) * 100).toFixed(1)}%`);
+        tt.style.setProperty("--gy", `${((ny + 0.5) * 100).toFixed(1)}%`);
+        tt.style.setProperty("--go", "1");
+      }
       const t = (e.target as Element | null)?.closest?.("[data-hover-img]") as HTMLElement | null;
       if (t && t.dataset.hoverImg) show(t.dataset.hoverImg);
       else hide();
@@ -66,10 +101,11 @@ export function CursorFX() {
     });
 
     window.addEventListener("pointermove", onMove, { passive: true });
-    document.documentElement.addEventListener("pointerleave", hide);
+    const leaveAll = () => { hide(); untilt(); };
+    document.documentElement.addEventListener("pointerleave", leaveAll);
     return () => {
       window.removeEventListener("pointermove", onMove);
-      document.documentElement.removeEventListener("pointerleave", hide);
+      document.documentElement.removeEventListener("pointerleave", leaveAll);
       offs.forEach((o) => o());
     };
   }, []);

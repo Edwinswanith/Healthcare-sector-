@@ -10,6 +10,8 @@ const STYLE = "Cinematic, premium, calm. Deep navy-ink background and shadows, w
 const NEG = "text, captions, subtitles, logos, watermark, gore, blood, surgery footage, distorted anatomy, extra fingers, flicker, jump cut";
 
 export const BRIEFS = {
+  "v-theatre": { aspect: "16:9", image: "media-src/final/g-theatre.jpg", prompt: "The surgical lights slowly brighten, a soft haze drifts through the beams, the camera makes a slow, steady push forward into the empty theatre." },
+  "v-clinic": { aspect: "16:9", image: "media-src/final/g-clinic.jpg", prompt: "Blue hour deepens, the warm window light glows brighter, light rain sparkles on the wet pavement, the camera performs a slow lateral dolly to the right." },
   "v-film": { aspect: "16:9", prompt: "A polished 3D medical explainer animation: a slow orbit around a translucent stylised human digestive system floating in darkness, the liver and stomach rendered as soft glassy forms, the gallbladder glowing red-orange, gentle volumetric light, tiny floating particles." },
   "v-presenter": { aspect: "16:9", prompt: "A friendly middle-aged clinician in a navy blazer sits in a softly lit studio with a deep navy backdrop and speaks calmly to camera, natural small hand gestures, shallow depth of field, a warm key light and a subtle red-orange rim light. Medium shot, locked-off camera with a very slow push-in." },
   "v-short": { aspect: "9:16", prompt: "Vertical close-up of a stylised 3D anatomical human heart slowly beating, glossy red-orange surface with soft subsurface glow, floating in deep navy darkness with fine particles, slow rotation." },
@@ -31,11 +33,12 @@ async function run(id, attempt = 1) {
   const b = BRIEFS[id];
   if (!b) throw new Error(`unknown id ${id}`);
   const prompt = `${b.prompt} ${STYLE}`;
-  const body = { instances: [{ prompt }], parameters: { aspectRatio: b.aspect, durationSeconds: 8, negativePrompt: NEG } };
+  const instance = b.image ? { prompt, image: { bytesBase64Encoded: fs.readFileSync(b.image).toString("base64"), mimeType: "image/jpeg" } } : { prompt };
+  const body = { instances: [instance], parameters: { aspectRatio: b.aspect, durationSeconds: 8, negativePrompt: NEG } };
   const t0 = Date.now();
   const res = await fetch(`${API}/models/${MODEL}:predictLongRunning`, { method: "POST", headers: headers(), body: JSON.stringify(body) });
   const op = await res.json();
-  const entry = { id, attempt, model: MODEL, kind: "video", aspect: b.aspect, durationSeconds: 8, prompt, negativePrompt: NEG, submitStatus: res.status, operation: op.name ?? null, at: new Date().toISOString() };
+  const entry = { id, attempt, model: MODEL, kind: "video", startFrame: b.image ?? null, aspect: b.aspect, durationSeconds: 8, prompt, negativePrompt: NEG, submitStatus: res.status, operation: op.name ?? null, at: new Date().toISOString() };
   if (!res.ok || !op.name) {
     entry.error = op.error?.message ?? "no operation";
     log(entry);

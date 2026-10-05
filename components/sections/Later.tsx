@@ -7,6 +7,8 @@ import { Eyebrow, Headline, Stroke } from "@/components/ui/Headline";
 import { Wordmark } from "@/components/ui/Wordmark";
 import { ConceptCard } from "./ConceptCard";
 import { Interlude, SceneImage } from "./Interlude";
+import { Script } from "@/components/ui/Script";
+import { HeartGL } from "@/components/motion/HeartGL";
 
 export function Presenter() {
   return (
@@ -70,7 +72,7 @@ export function Work() {
   const cols = [0, 1, 2, 3].map((c) => specialties.filter((_, i) => i % 4 === c));
   return (
     <section id="work" className="s s-work" data-theme="paper" data-field="drift" aria-labelledby="work-title">
-      <Interlude id="g-clinic" word="Launched." alt="Generated illustration: a modern clinic building at blue hour" />
+      <Interlude id="g-clinic" video="v-clinic" word="Launched." alt="Generated illustration: a modern clinic building at blue hour" />
       <div className="work-head">
         <Eyebrow>{work.eyebrow}</Eyebrow>
         <div id="work-title"><Headline h={work.headline} /></div>
@@ -78,7 +80,7 @@ export function Work() {
       </div>
       <div className="cases">
         {work.cases.map((c, i) => (
-          <article key={c.index} className="case" data-case>
+          <article key={c.index} className="case" data-case data-tilt>
             {i === 0 ? (
               <div className="slot slot--case" data-frame-slot="browser" data-frame-variant="home" data-frame-radius="12">
                 <FrameStatic state="browser" />
@@ -124,7 +126,7 @@ export function Process() {
           </div>
           <ol className="proc-steps">
             {process.steps.map((s, i) => (
-              <li key={s.index} data-proc-step={i} data-hover-img={["g-room", "g-hands", "g-phone", "g-studio", "g-clinic"][i]}>
+              <li key={s.index} data-proc-step={i} data-hover-img={["g-room", "g-desk", "g-edit", "g-studio", "g-clinic"][i]}>
                 <span className="proc-num" aria-hidden="true">0{i + 1}</span>
                 <span className="proc-dot" aria-hidden="true" />
                 <h3>{s.title}</h3>
@@ -132,8 +134,7 @@ export function Process() {
             ))}
           </ol>
           <div className="proc-stamp" aria-hidden="true" data-stamp>
-            <span>Approved</span>
-            <Stroke className="stamp-stroke" />
+            <Script name="approved" className="script--stamp" label="Approved" />
           </div>
           <ul className="safeguards mono">{process.safeguards.map((s) => <li key={s} data-safe><Stroke className="tick" />{s}</li>)}</ul>
         </div>
@@ -152,7 +153,7 @@ export function Packages() {
       </div>
       <div className="options" data-deck>
         {packages.options.map((o, i) => (
-          <article key={o.title} className={`option${o.featured ? " option--featured" : ""}`} data-card={i}>
+          <article key={o.title} className={`option${o.featured ? " option--featured" : ""}`} data-card={i} data-tilt>
             <p className="mono option-tag">{o.tag}</p>
             <h3>{o.title}</h3>
             <ul>{o.items.map((t) => <li key={t}>{t}</li>)}</ul>
@@ -166,10 +167,12 @@ export function Packages() {
 
 export function Footer() {
   return (
-    <footer id="footer" className="s s-footer" data-theme="ink" data-field="heart">
+    <footer id="footer" className="s s-footer" data-theme="ink" data-field="drift">
       <SceneImage id="g-room" className="scene-img--footer" />
+      <HeartGL className="heart-gl--footer" />
       <div className="footer-panel" data-footer-panel>
         <span className="mono footer-tab">03:00 / 03:00</span>
+        <Script name="letstalk" className="script--footer" />
         <Eyebrow>{footer.eyebrow}</Eyebrow>
         <Headline h={footer.headline} className="hl--footer" />
         <div className="ctas">

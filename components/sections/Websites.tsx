@@ -3,6 +3,7 @@ import { FrameStatic } from "@/components/frame/FrameStatic";
 import { Eyebrow, Headline } from "@/components/ui/Headline";
 import { SpecialtyPicker } from "./SpecialtyPicker";
 import { Interlude } from "./Interlude";
+import { Script } from "@/components/ui/Script";
 
 export function Websites() {
   const g = websites.geo;
@@ -28,8 +29,9 @@ export function Websites() {
           <Eyebrow>{g.eyebrow}</Eyebrow>
           <p className="geo-lead">{g.lead}</p>
           <p className="mono geo-def">GEO: generative engine optimisation</p>
+          <Script name="found" className="script--geo" />
         </div>
-        <figure className="geo-card">
+        <figure className="geo-card" data-tilt>
           <div className="geo-q"><span className="mono">A patient asks</span><p>{g.question}</p></div>
           <div className="geo-a">
             <span className="mono">The assistant answers</span>

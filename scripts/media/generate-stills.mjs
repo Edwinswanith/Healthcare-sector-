@@ -8,7 +8,17 @@ const MODEL = process.env.GEN_MODEL || "gemini-3-pro-image";
 const STYLE =
   "Cinematic editorial photograph, 35mm, shallow depth of field, soft directional light. Colour palette: deep navy-ink shadows, warm bone-cream highlights, one small signal red-orange accent. Calm, premium, clinical but human. No text, no letters, no logos, no signage, no watermarks, no readable screens. No identifiable faces.";
 
+const LETTER = "Pure black ink on a pure white background, nothing else in the image: no paper texture, no shadow, no other marks, no border. Centered with generous margins. Very high contrast.";
+
 export const BRIEFS = {
+  "l-madeclear": { aspect: "21:9", style: LETTER, prompt: "Confident hand lettering of the words \"made clear\" in flowing connected brush-pen script, lowercase, expressive thick-and-thin strokes, slight forward slant, one continuous signature-like flourish underlining the words." },
+  "l-plainenglish": { aspect: "21:9", style: LETTER, prompt: "Hand lettering of the words \"in plain English\" in fast, loose connected brush-pen script, lowercase except the E, energetic thick-and-thin strokes." },
+  "l-approved": { aspect: "21:9", style: LETTER, prompt: "A handwritten signature-style word \"approved\" written quickly with a brush pen, connected script, lowercase, with a confident underline stroke and a small tick at the end." },
+  "l-letstalk": { aspect: "21:9", style: LETTER, prompt: "Hand lettering of the words \"let's talk\" in bold expressive connected brush script, lowercase, with a swooping tail on the k." },
+  "l-found": { aspect: "21:9", style: LETTER, prompt: "Hand lettering of the single word \"found\" in bold expressive connected brush script, lowercase, with a looping flourish from the d." },
+  "g-desk": { aspect: "16:9", prompt: "Close-up of a hand holding a red pen and signing the final page of a printed script on a warm wooden desk at night, a laptop glowing softly out of focus, papers with illegible blurred lines. Only the hand and forearm in frame." },
+  "g-edit": { aspect: "16:9", prompt: "A dark film editing suite: two monitors showing an abstract glowing anatomy animation and a colourful video timeline, a keyboard and a jog wheel in the foreground, nobody in frame, cinematic low light." },
+  "g-glassheart": { aspect: "16:9", prompt: "A sculptural anatomical heart made of frosted glass on a dark navy plinth in a gallery, lit from inside with a warm red-orange glow, soft reflections, minimal composition with negative space on the left." },
   "g-room": { aspect: "16:9", prompt: "An empty private medical consulting room at dusk. Two upholstered chairs facing a clean desk, a desk lamp glowing warm, a large monitor showing a soft out-of-focus anatomical heart render in red-orange light, tall window with blue-hour sky. Wide composition, generous calm negative space on the left third." },
   "g-hands": { aspect: "16:9", prompt: "Close-up of a surgeon's gloved hands holding a slim tablet in a dim operating theatre; the tablet shows a glowing abstract point-cloud anatomy render, no interface text. Blurred surgical lights in the background, cool navy tones with a warm rim light." },
   "g-phone": { aspect: "16:9", prompt: "Close-up from directly behind and slightly above: a person's hands and a smartphone held at chest height on a dark sofa at night; we see only the hands, the phone and a soft knitted sleeve, no head and no face in frame. The phone screen glows with an abstract red-orange anatomy shape. Dark living room, warm lamp far in the background." },
@@ -20,8 +30,9 @@ export const BRIEFS = {
 async function run(id, attempt = 1) {
   const b = BRIEFS[id];
   if (!b) throw new Error(`unknown id ${id}`);
+  const fullPrompt = `${b.prompt} ${b.style ?? STYLE}`;
   const body = {
-    contents: [{ role: "user", parts: [{ text: `${b.prompt} ${STYLE}` }] }],
+    contents: [{ role: "user", parts: [{ text: fullPrompt }] }],
     generationConfig: { responseModalities: ["IMAGE"], imageConfig: { aspectRatio: b.aspect, imageSize: "2K" } },
   };
   const headers = { "content-type": "application/json" };
@@ -29,7 +40,7 @@ async function run(id, attempt = 1) {
   const t0 = Date.now();
   const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`, { method: "POST", headers, body: JSON.stringify(body), signal: AbortSignal.timeout(180000) });
   const json = await res.json();
-  const entry = { id, attempt, model: MODEL, status: res.status, ms: Date.now() - t0, at: new Date().toISOString(), aspect: b.aspect, size: "2K", prompt: `${b.prompt} ${STYLE}`, usage: json.usageMetadata ?? null, modelVersion: json.modelVersion ?? null, responseId: json.responseId ?? null };
+  const entry = { id, attempt, model: MODEL, status: res.status, ms: Date.now() - t0, at: new Date().toISOString(), aspect: b.aspect, size: "2K", prompt: fullPrompt, usage: json.usageMetadata ?? null, modelVersion: json.modelVersion ?? null, responseId: json.responseId ?? null };
   let saved = null;
   const part = json.candidates?.[0]?.content?.parts?.find((p) => p.inlineData);
   if (res.ok && part) {

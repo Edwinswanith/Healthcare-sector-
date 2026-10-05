@@ -22,7 +22,7 @@ export function Films() {
           <p className="mono films-now"><span>{films.nowShowing}</span>Concept preview</p>
         </div>
       </div>
-      <Interlude id="g-theatre" word="Explained." alt="Generated illustration: an empty operating theatre under surgical lights" />
+      <Interlude id="g-theatre" video="v-theatre" script="plainenglish" word="Explained." alt="Generated illustration: an empty operating theatre under surgical lights" />
       <div className="films-stats">
         {films.stats.map((s) => (
           <div key={s.value} className="stat" data-stat>
@@ -41,9 +41,9 @@ export function Films() {
         <div className="collage" aria-hidden="true" data-collage>
           {[
             ["g-theatre", 0.9, "c1"],
-            ["g-hands", 0.45, "c2"],
+            ["g-edit", 0.45, "c2"],
             ["g-phone", 1.25, "c3"],
-            ["g-studio", 0.6, "c4"],
+            ["g-glassheart", 0.6, "c4"],
             ["g-room", 1.05, "c5"],
           ].map(([id, depth, cls]) => (
             <figure key={id as string} className={`collage-item ${cls}`} data-depth={depth}>

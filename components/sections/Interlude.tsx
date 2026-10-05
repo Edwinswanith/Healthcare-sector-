@@ -1,12 +1,16 @@
 /* eslint-disable @next/next/no-img-element -- pre-encoded responsive WebP, sized by srcSet */
+import { Script } from "@/components/ui/Script";
+import { InViewVideo } from "./InViewVideo";
 
 /** Full-bleed generated still that opens from a window to the full viewport on scroll. */
-export function Interlude({ id, word, alt }: { id: string; word: string; alt: string }) {
+export function Interlude({ id, word, alt, video, script }: { id: string; word: string; alt: string; video?: string; script?: string }) {
   return (
     <figure className="interlude" data-interlude>
       <div className="interlude-sticky">
         <div className="interlude-media" data-il-media>
+          {video ? <InViewVideo src={video} className="interlude-video" data-il-img /> : null}
           <img
+            hidden={Boolean(video)}
             src={`/media/gen/${id}-1920.webp`}
             srcSet={`/media/gen/${id}-960.webp 960w, /media/gen/${id}-1920.webp 1920w`}
             sizes="100vw"
@@ -15,11 +19,12 @@ export function Interlude({ id, word, alt }: { id: string; word: string; alt: st
             height={1072}
             loading="lazy"
             decoding="async"
-            data-il-img
+            data-il-img={video ? undefined : true}
           />
           <div className="interlude-shade" />
         </div>
         <p className="interlude-word" data-il-word aria-hidden="true">{word}</p>
+        {script ? <Script name={script} tone="paper" className="script--interlude" /> : null}
         <figcaption className="mono interlude-cap">Generated illustration</figcaption>
       </div>
     </figure>

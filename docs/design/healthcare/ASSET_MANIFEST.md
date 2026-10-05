@@ -126,3 +126,23 @@ Model `veo-3.1-fast-generate-preview`, 8 s each, `predictLongRunning`, parameter
 
 Delivery: muted loops, VP9 WebM first (334 KB-968 KB), H.264 MP4 fallback (480 KB-965 KB), WebP posters (15-60 KB). `preload="none"`; a clip loads and plays only while its frame state is active, pauses otherwise; reduced motion shows posters only.
 Cost: **not verified** (pricing page blocked). Rough estimate at the recalled Veo 3.1 Fast rate (about USD 0.15 per second): 24 s ≈ USD 3.6. Running total estimate ≈ USD 4.6 of the USD 40 ceiling. Confirm in Google Cloud billing.
+
+## I. Generation batch 3 (user request 2026-10-05: hand-drawn character, art direction, 3D, hover depth via AI)
+Stills: `gemini-3-pro-image`. Videos: `veo-3.1-fast-generate-preview`, image-to-video from our own stills as the first frame. All logged in `ASSET_LOG.json`.
+
+| ID | Kind | Used in | Attempts | Status |
+|---|---|---|---|---|
+| l-madeclear | brush lettering | Hero, over the headline | 1 | final |
+| l-found | brush lettering | Websites GEO lead | 1 | final |
+| l-plainenglish | brush lettering | Films interlude | 1 | final |
+| l-approved | brush lettering | Process stamp | 1 | final |
+| l-letstalk | brush lettering | Footer panel | 1 | final |
+| g-desk | still | Process step hover | 1 | final |
+| g-edit | still | Collage, menu grid, process hover | 1 | final |
+| g-glassheart | still | Collage, menu grid | 1 | final |
+| v-theatre | Veo from g-theatre | Films interlude video | 1 | final |
+| v-clinic | Veo from g-clinic | Work interlude video | 1 | final |
+
+Lettering processed locally: inverted luminance → alpha, cropped, recoloured signal / paper, WebP 47-74 KB. Videos 254-578 KB (WebM/MP4) + posters.
+3D heart: no asset; procedural ray-marched shader (`components/motion/HeartGL.tsx`).
+Cost: **not verified**. Estimate: 8 images ≈ USD 1.05 + 16 s Veo Fast ≈ USD 2.40 → batch ≈ USD 3.45; running total ≈ USD 8 of USD 40. Confirm in Google Cloud billing.
