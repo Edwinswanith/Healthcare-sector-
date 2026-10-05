@@ -13,7 +13,7 @@ export function FilmStrip() {
       {films.library.map((f, i) => (
         <li key={f.title} className={`film${active === i ? " is-active" : ""}`}>
           <a
-            href={`/contact/?interest=films&topic=${encodeURIComponent(f.title)}`}
+            href={`/contact?interest=films&topic=${encodeURIComponent(f.title)}`}
             onMouseEnter={() => setActive(i)}
             onMouseLeave={() => setActive(-1)}
             onFocus={() => setActive(i)}

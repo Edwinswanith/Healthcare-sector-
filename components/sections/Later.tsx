@@ -2,6 +2,7 @@ import { footer, packages, presenter, process, social, work, brand, specialties 
 import { FrameStatic } from "@/components/frame/FrameStatic";
 import { ShortLayer } from "@/components/frame/Layers";
 import { Arrow } from "@/components/ui/Arrow";
+import { Roll } from "@/components/ui/Roll";
 import { Eyebrow, Headline, Stroke } from "@/components/ui/Headline";
 import { Wordmark } from "@/components/ui/Wordmark";
 import { ConceptCard } from "./ConceptCard";
@@ -19,7 +20,7 @@ export function Presenter() {
             <p className="body-l">{presenter.body}</p>
             <ol className="chips-row">
               {presenter.steps.map((s) => (
-                <li key={s.index} data-pres-step><span className="mono">{s.index}</span>{s.title}</li>
+                <li key={s.index} data-pres-step data-hover-img="g-studio"><span className="mono">{s.index}</span>{s.title}</li>
               ))}
             </ol>
             <p className="mono note-s">{presenter.disclosure}</p>
@@ -52,7 +53,7 @@ export function Social() {
           </div>
           <ul className="platforms-chips" aria-label="Where each film goes">
             {social.platforms.map((p) => (
-              <li key={p.name} data-platform><b>{p.name}</b><span className="mono">{p.format}</span></li>
+              <li key={p.name} data-platform data-hover-img="g-phone"><b>{p.name}</b><span className="mono">{p.format}</span></li>
             ))}
           </ul>
           <ul className="sr-only">
@@ -98,7 +99,7 @@ export function Work() {
             </div>
           ))}
         </div>
-        <a className="link wall-link" href={work.concepts.link.href}>{work.concepts.link.label}<Arrow /></a>
+        <a className="link wall-link" href={work.concepts.link.href}><Roll>{work.concepts.link.label}</Roll><Arrow /></a>
       </div>
     </section>
   );
@@ -123,7 +124,7 @@ export function Process() {
           </div>
           <ol className="proc-steps">
             {process.steps.map((s, i) => (
-              <li key={s.index} data-proc-step={i}>
+              <li key={s.index} data-proc-step={i} data-hover-img={["g-room", "g-hands", "g-phone", "g-studio", "g-clinic"][i]}>
                 <span className="proc-num" aria-hidden="true">0{i + 1}</span>
                 <span className="proc-dot" aria-hidden="true" />
                 <h3>{s.title}</h3>
@@ -155,7 +156,7 @@ export function Packages() {
             <p className="mono option-tag">{o.tag}</p>
             <h3>{o.title}</h3>
             <ul>{o.items.map((t) => <li key={t}>{t}</li>)}</ul>
-            <a className="btn btn--ghost" href={packages.cta.href}>{packages.cta.label}<Arrow /></a>
+            <a className="btn btn--ghost" href={packages.cta.href}><Roll>{packages.cta.label}</Roll><Arrow /></a>
           </article>
         ))}
       </div>
@@ -173,7 +174,7 @@ export function Footer() {
         <Headline h={footer.headline} className="hl--footer" />
         <div className="ctas">
           {footer.ctas.map((c, i) => (
-            <a key={c.label} className={`btn ${i === 0 ? "btn--signal" : "btn--ghost"}`} href={c.href}>{c.label}<Arrow /></a>
+            <a key={c.label} className={`btn ${i === 0 ? "btn--signal" : "btn--ghost"}`} href={c.href}><Roll>{c.label}</Roll><Arrow /></a>
           ))}
         </div>
       </div>

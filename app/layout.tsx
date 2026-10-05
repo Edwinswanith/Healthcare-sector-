@@ -7,6 +7,8 @@ import "./globals.css";
 import { brand } from "@/content/site";
 import { allowIndexing, siteUrl } from "@/lib/site";
 import { Header } from "@/components/ui/Header";
+import { SmoothScroll } from "@/components/motion/SmoothScroll";
+import { RouteTransition } from "@/components/motion/RouteTransition";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -37,6 +39,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgLd) }} />
         <Header />
         {children}
+        <SmoothScroll />
+        <RouteTransition />
       </body>
     </html>
   );

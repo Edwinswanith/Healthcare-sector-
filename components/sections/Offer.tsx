@@ -1,6 +1,7 @@
 import { offer } from "@/content/site";
 import { FrameStatic } from "@/components/frame/FrameStatic";
 import { Arrow } from "@/components/ui/Arrow";
+import { Roll } from "@/components/ui/Roll";
 import { Eyebrow, Headline } from "@/components/ui/Headline";
 
 export function Offer() {
@@ -12,10 +13,10 @@ export function Offer() {
           <div id="offer-title"><Headline h={offer.headline} /></div>
           <ol className="svc-list">
             {offer.services.map((s, i) => (
-              <li key={s.index} className="svc" data-svc={i}>
+              <li key={s.index} className="svc" data-svc={i} data-hover-img={["g-clinic", "g-theatre", "g-studio", "g-phone"][i]}>
                 <span className="svc-index mono">{s.index}</span>
                 <h3 className="svc-title">{s.title}</h3>
-                <a className="link" href={s.link.href}>{s.link.label}<Arrow /></a>
+                <a className="link" href={s.link.href}><Roll>{s.link.label}</Roll><Arrow /></a>
               </li>
             ))}
           </ol>

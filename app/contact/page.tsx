@@ -6,7 +6,7 @@ import { EnquiryForm } from "./EnquiryForm";
 export const metadata: Metadata = {
   title: "Book a call",
   description: "Tell us your specialty and what you would like handled: website, patient films, an AI presenter or social content.",
-  alternates: { canonical: "/contact/" },
+  alternates: { canonical: "/contact" },
 };
 
 type Search = Promise<Record<string, string | string[] | undefined>>;

@@ -120,6 +120,7 @@ export function Choreography() {
     window.addEventListener("pointermove", onPointer, { passive: true });
     window.addEventListener("resize", onResize);
 
+    const cleanupFns: (() => void)[] = [];
     const ctx = gsap.context(() => {
       // ---------- SM1 Assembly: loader → field assembles → type sets ----------
       const hero = document.querySelector<HTMLElement>(".s-hero");
@@ -421,6 +422,54 @@ export function Choreography() {
         gsap.fromTo(img, { scale: 1.18 }, { scale: 1, ease: "none", scrollTrigger: { trigger: img.closest("section, footer"), start: "top bottom", end: "bottom top", scrub: 0.5 } }),
       );
 
+      // ---------- Numbers count up; ANY scrambles into place ----------
+      gsap.utils.toArray<HTMLElement>("[data-stat-value]").forEach((el) => {
+        const final = el.textContent ?? "";
+        const n = Number(final);
+        if (Number.isFinite(n) && final.trim() !== "") {
+          const o = { v: 0 };
+          el.textContent = "00";
+          gsap.to(o, { v: n, duration: 1.6, ease: "power3.out", snap: { v: 1 }, onUpdate: () => (el.textContent = String(Math.round(o.v)).padStart(2, "0")), scrollTrigger: { trigger: el, start: "top 80%", once: true } });
+        } else {
+          const glyphs = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+          const o = { p: 0 };
+          gsap.to(o, {
+            p: 1,
+            duration: 1.1,
+            ease: "none",
+            onUpdate: () => (el.textContent = final.split("").map((ch, i) => (o.p > (i + 1) / (final.length + 1) ? ch : glyphs[Math.floor(Math.random() * glyphs.length)])).join("")),
+            onComplete: () => (el.textContent = final),
+            scrollTrigger: { trigger: el, start: "top 80%", once: true },
+          });
+        }
+      });
+
+      // ---------- Film strip: colour shifts as it travels ----------
+      mm.add(MQ.desktop, () => {
+        gsap.fromTo(".strip-sticky", { backgroundColor: "rgba(42, 16, 24, 0)" }, { backgroundColor: "rgba(42, 16, 24, 1)", ease: "none", scrollTrigger: { trigger: "[data-strip-stage]", start: "top top", end: "bottom bottom", scrub: true } });
+      });
+
+      // ---------- Depth collage: scroll and pointer parallax by depth ----------
+      const collage = gsap.utils.toArray<HTMLElement>("[data-collage] .collage-item");
+      collage.forEach((item) => {
+        const d = Number(item.dataset.depth ?? 1);
+        gsap.fromTo(item, { yPercent: d * 45 }, { yPercent: -d * 45, ease: "none", scrollTrigger: { trigger: ".films-close", start: "top bottom", end: "bottom top", scrub: 0.4 } });
+      });
+      if (collage.length && window.matchMedia("(pointer: fine)").matches) {
+        const movers = collage.map((item) => ({ d: Number(item.dataset.depth ?? 1), x: gsap.quickTo(item, "x", { duration: 0.9, ease: "power3" }) }));
+        const onCollage = (e: PointerEvent) => {
+          const nx = e.clientX / window.innerWidth - 0.5;
+          movers.forEach((m) => m.x(nx * -60 * m.d));
+        };
+        window.addEventListener("pointermove", onCollage, { passive: true });
+        cleanupFns.push(() => window.removeEventListener("pointermove", onCollage));
+      }
+
+      // ---------- Footer glow rises; scroll progress line ----------
+      gsap.fromTo(".s-footer", { "--glow": 0 }, { "--glow": 1, ease: "none", scrollTrigger: { trigger: ".s-footer", start: "top bottom", end: "bottom bottom", scrub: 0.5 } });
+      const line = document.querySelector<HTMLElement>("[data-scroll-line]");
+      if (line) ScrollTrigger.create({ start: 0, end: "max", onUpdate: (self) => (line.style.transform = `scaleY(${self.progress.toFixed(4)})`) });
+
       // ---------- Supporting: block-wipe headline reveals ----------
       gsap.utils.toArray<HTMLElement>(".hl[data-reveal]:not(.hl--hero)").forEach((hl) => {
         const ins = hl.querySelectorAll<HTMLElement>(".hl-in");
@@ -455,6 +504,7 @@ export function Choreography() {
 
     return () => {
       ctx.revert();
+      cleanupFns.forEach((f) => f());
       gsap.ticker.remove(tick);
       window.removeEventListener("pointermove", onPointer);
       window.removeEventListener("resize", onResize);

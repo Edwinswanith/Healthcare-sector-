@@ -14,7 +14,7 @@ export function GET() {
     "",
     "## Pages",
     `- [Home](${siteUrl}/)`,
-    `- [Enquire](${siteUrl}/contact/)`,
+    `- [Enquire](${siteUrl}/contact)`,
     "",
   ].join("\n");
   return new Response(body, { headers: { "content-type": "text/plain; charset=utf-8" } });

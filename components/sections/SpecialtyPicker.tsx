@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { specialties, websites } from "@/content/site";
 import { frameStore, useFrameStore } from "@/lib/frame/store";
 import { Arrow } from "@/components/ui/Arrow";
+import { Roll } from "@/components/ui/Roll";
 
 /** Accessible tablist that drives the Media Frame's concept site. */
 export function SpecialtyPicker() {
@@ -56,7 +57,7 @@ export function SpecialtyPicker() {
         <p className="mono picker-meta"><span>{current.organ}</span><span>{current.style}</span><span className="tag">{websites.conceptLabel}</span></p>
         <h3 className="picker-name">{current.name}</h3>
         <p className="picker-desc">{current.description}</p>
-        <a className="link" href={`/contact/?interest=website&specialty=${current.slug}`}>{websites.panelCta}<Arrow /></a>
+        <a className="link" href={`/contact?interest=website&specialty=${current.slug}`}><Roll>{websites.panelCta}</Roll><Arrow /></a>
       </div>
     </div>
   );

@@ -20,7 +20,7 @@ export const nav: NavItem[] = [
   { label: "Work", href: "/#work" },
 ];
 
-export const enquire: NavItem = { label: "Enquire", href: "/contact/" };
+export const enquire: NavItem = { label: "Enquire", href: "/contact" };
 
 /** Locked order. Rendered and tested in exactly this sequence. */
 export const sectionOrder = [
@@ -49,7 +49,7 @@ export const hero = {
   eyebrow: ["Websites", "Patient films", "AI presenter", "Social"],
   headline: { lead: ["Your healthcare", "media"], accent: "partner." } as Headline,
   body: "Websites, patient films, AI presenters and social, for doctors, clinics and hospitals.",
-  primary: { label: "Book a call", href: "/contact/" },
+  primary: { label: "Book a call", href: "/contact" },
   secondary: { label: "See what we make", href: "#offer" },
   proofLabel: "Selected work",
   proofNote: "Case studies appear once clients approve publication",
@@ -100,7 +100,7 @@ export const websites = {
   eyebrow: "Websites",
   headline: { lead: ["Websites that", "get"], accent: "found." } as Headline,
   body: "Pick a specialty. Watch it build.",
-  notListed: { label: "Not listed?", href: "/contact/" },
+  notListed: { label: "Not listed?", href: "/contact" },
   conceptLabel: "Concept",
   panelCta: "Ask for this concept",
   geo: {
@@ -154,8 +154,8 @@ export const films = {
   ] as Film[],
   closing: "Not here yet? We script it.",
   ctas: [
-    { label: "Ask for the topic list", href: "/contact/?interest=films" },
-    { label: "Ask for a new topic", href: "/contact/?interest=films" },
+    { label: "Ask for the topic list", href: "/contact?interest=films" },
+    { label: "Ask for a new topic", href: "/contact?interest=films" },
   ],
 };
 
@@ -236,20 +236,20 @@ export const packages = {
     { tag: "Most complete start", title: "Website with films", fit: "You want a site that patients and AI assistants can find.", items: ["A GEO-friendly website for your specialty", "A film embedded on each procedure page", "Structured data, transcripts and llms.txt built in"], featured: true },
     { tag: "Option 03", title: "Full media partner", fit: "You want all of it handled, and kept going.", items: ["Website and film library", "Your AI presenter, in your own voice", "Shorts and channels managed across four platforms"], featured: false },
   ],
-  cta: { label: "Talk about this", href: "/contact/" },
+  cta: { label: "Talk about this", href: "/contact" },
 };
 
 export const footer = {
   eyebrow: "A short call is where it starts",
   headline: { lead: ["Let's talk about"], accent: "your practice." } as Headline,
   ctas: [
-    { label: "Book a call", href: "/contact/" },
-    { label: "Ask about film topics", href: "/contact/?interest=films" },
+    { label: "Book a call", href: "/contact" },
+    { label: "Ask about film topics", href: "/contact?interest=films" },
   ],
   columns: [
     { title: "What we do", links: [{ label: "Websites", href: "/#websites" }, { label: "Films", href: "/#films" }, { label: "AI presenter", href: "/#presenter" }, { label: "Social", href: "/#social" }, { label: "Work", href: "/#work" }, { label: "All services", href: "/#offer" }] },
     { title: "More", links: [{ label: "How we work", href: "/#process" }, { label: "Ways to start", href: "/#packages" }, { label: "llms.txt", href: "/llms.txt" }] },
-    { title: "Contact", links: [{ label: "Enquire", href: "/contact/" }] },
+    { title: "Contact", links: [{ label: "Enquire", href: "/contact" }] },
   ],
   legal: `© ${2026} Tech Cogniverse.`,
   disclaimer: "Patient-education films are not medical advice. People shown in example films are AI-generated; clinician clones are made only with signed consent.",

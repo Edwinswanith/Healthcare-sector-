@@ -1,6 +1,7 @@
 import { films } from "@/content/site";
 import { FrameStatic } from "@/components/frame/FrameStatic";
 import { Arrow } from "@/components/ui/Arrow";
+import { Roll } from "@/components/ui/Roll";
 import { Eyebrow, Headline } from "@/components/ui/Headline";
 import { FilmStrip } from "./FilmStrip";
 import { Interlude } from "./Interlude";
@@ -37,10 +38,24 @@ export function Films() {
         </div>
       </div>
       <div className="films-close">
+        <div className="collage" aria-hidden="true" data-collage>
+          {[
+            ["g-theatre", 0.9, "c1"],
+            ["g-hands", 0.45, "c2"],
+            ["g-phone", 1.25, "c3"],
+            ["g-studio", 0.6, "c4"],
+            ["g-room", 1.05, "c5"],
+          ].map(([id, depth, cls]) => (
+            <figure key={id as string} className={`collage-item ${cls}`} data-depth={depth}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={`/media/gen/${id}-960.webp`} alt="" width={960} height={536} loading="lazy" decoding="async" />
+            </figure>
+          ))}
+        </div>
         <p className="body-l">{films.closing}</p>
         <div className="ctas">
           {films.ctas.map((c, i) => (
-            <a key={c.label} className={`btn ${i === 0 ? "btn--signal" : "btn--ghost"}`} href={c.href}>{c.label}<Arrow /></a>
+            <a key={c.label} className={`btn ${i === 0 ? "btn--signal" : "btn--ghost"}`} href={c.href}><Roll>{c.label}</Roll><Arrow /></a>
           ))}
         </div>
       </div>

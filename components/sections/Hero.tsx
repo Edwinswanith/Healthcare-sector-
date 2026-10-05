@@ -1,6 +1,7 @@
 import { hero } from "@/content/site";
 import { FrameStatic } from "@/components/frame/FrameStatic";
 import { Arrow } from "@/components/ui/Arrow";
+import { Roll } from "@/components/ui/Roll";
 import { Headline } from "@/components/ui/Headline";
 
 export function Hero() {
@@ -20,8 +21,8 @@ export function Hero() {
         <div className="hero-copy">
           <p className="lede" data-hero-fade>{hero.body}</p>
           <div className="ctas" data-hero-fade>
-            <a className="btn btn--signal" href={hero.primary.href}>{hero.primary.label}<Arrow /></a>
-            <a className="btn btn--ghost" href={hero.secondary.href}>{hero.secondary.label}<Arrow /></a>
+            <a className="btn btn--signal" href={hero.primary.href}><Roll>{hero.primary.label}</Roll><Arrow /></a>
+            <a className="btn btn--ghost" href={hero.secondary.href}><Roll>{hero.secondary.label}</Roll><Arrow /></a>
           </div>
 
         </div>

@@ -7,6 +7,7 @@ import { Preloader } from "@/components/sections/Preloader";
 import { MediaFrame } from "@/components/frame/MediaFrame";
 import { Choreography } from "@/components/motion/Choreography";
 import { HeaderTheme } from "@/components/motion/HeaderTheme";
+import { CursorFX } from "@/components/motion/CursorFX";
 
 // Runs before the hero is parsed: hides hero type only when motion will run,
 // marks first visits for the loader, and restores everything after 4 s if the
@@ -35,6 +36,8 @@ export default function Home() {
       <MediaFrame />
       <Choreography />
       <HeaderTheme />
+      <CursorFX />
+      <div className="scroll-line" aria-hidden="true"><span data-scroll-line /></div>
     </>
   );
 }

@@ -113,7 +113,7 @@ for (const [label, vp] of [["desktop", { width: 1440, height: 900 }], ["mobile",
 // 6. Contact form honesty without a configured destination.
 {
   const { ctx, p } = await page();
-  await p.goto(BASE + "/contact/", { waitUntil: "networkidle" });
+  await p.goto(BASE + "/contact", { waitUntil: "networkidle" });
   await p.click("button[type=submit]");
   const err = await p.evaluate(() => ({ focus: document.activeElement?.id, errs: document.querySelectorAll(".err").length }));
   check("contact: empty submit shows errors and focuses first field", err.focus === "f-name" && err.errs >= 2, JSON.stringify(err));
@@ -138,6 +138,57 @@ for (const [label, vp] of [["desktop", { width: 1440, height: 900 }], ["mobile",
   }
   const after = await p.evaluate(() => window.__tcTriggers?.());
   check("no ScrollTrigger leak after 4 breakpoint flips", before === after, `${before} -> ${after}`);
+  await ctx.close();
+}
+
+// 8. Interaction layer: Lenis, anchors, route transition, cursor image, menu grid, counters.
+{
+  const { ctx, p, errors } = await page();
+  await p.goto(BASE + "/", { waitUntil: "networkidle" });
+  await p.waitForTimeout(3500);
+  const lenisOn = await p.evaluate(() => document.documentElement.classList.contains("lenis-on") && !!window.__lenis);
+  check("Lenis smooth scroll active (desktop)", lenisOn);
+  await p.evaluate(() => document.querySelector('.hdr-nav a[href="/#films"]').click());
+  await p.waitForTimeout(2500);
+  const filmsTop = await p.evaluate(() => Math.round(document.querySelector("#films").getBoundingClientRect().top));
+  check("nav anchor glides to its section", Math.abs(filmsTop) < 120, `#films top ${filmsTop}px`);
+  // cursor image over a service row
+  await p.evaluate(() => scrollTo(0, document.querySelector("#offer").offsetTop + innerHeight * 1.2));
+  await p.waitForTimeout(1500);
+  const svc = await p.$(".svc.is-active .svc-title");
+  if (svc) { const bb = await svc.boundingBox(); await p.mouse.move(bb.x + 20, bb.y + bb.height / 2, { steps: 6 }); await p.waitForTimeout(700); }
+  const cur = await p.evaluate(() => { const c = document.querySelector(".cursor-img"); return { op: getComputedStyle(c).opacity, src: c.querySelector("img").getAttribute("src") }; });
+  check("cursor image appears over a service row", Number(cur.op) > 0.5 && /g-/.test(cur.src ?? ""), JSON.stringify(cur));
+  await p.mouse.move(5, 5);
+  // counters
+  await p.evaluate(() => document.querySelector("[data-stat]").scrollIntoView());
+  await p.waitForTimeout(400);
+  await p.evaluate(() => scrollBy(0, 1));
+  await p.waitForTimeout(2500);
+  await p.evaluate(() => document.querySelectorAll("[data-stat]")[2].scrollIntoView());
+  await p.waitForTimeout(2500);
+  const stats = await p.evaluate(() => [...document.querySelectorAll("[data-stat-value]")].map((e) => e.textContent));
+  check("counters settle on their real values", JSON.stringify(stats) === JSON.stringify(["16", "75", "ANY"]), stats.join(","));
+  // menu image grid
+  await p.evaluate(() => scrollTo(0, 0));
+  await p.waitForTimeout(800);
+  await p.click(".menu-btn");
+  await p.waitForTimeout(900);
+  const link = await p.$(".menu-list li:nth-child(2) a");
+  const lb = await link.boundingBox();
+  await p.mouse.move(lb.x + 40, lb.y + lb.height / 2, { steps: 5 });
+  await p.waitForTimeout(500);
+  const hot = await p.evaluate(() => [...document.querySelectorAll(".menu-img")].map((m) => m.className.includes("is-hot")));
+  check("menu link hover lights its grid image", hot.filter(Boolean).length === 1, JSON.stringify(hot));
+  await p.keyboard.press("Escape");
+  await p.waitForTimeout(400);
+  // route transition
+  await p.click(".hdr-cta");
+  await p.waitForURL("**/contact", { timeout: 8000 }).catch(() => {});
+  await p.waitForTimeout(1600);
+  const rt = await p.evaluate(() => ({ path: location.pathname, cover: getComputedStyle(document.querySelector(".route-cover")).visibility }));
+  check("route transition reaches /contact and clears the cover", rt.path === "/contact" && rt.cover === "hidden", JSON.stringify(rt));
+  check("interaction layer: no console errors", errors.length === 0, errors.slice(0, 3).join(" | "));
   await ctx.close();
 }
 

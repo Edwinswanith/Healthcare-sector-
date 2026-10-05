@@ -94,3 +94,19 @@ Mid-transition frames (`fwd-0NN-mid`, `trans` sheet) show: **block-wipe text rev
 
 ## 6. What we will NOT take
 Lime-on-black palette, racing vocabulary, helmet/driver imagery, signature handwriting of a person, the "ON" script lockup, the exact notched-tab silhouette, Mona Sans/Brier pairing, any asset or code.
+
+## 7. Parity pass (2026-10-05): On Track pattern → our implementation
+| On Track (observed) | Ours (implemented) |
+|---|---|
+| Lenis smooth scroll, lerp 0.1 | Lenis 1.3, lerp 0.1, driven by the GSAP ticker, off for reduced motion, native on touch |
+| Rive full-screen page transition | Signal-red full-screen wipe with wordmark between routes (GSAP clip-path) |
+| `data-anim="text-hover"` label hovers | Roll labels on nav, buttons, links, menu |
+| Rive button micro-motion | Magnetic buttons + arrow nudge |
+| `data-mouse-reveal` image following cursor over lists | Cursor-follow image (velocity tilt) over service rows, process steps, chips |
+| Menu photo grid, link hover swaps image | Menu 2x2 generated-image grid, hovered link colours its image, others dim |
+| Giant numbers, counters | 16 / 75 count up, ANY scrambles, width-axis scrub |
+| Scattered photo collage with depth parallax | Five-image depth collage, scroll + pointer parallax |
+| Horizontal section with colour shift | Film strip shifts ink → wine while travelling |
+| Footer glow rising, notched panel | Signal glow scrubbed up, tabbed panel rises over the heart |
+| Fixed scroll indicator | Right-edge progress line |
+| Not copied | Lime/black identity, racing content, helmets, signature, any asset or code |
