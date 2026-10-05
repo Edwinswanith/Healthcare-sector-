@@ -5,12 +5,14 @@ import { Arrow } from "@/components/ui/Arrow";
 import { Eyebrow, Headline, Stroke } from "@/components/ui/Headline";
 import { Wordmark } from "@/components/ui/Wordmark";
 import { ConceptCard } from "./ConceptCard";
+import { Interlude, SceneImage } from "./Interlude";
 
 export function Presenter() {
   return (
     <section id="presenter" className="s s-presenter" data-theme="ink" data-field="heart" aria-labelledby="presenter-title">
       <div className="stage-wrap">
         <div className="stage stage--presenter">
+          <SceneImage id="g-studio" className="scene-img--presenter" />
           <div className="pres-copy">
             <Eyebrow>{presenter.eyebrow}</Eyebrow>
             <div id="presenter-title"><Headline h={presenter.headline} /></div>
@@ -67,6 +69,7 @@ export function Work() {
   const cols = [0, 1, 2, 3].map((c) => specialties.filter((_, i) => i % 4 === c));
   return (
     <section id="work" className="s s-work" data-theme="paper" data-field="drift" aria-labelledby="work-title">
+      <Interlude id="g-clinic" word="Launched." alt="Generated illustration: a modern clinic building at blue hour" />
       <div className="work-head">
         <Eyebrow>{work.eyebrow}</Eyebrow>
         <div id="work-title"><Headline h={work.headline} /></div>
@@ -104,6 +107,7 @@ export function Work() {
 export function Process() {
   return (
     <section id="process" className="s s-process" data-theme="paper" data-field="drift" aria-labelledby="process-title">
+      <Interlude id="g-hands" word="Checked." alt="Generated illustration: gloved hands holding a tablet showing an anatomy render" />
       <div className="stage-wrap">
         <div className="stage stage--process">
           <div className="proc-head">
@@ -162,6 +166,7 @@ export function Packages() {
 export function Footer() {
   return (
     <footer id="footer" className="s s-footer" data-theme="ink" data-field="heart">
+      <SceneImage id="g-room" className="scene-img--footer" />
       <div className="footer-panel" data-footer-panel>
         <span className="mono footer-tab">03:00 / 03:00</span>
         <Eyebrow>{footer.eyebrow}</Eyebrow>

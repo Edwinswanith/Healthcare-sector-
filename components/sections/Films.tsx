@@ -3,6 +3,7 @@ import { FrameStatic } from "@/components/frame/FrameStatic";
 import { Arrow } from "@/components/ui/Arrow";
 import { Eyebrow, Headline } from "@/components/ui/Headline";
 import { FilmStrip } from "./FilmStrip";
+import { Interlude } from "./Interlude";
 
 export function Films() {
   return (
@@ -20,6 +21,7 @@ export function Films() {
           <p className="mono films-now"><span>{films.nowShowing}</span>Concept preview</p>
         </div>
       </div>
+      <Interlude id="g-theatre" word="Explained." alt="Generated illustration: an empty operating theatre under surgical lights" />
       <div className="films-stats">
         {films.stats.map((s) => (
           <div key={s.value} className="stat" data-stat>

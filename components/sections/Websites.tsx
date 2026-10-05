@@ -2,6 +2,7 @@ import { websites } from "@/content/site";
 import { FrameStatic } from "@/components/frame/FrameStatic";
 import { Eyebrow, Headline } from "@/components/ui/Headline";
 import { SpecialtyPicker } from "./SpecialtyPicker";
+import { Interlude } from "./Interlude";
 
 export function Websites() {
   const g = websites.geo;
@@ -21,6 +22,7 @@ export function Websites() {
       </div>
       </div>
 
+      <Interlude id="g-phone" word="Asked." alt="Generated illustration: hands holding a phone at night, watching a medical explainer" />
       <div className="geo" id="geo">
         <div className="geo-head">
           <Eyebrow>{g.eyebrow}</Eyebrow>

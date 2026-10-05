@@ -1,0 +1,249 @@
+[
+ {
+  "id": "g-room",
+  "attempt": 1,
+  "model": "gemini-3-pro-image",
+  "status": 403,
+  "ms": 271,
+  "at": "2026-10-05T09:50:04.607Z",
+  "aspect": "16:9",
+  "size": "2K",
+  "prompt": "An empty private medical consulting room at dusk. Two upholstered chairs facing a clean desk, a desk lamp glowing warm, a large monitor showing a soft out-of-focus anatomical heart render in red-orange light, tall window with blue-hour sky. Wide composition, generous calm negative space on the left third. Cinematic editorial photograph, 35mm, shallow depth of field, soft directional light. Colour palette: deep navy-ink shadows, warm bone-cream highlights, one small signal red-orange accent. Calm, premium, clinical but human. No text, no letters, no logos, no signage, no watermarks, no readable screens. No identifiable faces.",
+  "usage": null,
+  "modelVersion": null,
+  "responseId": null,
+  "error": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+  "file": null
+ },
+ {
+  "id": "g-room",
+  "attempt": 1,
+  "model": "gemini-3-pro-image",
+  "status": 200,
+  "ms": 21446,
+  "at": "2026-10-05T09:50:35.578Z",
+  "aspect": "16:9",
+  "size": "2K",
+  "prompt": "An empty private medical consulting room at dusk. Two upholstered chairs facing a clean desk, a desk lamp glowing warm, a large monitor showing a soft out-of-focus anatomical heart render in red-orange light, tall window with blue-hour sky. Wide composition, generous calm negative space on the left third. Cinematic editorial photograph, 35mm, shallow depth of field, soft directional light. Colour palette: deep navy-ink shadows, warm bone-cream highlights, one small signal red-orange accent. Calm, premium, clinical but human. No text, no letters, no logos, no signage, no watermarks, no readable screens. No identifiable faces.",
+  "usage": {
+   "promptTokenCount": 137,
+   "candidatesTokenCount": 1301,
+   "totalTokenCount": 1703,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 137
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 265,
+   "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-pro-image",
+  "responseId": "1nLDaqPuMYGPjrEP48eckQk",
+  "file": "media-src/gen/g-room-1.jpg"
+ },
+ {
+  "id": "g-hands",
+  "attempt": 1,
+  "model": "gemini-3-pro-image",
+  "status": 200,
+  "ms": 20105,
+  "at": "2026-10-05T09:51:07.568Z",
+  "aspect": "16:9",
+  "size": "2K",
+  "prompt": "Close-up of a surgeon's gloved hands holding a slim tablet in a dim operating theatre; the tablet shows a glowing abstract point-cloud anatomy render, no interface text. Blurred surgical lights in the background, cool navy tones with a warm rim light. Cinematic editorial photograph, 35mm, shallow depth of field, soft directional light. Colour palette: deep navy-ink shadows, warm bone-cream highlights, one small signal red-orange accent. Calm, premium, clinical but human. No text, no letters, no logos, no signage, no watermarks, no readable screens. No identifiable faces.",
+  "usage": {
+   "promptTokenCount": 127,
+   "candidatesTokenCount": 1273,
+   "totalTokenCount": 1638,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 127
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 238,
+   "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-pro-image",
+  "responseId": "-HLDarOfCPm2sOIP5fPywQY",
+  "file": "media-src/gen/g-hands-1.jpg"
+ },
+ {
+  "id": "g-phone",
+  "attempt": 1,
+  "model": "gemini-3-pro-image",
+  "status": 200,
+  "ms": 25945,
+  "at": "2026-10-05T09:51:33.659Z",
+  "aspect": "16:9",
+  "size": "2K",
+  "prompt": "Over-the-shoulder view from behind of a person on a sofa at night watching a medical explainer animation on a smartphone; only the back of the head and shoulder visible, face not visible. The phone screen glows with an abstract red-orange anatomy shape. Dark living room, warm lamp far in the background. Cinematic editorial photograph, 35mm, shallow depth of field, soft directional light. Colour palette: deep navy-ink shadows, warm bone-cream highlights, one small signal red-orange accent. Calm, premium, clinical but human. No text, no letters, no logos, no signage, no watermarks, no readable screens. No identifiable faces.",
+  "usage": {
+   "promptTokenCount": 138,
+   "candidatesTokenCount": 1269,
+   "totalTokenCount": 1653,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 138
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 246,
+   "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-pro-image",
+  "responseId": "C3PDas7ZPJfy-8YPhaGvwAI",
+  "file": "media-src/gen/g-phone-1.jpg"
+ },
+ {
+  "id": "g-studio",
+  "attempt": 1,
+  "model": "gemini-3-pro-image",
+  "status": 200,
+  "ms": 21321,
+  "at": "2026-10-05T09:51:55.658Z",
+  "aspect": "16:9",
+  "size": "2K",
+  "prompt": "An empty small video production studio prepared for recording a doctor's presentation: cinema camera on a tripod, teleprompter glass, a single chair, soft key light, deep navy seamless backdrop, one small red-orange recording light. No people. Cinematic editorial photograph, 35mm, shallow depth of field, soft directional light. Colour palette: deep navy-ink shadows, warm bone-cream highlights, one small signal red-orange accent. Calm, premium, clinical but human. No text, no letters, no logos, no signage, no watermarks, no readable screens. No identifiable faces.",
+  "usage": {
+   "promptTokenCount": 124,
+   "candidatesTokenCount": 1292,
+   "totalTokenCount": 1625,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 124
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 209,
+   "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-pro-image",
+  "responseId": "JnPDategLLDo-8YPo8H3sAc",
+  "file": "media-src/gen/g-studio-1.jpg"
+ },
+ {
+  "id": "g-clinic",
+  "attempt": 1,
+  "model": "gemini-3-pro-image",
+  "status": 200,
+  "ms": 24164,
+  "at": "2026-10-05T09:52:19.964Z",
+  "aspect": "16:9",
+  "size": "2K",
+  "prompt": "Exterior of a modern private clinic building at blue hour, clean architectural lines, warm light glowing from tall windows, wet pavement reflections, a few soft bokeh lights. No signage, no text, no people in focus. Cinematic editorial photograph, 35mm, shallow depth of field, soft directional light. Colour palette: deep navy-ink shadows, warm bone-cream highlights, one small signal red-orange accent. Calm, premium, clinical but human. No text, no letters, no logos, no signage, no watermarks, no readable screens. No identifiable faces.",
+  "usage": {
+   "promptTokenCount": 117,
+   "candidatesTokenCount": 1270,
+   "totalTokenCount": 1703,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 117
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 316,
+   "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-pro-image",
+  "responseId": "PHPDav7_B725sOIP3ojngAk",
+  "file": "media-src/gen/g-clinic-1.jpg"
+ },
+ {
+  "id": "g-theatre",
+  "attempt": 1,
+  "model": "gemini-3-pro-image",
+  "status": 200,
+  "ms": 20561,
+  "at": "2026-10-05T09:52:40.696Z",
+  "aspect": "16:9",
+  "size": "2K",
+  "prompt": "A modern empty operating theatre, dramatic overhead surgical lights switched on, symmetric composition, cool navy ambience with a subtle red-orange accent light, reflective floor, cinematic haze. No people. Cinematic editorial photograph, 35mm, shallow depth of field, soft directional light. Colour palette: deep navy-ink shadows, warm bone-cream highlights, one small signal red-orange accent. Calm, premium, clinical but human. No text, no letters, no logos, no signage, no watermarks, no readable screens. No identifiable faces.",
+  "usage": {
+   "promptTokenCount": 111,
+   "candidatesTokenCount": 1251,
+   "totalTokenCount": 1584,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 111
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 222,
+   "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-pro-image",
+  "responseId": "VHPDaujOItH2-8YPlKqdwQo",
+  "file": "media-src/gen/g-theatre-1.jpg"
+ },
+ {
+  "id": "g-phone",
+  "attempt": 2,
+  "model": "gemini-3-pro-image",
+  "status": 200,
+  "ms": 20703,
+  "at": "2026-10-05T09:53:24.235Z",
+  "aspect": "16:9",
+  "size": "2K",
+  "prompt": "Close-up from directly behind and slightly above: a person's hands and a smartphone held at chest height on a dark sofa at night; we see only the hands, the phone and a soft knitted sleeve, no head and no face in frame. The phone screen glows with an abstract red-orange anatomy shape. Dark living room, warm lamp far in the background. Cinematic editorial photograph, 35mm, shallow depth of field, soft directional light. Colour palette: deep navy-ink shadows, warm bone-cream highlights, one small signal red-orange accent. Calm, premium, clinical but human. No text, no letters, no logos, no signage, no watermarks, no readable screens. No identifiable faces.",
+  "usage": {
+   "promptTokenCount": 149,
+   "candidatesTokenCount": 1249,
+   "totalTokenCount": 1606,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 149
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 208,
+   "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-pro-image",
+  "responseId": "gHPDatvqDd-939IPj4zJqAo",
+  "file": "media-src/gen/g-phone-2.jpg"
+ }
+]

@@ -406,6 +406,21 @@ export function Choreography() {
       gsap.fromTo(".geo-card", { clipPath: "inset(0% 0% 100% 0% round 18px)" }, { clipPath: "inset(0% 0% 0% 0% round 18px)", duration: 1.1, ease: "expo.inOut", scrollTrigger: { trigger: ".geo-card", start: "top 80%", once: true } });
       gsap.from("[data-geo-chip]", { y: 50, autoAlpha: 0, scale: 0.9, stagger: 0.08, duration: 0.8, ease: "back.out(1.6)", scrollTrigger: { trigger: ".geo-principles", start: "top 85%", once: true } });
 
+      // ---------- Generated imagery: window-to-full-bleed interludes ----------
+      gsap.utils.toArray<HTMLElement>("[data-interlude]").forEach((il) => {
+        const media = il.querySelector("[data-il-media]");
+        const img = il.querySelector("[data-il-img]");
+        const word = il.querySelector("[data-il-word]");
+        gsap.timeline({ scrollTrigger: { trigger: il, start: "top top", end: "bottom bottom", scrub: 0.6 } })
+          .fromTo(media, { clipPath: "inset(24% 30% 24% 30% round 28px)" }, { clipPath: "inset(0% 0% 0% 0% round 0px)", duration: 1, ease: "power2.inOut" }, 0)
+          .fromTo(img, { scale: 1.4 }, { scale: 1, duration: 1.4, ease: "none" }, 0)
+          .fromTo(word, { yPercent: 70, autoAlpha: 0, "--wdth": 62 }, { yPercent: 0, autoAlpha: 1, "--wdth": 125, duration: 0.7, ease: "expo.out" }, 0.55)
+          .to(word, { yPercent: -30, autoAlpha: 0, duration: 0.4, ease: "power2.in" }, 1.3);
+      });
+      gsap.utils.toArray<HTMLElement>("[data-scene-img] img").forEach((img) =>
+        gsap.fromTo(img, { scale: 1.18 }, { scale: 1, ease: "none", scrollTrigger: { trigger: img.closest("section, footer"), start: "top bottom", end: "bottom top", scrub: 0.5 } }),
+      );
+
       // ---------- Supporting: block-wipe headline reveals ----------
       gsap.utils.toArray<HTMLElement>(".hl[data-reveal]:not(.hl--hero)").forEach((hl) => {
         const ins = hl.querySelectorAll<HTMLElement>(".hl-in");

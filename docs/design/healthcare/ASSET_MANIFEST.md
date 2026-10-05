@@ -99,3 +99,18 @@ I will check actual usage after each job, never resubmit before checking job sta
 | Plainsight films, posters, captures, `body.bin`, client names | not used (permission unconfirmed) | held |
 | Generated media (Gemini / Veo / Higgsfield) | none generated, USD 0 spent | not started |
 | Favicon | `app/icon.svg`, original | in use |
+
+## G. Generation batch 1 (approved by user 2026-10-05, run 2026-10-05)
+Model `gemini-3-pro-image`, 16:9, imageSize 2K, output 2752x1536 JPEG. Script `scripts/media/generate-stills.mjs`; every request with full prompt, token usage and response id is logged in `ASSET_LOG.json`. Raw outputs in `media-src/gen/` (not committed), retouched masters in `media-src/final/` (not committed), shipped WebP in `public/media/gen/` (960 + 1920 wide, 13-75 KB each).
+
+| ID | Used in | Attempts | Status | Notes |
+|---|---|---|---|---|
+| g-room | Footer backdrop | 1 | final | Tiny monitor logo blurred out in retouch |
+| g-phone | Websites interlude "Asked." | 2 | final | Attempt 1 rejected (face profile visible); attempt 2 hands-only, right edge cropped |
+| g-theatre | Films interlude "Explained." | 1 | final | |
+| g-studio | Presenter backdrop | 1 | final | |
+| g-clinic | Work interlude "Launched." | 1 | final | No signage |
+| g-hands | Process interlude "Checked." | 1 | final | |
+
+Calls: 7 successful generations + 1 failed unauthenticated request (HTTP 403, no image, not billed). Cost: **not verified** (pricing page blocked). Rough estimate from the recalled published rate (about USD 0.13 per 1K-2K image): about USD 0.95. Check actual spend in Google Cloud billing. Remaining sample ceiling well above zero; total ceiling USD 40 unchanged.
+All six are labelled "Generated illustration" on the page. No real people, clients or patients depicted.
