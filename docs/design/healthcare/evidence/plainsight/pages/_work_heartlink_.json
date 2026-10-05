@@ -1,0 +1,33 @@
+{
+ "status": 200,
+ "title": "Case study: HeartLink AI presenter films | Plainsight Medical",
+ "desc": "A heart attack film for HeartLink, presented by an AI clone of cardiologist Dr Harmandeep Singh in his own voice, with his consent, plus three shorts.",
+ "sections": [
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "HOME\n/\nWORK\n/\nCASE STUDY\nHEARTLINK: THE CARDIOLOGIST presents it himself.\nA heart attack film presented by an AI clone of Dr Harmandeep Singh, Consultant Cardiologist, made with his consent and carrying the HeartLink brand throughout."
+  },
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "CLIENT\nHeartLink\nPRESENTER\nAI clone of Dr Harmandeep Singh: his face and voice, with consent\nMASTER FILM\n02:30, 16:9\nSHORTS\n3 vertical, 9:16\nRead the transcript and sources"
+  },
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "WHY AN AI PRESENTER\nPATIENTS TRUST A FACE THEY WILL meet.\nA narrated animation explains. A film presented by the clinician also introduces them. The AI clone gives that presence without a filming day, a studio or a retake every time guidance changes.\nThe film opens with the cardiologist, moves through the anatomy of a blocked artery and the symptoms to act on, follows one patient from the 999 call to the catheter lab, and closes on a single instruction: call 999.\n01\nConsent first\nThe clinician signs a consent form before anything is recorded.\n02\nOne short session\nA single recording session captures their face and voice.\n03\nTheir words, approved\nThe clone only ever says a script the clinician has reviewed and signed off.\n04\nUsed for nothing else\nThe clone is used only for that client’s approved films, and is deleted on request.\n05\nSaid on screen\nThe film states that it is presented by an AI avatar, created with the clinician’s consent."
+  },
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "FOR THE FEED\nTHREE SHORTS FROM one film.\nKnow the signs. Inside a heart attack. Reopening the artery. Each is a self-contained 30 to 45 seconds with burned-in captions, built to be understood with the sound off.\n00:35 · 9:16\nKnow the signs\n00:39 · 9:16\nInside a heart attack\n00:44 · 9:16\nReopening the artery\nHOVER TO PLAY · CLICK FOR SOUND\n←\n→"
+  }
+ ],
+ "forms": [],
+ "ld": [
+  "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"@id\":\"https://www.plainsightmedical.co.uk/#organization\",\"name\":\"Plainsight Medical\",\"url\":\"https://www.plainsightmedical.co.uk/\",\"email\":\"raghul@cogniversetech.com\",\"description\":\"A media partner for UK private practice: GEO-friendly websites, patient-education films, AI presenters and social content for consultants and clinics.\",\"areaServed\":\"GB\",\"parentOrganization\":{\"@type\":\"Organization\",\"name\":\"COGNIVERSE LIMITED\",\"url\":\"https://cogniversetech.com\"}}",
+  "{\"@context\":\"https://schema.org\",\"@type\":\"VideoObject\",\"name\":\"Heart attack: know the signs and act fast\",\"description\":\"Presented by an AI avatar of Dr Harmandeep Singh, made with his consent: what a heart attack is, the symptoms, calling 999, and how a stent reopens the artery.\",\"thumbnailUrl\":\"https://www.plainsightmedical.co.uk/media/heart-attack.jpg\",\"contentUrl\":\"https://www.plainsightmedical.co.uk/media/heart-attack.mp4\",\"uploadDate\":\"2026-09-21\",\"duration\":\"PT2M30S\",\"inLanguage\":\"en-GB\",\"transcript\":\"A heart attack is a medical emergency. Knowing the signs, and acting fast, can save a life. Your heart pumps oxygen-rich blood from your lungs out to your body, and sends oxygen-poor blood back to your lungs. The heart muscle itself also needs oxygen-rich blood, supplied by its own arteries, the coronary arteries. Over many years, a fatty plaque can build up inside the wall of an artery, covered by a thin fibrous cap. If that cap tears, a blood clot forms on the plaque, and can block the artery. The heart muscle beyond the blockage is starved of oxygen, and begins to be damaged. The most common warning sign is chest pain, or a feeling of pressure or tightness. It can spread to the arms, neck, jaw or back, and you may feel breathless, sweaty or sick. Symptoms aren't the same for everyone. Some people, particularly women, feel breathless or sick, or have back or jaw pain, without chest pain. If you think someone is having a heart attack, call 999 straight away. Don't drive ",
+  "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.plainsightmedical.co.uk/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Work\",\"item\":\"https://www.plainsightmedical.co.uk/work/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"HeartLink\",\"item\":\"https://www.plainsightmedical.co.uk/work/heartlink/\"}]}"
+ ]
+}

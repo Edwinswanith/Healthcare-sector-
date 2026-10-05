@@ -1,0 +1,38 @@
+{
+ "status": 200,
+ "title": "AI presenter: films in your own voice | Plainsight Medical",
+ "desc": "An AI clone of the clinician, made with signed consent from one recording session, presents each patient film in the clinician’s own face and voice.",
+ "sections": [
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "HOME\n/\nAI PRESENTER\nYOUR FILMS, PRESENTED BY you.\nWe create an AI clone of you from one recording session. It appears on camera and narrates the whole film in your own voice, so patients meet the consultant they are about to see."
+  },
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "WITH YOUR AI PRESENTER\nWITH OUR HOUSE NARRATOR\nDr Harmandeep Singh’s AI clone appears on camera, and his cloned voice narrates the whole film. Made for HeartLink, with his consent."
+  },
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "WHAT YOUR PRESENTER DOES\nONE SESSION. EVERY film.\nOn camera\nYour digital twin introduces the film and returns for the key moments, in a clinic setting.\nIn your voice\nYour cloned voice narrates the whole film, so the anatomy is explained by the consultant the patient will meet.\nIn every format\nThe full film, the vertical version and the shorts all carry your presenter.\nSTEP 01\nConsent\nYou sign a consent form that sets out what your clone may be used for. Nothing is recorded before that.\nSTEP 02\nOne recording session\nA single short session captures your face and your voice. It is the only time you are in front of a camera.\nSTEP 03\nYour clone is built\nWe create a digital twin for the camera and a cloned voice for the narration.\nSTEP 04\nScripts you approve\nEach script is drafted from NHS and NICE guidance. Your clone only speaks words you have reviewed and signed off.\nSTEP 05\nFinal sign-off\nYou see and hear the finished film before it is released, in every format."
+  },
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "CONSENT AND CONTROL\nYOUR FACE AND VOICE STAY yours.\nA clone of a clinician is only worth having if the clinician is in charge of it.\n01\nYour likeness stays yours\nYour face and voice remain your own. The clone is not ours to use elsewhere.\n02\nOnly your approved content\nThe clone is used for your films and nothing else.\n03\nSaid on screen\nEach film states that it is presented by an AI avatar, created with the clinician’s consent.\n04\nStored securely\nYour recordings and clone data are held securely and used only for your work.\n05\nDeleted on request\nThe clone is deleted when you ask, or when we stop working together."
+  },
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "QUESTIONS\nBEFORE YOU decide.\nBOOK A CALL\nWhat do I have to do?\nWho controls what my clone says?\nWill patients know it is AI?\nDoes it replace me on camera completely?\nWhat happens to my likeness if we stop working together?"
+  }
+ ],
+ "forms": [],
+ "ld": [
+  "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"@id\":\"https://www.plainsightmedical.co.uk/#organization\",\"name\":\"Plainsight Medical\",\"url\":\"https://www.plainsightmedical.co.uk/\",\"email\":\"raghul@cogniversetech.com\",\"description\":\"A media partner for UK private practice: GEO-friendly websites, patient-education films, AI presenters and social content for consultants and clinics.\",\"areaServed\":\"GB\",\"parentOrganization\":{\"@type\":\"Organization\",\"name\":\"COGNIVERSE LIMITED\",\"url\":\"https://cogniversetech.com\"}}",
+  "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"What do I have to do?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Sign a consent form and complete one short recording session. After that you review scripts and approve final films, exactly as you would for a narrated film.\"}},{\"@type\":\"Question\",\"name\":\"Who controls what my clone says?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"You do. It only speaks scripts you have reviewed and signed off, and you approve each finished film before it is released.\"}},{\"@type\":\"Question\",\"name\":\"Will patients know it is AI?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. Each film states on screen that it is presented by an AI avatar, created with the clinician’s consent.\"}},{\"@type\":\"Question\",\"name\":\"Does it replace me on camera completely?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"In the films, yes. Your digital twin appears on camera and your cloned voice narrates, so there is no filming day and no retake when guidance changes.\"}},{\"@type\":\"Question\",\"name\":\"What happens to my likeness if we stop working together?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Your face and voice remain yours. The clone is used only for your approved content and is deleted on request or when the agreement ends.\"}}]}",
+  "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.plainsightmedical.co.uk/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"AI presenter\",\"item\":\"https://www.plainsightmedical.co.uk/ai-presenter/\"}]}"
+ ]
+}

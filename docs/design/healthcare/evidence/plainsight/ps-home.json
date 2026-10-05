@@ -1,0 +1,409 @@
+[
+ {
+  "i": 0,
+  "tag": "HEADER",
+  "id": "",
+  "cls": "header",
+  "aria": null,
+  "headings": [],
+  "text": "PLAINSIGHT\nMEDICAL\nWEBSITES\nFILMS\nAI PRESENTER\nSOCIAL\nWORK\nENQUIRE",
+  "links": [
+   "PLAINSIGHT MEDICAL -> /",
+   "WEBSITES -> /templates/",
+   "FILMS -> /films/",
+   "AI PRESENTER -> /ai-presenter/",
+   "SOCIAL -> /social/",
+   "WORK -> /work/",
+   "ENQUIRE -> /contact/"
+  ],
+  "imgs": [],
+  "videos": [],
+  "canvases": 0,
+  "forms": []
+ },
+ {
+  "i": 1,
+  "tag": "NAV",
+  "id": "",
+  "cls": "",
+  "aria": "Main",
+  "headings": [],
+  "text": "WEBSITES\nFILMS\nAI PRESENTER\nSOCIAL\nWORK",
+  "links": [
+   "WEBSITES -> /templates/",
+   "FILMS -> /films/",
+   "AI PRESENTER -> /ai-presenter/",
+   "SOCIAL -> /social/",
+   "WORK -> /work/"
+  ],
+  "imgs": [],
+  "videos": [],
+  "canvases": 0,
+  "forms": []
+ },
+ {
+  "i": 2,
+  "tag": "DIV",
+  "id": "preloader",
+  "cls": "preloader",
+  "aria": null,
+  "headings": [],
+  "text": "Building anatomy100 14 anatomical structures · sampled from Z-Anatomy",
+  "links": [],
+  "imgs": [],
+  "videos": [],
+  "canvases": 0,
+  "forms": []
+ },
+ {
+  "i": 3,
+  "tag": "SECTION",
+  "id": "hero",
+  "cls": "hero",
+  "aria": null,
+  "headings": [
+   "H1: YOUR PRACTICE’S MEDIA partner."
+  ],
+  "text": "WEBSITES · PATIENT FILMS · AI PRESENTER · SOCIAL\nYOUR PRACTICE’S\nMEDIA partner.\nWe build the website patients and AI assistants find, put patient films inside it, present them in your own voice, and run your content on Instagram, TikTok, YouTube and Facebook.\nBOOK A CALL\nSEE WHAT WE MAKE\nMADE FOR\nProf. Hemant Sheth\nHeartLink\nyourname.co.uk/gallbladder-surgery\nYN\nYour Name\nCONSULTANT SURGEON\nBook a consultation\nGallstones and gallbladder removal\nPLAY THE FILM · 03:00\nTRANSCRIPT\nCAPTIONS\nSOURCES: NHS\nYOUR WEBSITE\nYOUR FILM, INSIDE IT\nYOUR SHORTS",
+  "links": [
+   "BOOK A CALL -> /contact/",
+   "SEE WHAT WE MAKE -> #offer",
+   "Prof. Hemant Sheth -> /work/prof-hemant-sheth/",
+   "HeartLink -> /work/heartlink/",
+   "yourname.co.uk/gallbladder-surgery YN Your Name CONSULTANT SURGEON Book a consultation Gallstones and gallbladder removal PLAY THE FILM · 03:00 TRANSCRIPT CAPTIONS SOURCES: NHS -> #films"
+  ],
+  "imgs": [],
+  "videos": [
+   "/hero/film.mp4 poster=/hero/film.jpg tracks=",
+   "/media/short-know-the-signs.mp4 poster=/media/short-know-the-signs.jpg tracks="
+  ],
+  "canvases": 1,
+  "forms": []
+ },
+ {
+  "i": 4,
+  "tag": "SECTION",
+  "id": "offer",
+  "cls": "section offer",
+  "aria": null,
+  "headings": [
+   "H2: ONE PARTNER FOR EVERYTHING YOUR PATIENTS see."
+  ],
+  "text": "WHAT WE DO\nONE PARTNER FOR EVERYTHING YOUR PATIENTS see.\n01\nWEBSITES\nBuilt for your specialty, and built to be found: on Google, and by the AI assistants patients now ask.\nSee the websites\n02\nPATIENT FILMS\nTwo to three minutes in plain English, embedded on the page where the patient needs them.\nWatch the films\n03\nYOUR AI PRESENTER\nAn AI clone of you presents each film with your own face and voice, from one recording session.\nSee it working\n04\nSOCIAL CONTENT\nEvery film cut into shorts, and your channels managed across Instagram, TikTok, YouTube and Facebook.\nSee the shorts",
+  "links": [
+   "01 WEBSITES Built for your specialty, and built to be found: on Google, and by the AI assistants patients now ask. See the websites -> #websites",
+   "02 PATIENT FILMS Two to three minutes in plain English, embedded on the page where the patient needs them. Watch the films -> #films",
+   "03 YOUR AI PRESENTER An AI clone of you presents each film with your own face and voice, from one recording session. See it working -> #presenter",
+   "04 SOCIAL CONTENT Every film cut into shorts, and your channels managed across Instagram, TikTok, YouTube and Facebook. See the shorts -> #social"
+  ],
+  "imgs": [
+   "/shots/cardiology.jpg | alt=\"\" | 1100x2521",
+   "/hero/film.jpg | alt=\"\" | 960x540",
+   "/presenter/clone.jpg | alt=\"\" | 1280x720",
+   "/media/short-inside-a-heart-attack.jpg | alt=\"\" | 540x960"
+  ],
+  "videos": [
+   "(lazy) poster=null tracks=",
+   "(lazy) poster=null tracks=",
+   "(lazy) poster=null tracks="
+  ],
+  "canvases": 0,
+  "forms": []
+ },
+ {
+  "i": 5,
+  "tag": "SECTION",
+  "id": "websites",
+  "cls": "section websites",
+  "aria": null,
+  "headings": [
+   "H2: WEBSITES THAT GET found.",
+   "H3: CARDIOLOGY",
+   "H3: ",
+   "H3: ",
+   "H3: ",
+   "H3: ",
+   "H3: ",
+   "H3: ",
+   "H3: ",
+   "H3: ",
+   "H3: ",
+   "H3: ",
+   "H3: ",
+   "H3: ",
+   "H3: When a patient asks an assistant, it names the consultant it can read, check and quote."
+  ],
+  "text": "WEBSITES\nWEBSITES THAT GET found.\nPick your specialty. Each site is organised around the conditions you treat, with a film on the page that explains each one.\nCardiology\nOrthopaedics\nNeurology\nOphthalmology\nRespiratory\nUpper GI\nUrology\nColorectal\nSpinal\nENT\nHand\nPrivate GP\nNot listed?\nHEART\nCARDIOLOGY\nA calm, serious site that leads with urgency rules: when to call 999, when to book.\nFILMS\n2 films made, 7 more topics ready to script\nOPEN THE LIVE TEMPLATE\nyourname.co.uk\nGEO-FRIENDLY, IN PLAIN WORDS\nA PATIENT ASKS\nIs it normal for my baby to bring up milk?\nTHE ASSISTANT ANSWERS\nLots of babies bring up milk after a feed. It can be worrying, but for most babies it’s normal, and it gets better with time.\n1\nyourname.co.uk\nReflux in babies: film and transcript\nIllustration. The answer is quoted from our film transcript.\nWhen a patient asks an assistant, it names the consultant it can read, check and quote.\nGEO means generative engine optimisation: being the consultant that ChatGPT, Gemini or Perplexity names. Every site we build is made for that, as well as for Google.\n01\nReadable\nEvery film ships with its full transcript, so what you say on screen exists as text an assistant can read.\n02\nCheckable\nYour GMC number, appointments and hospitals stated once, consistently, with the sources behind each page named.\n03\nStructured\nMarkup that tells a machine this is a physician, this is a procedure, this is a film and how long it runs.\n04\nOpen\nCrawl rules and an llms.txt file that let AI assistants in, rather than blocking them by default.\n05\nWatched\nA regular check of what Google and the main assistants actually say when asked about you.\nHow a page is built to be found",
+  "links": [
+   "OPEN THE LIVE TEMPLATE -> /templates/cardiology/",
+   "(icon) -> /templates/orthopaedics/",
+   "(icon) -> /templates/neurology/",
+   "(icon) -> /templates/ophthalmology/",
+   "(icon) -> /templates/respiratory/",
+   "(icon) -> /templates/upper-gi-hpb/",
+   "(icon) -> /templates/urology/",
+   "(icon) -> /templates/colorectal/",
+   "(icon) -> /templates/spinal-surgery/",
+   "(icon) -> /templates/ent-maxillofacial/",
+   "(icon) -> /templates/hand-and-wrist/",
+   "(icon) -> /templates/private-gp/",
+   "(icon) -> /contact/",
+   "yourname.co.uk -> /templates/cardiology/",
+   "(icon) -> /templates/orthopaedics/",
+   "(icon) -> /templates/neurology/",
+   "(icon) -> /templates/ophthalmology/",
+   "(icon) -> /templates/respiratory/",
+   "(icon) -> /templates/upper-gi-hpb/",
+   "(icon) -> /templates/urology/",
+   "(icon) -> /templates/colorectal/",
+   "(icon) -> /templates/spinal-surgery/",
+   "(icon) -> /templates/ent-maxillofacial/",
+   "(icon) -> /templates/hand-and-wrist/",
+   "(icon) -> /templates/private-gp/",
+   "How a page is built to be found -> /templates/#geo"
+  ],
+  "imgs": [
+   "/shots/cardiology.jpg | alt=\"Cardiology website template\" | 1100x2521",
+   "/shots/orthopaedics.jpg | alt=\"Orthopaedics website template\" | 1100x2521",
+   "null | alt=\"Neurology website template\" | 0x0",
+   "null | alt=\"Ophthalmology website template\" | 0x0",
+   "null | alt=\"Respiratory medicine website template\" | 0x0",
+   "null | alt=\"Upper GI and HPB surgery website template\" | 0x0",
+   "null | alt=\"Urology website template\" | 0x0",
+   "null | alt=\"Colorectal surgery website template\" | 0x0",
+   "null | alt=\"Spinal surgery website template\" | 0x0",
+   "null | alt=\"ENT and maxillofacial website template\" | 0x0",
+   "null | alt=\"Hand and wrist surgery website template\" | 0x0",
+   "null | alt=\"Private GP and health screening website template\" | 0x0"
+  ],
+  "videos": [],
+  "canvases": 1,
+  "forms": []
+ },
+ {
+  "i": 6,
+  "tag": "SECTION",
+  "id": "films",
+  "cls": "section dark films",
+  "aria": null,
+  "headings": [
+   "H2: A LIBRARY FOR YOUR SPECIALTY. OR WE MAKE yours."
+  ],
+  "text": "THE FILM LIBRARY\nA LIBRARY FOR YOUR SPECIALTY. OR WE MAKE yours.\nPatient films of two to three minutes, scripted from NHS and NICE guidance and signed off by the clinician. They sit inside your website, on the page where the patient needs them.\nNOW SHOWING\nGallstones and robotic gallbladder removal\nTranscript and sources\nGallstones and robotic gallbladder removal\n03:00 · FOR PROF. HEMANT SHETH\nHeart attack\n02:30 · FOR HEARTLINK\nReflux in babies and children\n03:04 · FOR PROF. HEMANT SHETH\nInguinal hernia\n02:54 · HERNIA\nThe Whipple procedure\n02:22 · HEPATOBILIARY\nChest pain\n03:02 · CARDIOLOGY\n16\nfilms ready\n75\ntopics available, across 14 specialties\nANY\ntopic made to order\nHOVER A FILM TO PREVIEW IT · CLICK FOR THE FULL FILM, TRANSCRIPT AND SOURCES\n←\n→\n03:00\nHEPATOBILIARY\nGallstones and robotic gallbladder removal\nMade for Prof. Hemant Sheth\n03:00\nHEPATOBILIARY\nRobotic bile duct exploration: what to expect\nMade for Prof. Hemant Sheth\n02:56\nHEPATOBILIARY\nLiver cyst deroofing: keyhole surgery for a simple liver cyst\nMade for Prof. Hemant Sheth\n03:07\nUPPER GI\nAnti-reflux surgery: repairing the valve\nMade for Prof. Hemant Sheth\n03:04\nPAEDIATRICS\nReflux in babies and children\nMade for Prof. Hemant Sheth\n02:50\nHERNIA\nHernias of the tummy wall: symptoms and robotic repair\nMade for Prof. Hemant Sheth\n02:38\nHERNIA\nComplex abdominal wall reconstruction: rebuilding the tummy wall\nMade for Prof. Hemant Sheth\n02:54\nHERNIA\nInguinal hernia: symptoms and robotic repair\n02:59\nUPPER GI\nLarge paraoesophageal hernia repair\n03:00\nGENERAL SURGERY\nAppendicitis and appendicectomy: what to expect\n03:01\nGENERAL SURGERY\nDiagnostic laparoscopy: a keyhole look inside the tummy\n02:50\nHEPATOBILIARY\nPancreatitis: know the signs\n02:22\nHEPATOBILIARY\nThe Whipple procedure: why and how it is done\n02:56\nSCREENING\nBowel cancer screening: the home test that could save your life\n03:02\nCARDIOLOGY\nChest pain: causes and when to act\n02:30\nCARDIOLOGY\nHeart attack: know the signs and act fast\nMade for HeartLink\nYour specialty not here yet? Tell us the procedure you explain most often and we will script it, or choose from the topic list.\nCHOOSE FROM 75 TOPICS\nASK FOR A NEW TOPIC",
+  "links": [
+   "Transcript and sources -> /films/gallstones-robotic-gallbladder-removal/",
+   "03:00 HEPATOBILIARY Gallstones and robotic gallbladder removal Made for Prof. Hemant Sheth -> /films/gallstones-robotic-gallbladder-removal/",
+   "03:00 HEPATOBILIARY Robotic bile duct exploration: what to expect Made for Prof. Hemant Sheth -> /films/robotic-bile-duct-exploration/",
+   "02:56 HEPATOBILIARY Liver cyst deroofing: keyhole surgery for a simple liver cyst Made for Prof. Hemant Sheth -> /films/liver-cyst-deroofing/",
+   "03:07 UPPER GI Anti-reflux surgery: repairing the valve Made for Prof. Hemant Sheth -> /films/anti-reflux-surgery/",
+   "03:04 PAEDIATRICS Reflux in babies and children Made for Prof. Hemant Sheth -> /films/reflux-in-babies-and-children/",
+   "02:50 HERNIA Hernias of the tummy wall: symptoms and robotic repair Made for Prof. Hemant Sheth -> /films/abdominal-wall-hernia-robotic-repair/",
+   "02:38 HERNIA Complex abdominal wall reconstruction: rebuilding the tummy wall Made for Prof. Hemant Sheth -> /films/complex-abdominal-wall-reconstruction/",
+   "02:54 HERNIA Inguinal hernia: symptoms and robotic repair -> /films/inguinal-hernia-robotic-repair/",
+   "02:59 UPPER GI Large paraoesophageal hernia repair -> /films/paraoesophageal-hernia-repair/",
+   "03:00 GENERAL SURGERY Appendicitis and appendicectomy: what to expect -> /films/appendicitis-and-appendicectomy/",
+   "03:01 GENERAL SURGERY Diagnostic laparoscopy: a keyhole look inside the tummy -> /films/diagnostic-laparoscopy/",
+   "02:50 HEPATOBILIARY Pancreatitis: know the signs -> /films/pancreatitis/",
+   "02:22 HEPATOBILIARY The Whipple procedure: why and how it is done -> /films/whipple-procedure/",
+   "02:56 SCREENING Bowel cancer screening: the home test that could save your life -> /films/bowel-cancer-screening/",
+   "03:02 CARDIOLOGY Chest pain: causes and when to act -> /films/chest-pain/",
+   "02:30 CARDIOLOGY Heart attack: know the signs and act fast Made for HeartLink -> /films/heart-attack/",
+   "CHOOSE FROM 75 TOPICS -> /topics/",
+   "ASK FOR A NEW TOPIC -> /contact/"
+  ],
+  "imgs": [
+   "/media/gallstones-robotic-gallbladder-removal.jpg | alt=\"\" | 1280x720",
+   "/media/heart-attack.jpg | alt=\"\" | 1280x720",
+   "/media/reflux-in-babies-and-children.jpg | alt=\"\" | 1280x720",
+   "/media/inguinal-hernia-robotic-repair.jpg | alt=\"\" | 1280x720",
+   "/media/whipple-procedure.jpg | alt=\"\" | 1280x720",
+   "/media/chest-pain.jpg | alt=\"\" | 1280x720",
+   "/media/gallstones-robotic-gallbladder-removal.jpg | alt=\"\" | 1280x720",
+   "/media/robotic-bile-duct-exploration.jpg | alt=\"\" | 1280x720",
+   "/media/liver-cyst-deroofing.jpg | alt=\"\" | 1280x720",
+   "/media/anti-reflux-surgery.jpg | alt=\"\" | 1280x720",
+   "/media/reflux-in-babies-and-children.jpg | alt=\"\" | 1280x720",
+   "/media/abdominal-wall-hernia-robotic-repair.jpg | alt=\"\" | 0x0",
+   "/media/complex-abdominal-wall-reconstruction.jpg | alt=\"\" | 0x0",
+   "/media/inguinal-hernia-robotic-repair.jpg | alt=\"\" | 1280x720",
+   "/media/paraoesophageal-hernia-repair.jpg | alt=\"\" | 0x0",
+   "/media/appendicitis-and-appendicectomy.jpg | alt=\"\" | 0x0",
+   "/media/diagnostic-laparoscopy.jpg | alt=\"\" | 0x0",
+   "/media/pancreatitis.jpg | alt=\"\" | 0x0",
+   "/media/whipple-procedure.jpg | alt=\"\" | 1280x720",
+   "/media/bowel-cancer-screening.jpg | alt=\"\" | 0x0",
+   "/media/chest-pain.jpg | alt=\"\" | 1280x720",
+   "/media/heart-attack.jpg | alt=\"\" | 1280x720"
+  ],
+  "videos": [
+   "/media/gallstones-robotic-gallbladder-removal.mp4 poster=/media/gallstones-robotic-gallbladder-removal.jpg tracks=/media/gallstones-robotic-gallbladder-removal.vtt",
+   "(lazy) poster=null tracks=",
+   "(lazy) poster=null tracks=",
+   "(lazy) poster=null tracks=",
+   "(lazy) poster=null tracks=",
+   "(lazy) poster=null tracks=",
+   "(lazy) poster=null tracks=",
+   "(lazy) poster=null tracks=",
+   "(lazy) poster=null tracks=",
+   "(lazy) poster=null tracks=",
+   "(lazy) poster=null tracks=",
+   "(lazy) poster=null tracks=",
+   "(lazy) poster=null tracks=",
+   "(lazy) poster=null tracks=",
+   "(lazy) poster=null tracks=",
+   "(lazy) poster=null tracks=",
+   "(lazy) poster=null tracks="
+  ],
+  "canvases": 0,
+  "forms": []
+ },
+ {
+  "i": 7,
+  "tag": "SECTION",
+  "id": "presenter",
+  "cls": "section presenter",
+  "aria": null,
+  "headings": [
+   "H2: PRESENTED BY YOU, IN YOUR own voice."
+  ],
+  "text": "YOUR AI PRESENTER\nPRESENTED BY YOU, IN YOUR own voice.\nWe create an AI clone of you. It appears on camera and narrates the whole film in your voice, so patients meet the consultant they are about to see.\n01\nConsent first\nYou sign a consent form before anything is recorded.\n02\nOne recording session\nA single short session captures your face and your voice.\n03\nYou approve every word\nYour clone only speaks scripts you have reviewed and signed off.\nEach film says on screen that it is presented by an AI avatar. Your face and voice stay yours, and the clone is deleted on request.\nHOW THE AI PRESENTER WORKS\nWITH YOUR AI PRESENTER\nWITH OUR HOUSE NARRATOR\nDr Harmandeep Singh’s AI clone appears on camera, and his cloned voice narrates the whole film. Made for HeartLink, with his consent.",
+  "links": [
+   "HOW THE AI PRESENTER WORKS -> /ai-presenter/"
+  ],
+  "imgs": [],
+  "videos": [
+   "/media/heart-attack.mp4 poster=/presenter/clone.jpg tracks=/media/heart-attack.vtt"
+  ],
+  "canvases": 0,
+  "forms": []
+ },
+ {
+  "i": 8,
+  "tag": "SECTION",
+  "id": "social",
+  "cls": "section social",
+  "aria": null,
+  "headings": [
+   "H2: NOT JUST YOUR WEBSITE. EVERY platform."
+  ],
+  "text": "SHORTS AND SOCIAL\nNOT JUST YOUR WEBSITE. EVERY platform.\nEach film is cut into vertical shorts, and we manage your patient-education content across Instagram, TikTok, YouTube and Facebook, so every channel carries the same clinically approved message.\n00:35 · 9:16\nKnow the signs\n00:39 · 9:16\nInside a heart attack\n00:44 · 9:16\nReopening the artery\nHOVER TO PLAY · CLICK FOR SOUND\nShorts cut from the heart attack film, made for HeartLink.\nWHERE EACH FILM GOES\nINSTAGRAM\tReels and Stories\t9:16\nTIKTOK\tShorts with an opening hook\t9:16\nYOUTUBE\tThe full film, plus Shorts\t16:9 · 9:16\nFACEBOOK\tThe full film, plus Reels\t16:9 · 9:16\nEvery film reframed for vertical viewing and cut into shorts of 30 to 60 seconds.\nCaptions burned in for silent viewing, with your logo and colours.\nYour AI presenter in every format, if you have one.\nA posting plan agreed with you, and nothing published without your sign-off.\nHOW SOCIAL WORKS",
+  "links": [
+   "HOW SOCIAL WORKS -> /social/"
+  ],
+  "imgs": [
+   "/media/short-know-the-signs.jpg | alt=\"\" | 540x960",
+   "/media/short-inside-a-heart-attack.jpg | alt=\"\" | 540x960",
+   "/media/short-reopening-the-artery.jpg | alt=\"\" | 540x960"
+  ],
+  "videos": [
+   "(lazy) poster=null tracks=",
+   "(lazy) poster=null tracks=",
+   "(lazy) poster=null tracks="
+  ],
+  "canvases": 0,
+  "forms": []
+ },
+ {
+  "i": 9,
+  "tag": "SECTION",
+  "id": "work",
+  "cls": "section dark portfolio",
+  "aria": null,
+  "headings": [
+   "H2: BUILT, LAUNCHED, in use."
+  ],
+  "text": "PORTFOLIO\nBUILT, LAUNCHED, in use.\nWork for clients who have agreed to be named. Every film can be watched in full.\nlondonroboticsurgeon.co.uk\nWEBSITE AND FILMS\nPROF. HEMANT SHETH\nConsultant Upper GI, Laparoscopic and Hepatobiliary Surgeon, London\n22-page website\n7 patient films\nStructured data and llms.txt\nAI PRESENTER AND SHORTS\nHEARTLINK\nDr Harmandeep Singh, Consultant Cardiologist\nFilm presented by his AI clone\n3 vertical shorts\nBranded for every platform\nALSO\n12 SPECIALTY WEBSITE CONCEPTS\nOpen the templates",
+  "links": [
+   "londonroboticsurgeon.co.uk WEBSITE AND FILMS PROF. HEMANT SHETH Consultant Upper GI, Laparoscopic and Hepatobiliary Surgeon, London 22-page website 7 patient films Structured data and llms.txt -> /work/prof-hemant-sheth/",
+   "AI PRESENTER AND SHORTS HEARTLINK Dr Harmandeep Singh, Consultant Cardiologist Film presented by his AI clone 3 vertical shorts Branded for every platform -> /work/heartlink/",
+   "ALSO 12 SPECIALTY WEBSITE CONCEPTS Open the templates -> /templates/"
+  ],
+  "imgs": [
+   "/shots/sheth.jpg | alt=\"Prof. Hemant Sheth website\" | 1100x3208",
+   "/presenter/clone.jpg | alt=\"\" | 1280x720"
+  ],
+  "videos": [],
+  "canvases": 0,
+  "forms": []
+ },
+ {
+  "i": 10,
+  "tag": "SECTION",
+  "id": "process",
+  "cls": "section process",
+  "aria": null,
+  "headings": [
+   "H2: YOU APPROVE. WE DO the rest.",
+   "H3: A short call",
+   "H3: A plan",
+   "H3: Scripts and design",
+   "H3: Production",
+   "H3: Sign-off and launch"
+  ],
+  "text": "HOW IT WORKS\nYOU APPROVE. WE DO the rest.\nYour time is one call, one recording session if you want an AI presenter, and two reviews per film: the script, then the final cut.\nSTEP 01\nA short call\nWe learn your specialty, your patients and the procedures you explain most often.\nSTEP 02\nA plan\nThe pages, the film topics and the channels, agreed together as one batch.\nSTEP 03\nScripts and design\nScripts are drafted from NHS, NICE and specialist sources. You review them once and sign them off.\nSTEP 04\nProduction\nWe build the site, make the films and, if you want one, record your AI presenter.\nSTEP 05\nSign-off and launch\nYou approve the final films and pages. Then we publish, and keep your channels supplied.\nSources named on every film\nNothing published without your sign-off\nNo patient data, ever\nAn AI clone only with signed consent\nThe full approach and safeguards",
+  "links": [
+   "The full approach and safeguards -> /approach/"
+  ],
+  "imgs": [],
+  "videos": [],
+  "canvases": 0,
+  "forms": []
+ },
+ {
+  "i": 11,
+  "tag": "SECTION",
+  "id": "packages",
+  "cls": "section packages",
+  "aria": null,
+  "headings": [
+   "H2: THREE WAYS TO begin.",
+   "H3: FILMS FOR YOUR SITE",
+   "H3: WEBSITE WITH FILMS",
+   "H3: FULL MEDIA PARTNER"
+  ],
+  "text": "WAYS TO START\nTHREE WAYS TO begin.\nEach is quoted for your practice after a short call.\nOPTION 01\nFILMS FOR YOUR SITE\nYou already have a website you are happy with.\nA batch of films on the procedures you explain most\nEach as a 16:9 master, a 9:16 vertical and a short\nTranscript and markup for your web team to add\nTALK ABOUT THIS\nMOST COMPLETE START\nWEBSITE WITH FILMS\nYou want a site that patients and AI assistants can find.\nA GEO-friendly website for your specialty\nA film embedded on each procedure page\nStructured data, transcripts and llms.txt built in\nTALK ABOUT THIS\nOPTION 03\nFULL MEDIA PARTNER\nYou want all of it handled, and kept going.\nWebsite and film library\nYour AI presenter, in your own voice\nShorts and channels managed across four platforms\nTALK ABOUT THIS",
+  "links": [
+   "TALK ABOUT THIS -> /contact/",
+   "TALK ABOUT THIS -> /contact/",
+   "TALK ABOUT THIS -> /contact/"
+  ],
+  "imgs": [],
+  "videos": [],
+  "canvases": 0,
+  "forms": []
+ },
+ {
+  "i": 12,
+  "tag": "FOOTER",
+  "id": "footer",
+  "cls": "footer",
+  "aria": null,
+  "headings": [
+   "H2: LET’S TALK ABOUT your practice."
+  ],
+  "text": "A SHORT CALL IS WHERE IT STARTS\nLET’S TALK ABOUT\nyour practice.\nBOOK A CALL\nCHOOSE FILM TOPICS\nWHAT WE DO\nWebsites\nFilms\nAI presenter\nSocial\nWork\nAll services\nMORE\nFilm topics\nHow we work\nProf. Hemant Sheth\nHeartLink\nCONTACT\nEnquire\nraghul@cogniversetech.com\nllms.txt\n© 2026 COGNIVERSE LIMITED. Registered in England and Wales, company no. 15140913. Plainsight is a studio of CogniVerse.\nFilms are patient education, not medical advice. People shown in the films are AI-generated; clinician clones are made only with signed consent. 3D anatomy derived from Z-Anatomy and BodyParts3D, CC BY-SA 4.0.",
+  "links": [
+   "your practice. -> /contact/",
+   "BOOK A CALL -> /contact/",
+   "CHOOSE FILM TOPICS -> /topics/",
+   "Websites -> /templates/",
+   "Films -> /films/",
+   "AI presenter -> /ai-presenter/",
+   "Social -> /social/",
+   "Work -> /work/",
+   "All services -> /services/",
+   "Film topics -> /topics/",
+   "How we work -> /approach/",
+   "Prof. Hemant Sheth -> /work/prof-hemant-sheth/",
+   "HeartLink -> /work/heartlink/",
+   "Enquire -> /contact/",
+   "raghul@cogniversetech.com -> mailto:raghul@cogniversetech.com",
+   "llms.txt -> /llms.txt",
+   "CogniVerse -> https://cogniversetech.com"
+  ],
+  "imgs": [],
+  "videos": [],
+  "canvases": 1,
+  "forms": []
+ }
+]

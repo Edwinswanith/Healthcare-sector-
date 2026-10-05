@@ -1,0 +1,39 @@
+{
+ "status": 200,
+ "title": "Cardiology website template | Plainsight Medical",
+ "desc": "A website template concept for a consultant cardiologist: A calm, serious site that leads with urgency rules: when to call 999, when to book.",
+ "sections": [
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "CONSULTANT CARDIOLOGIST · LONDON\nClear answers about your heart.\nRapid assessment of chest pain, palpitations and breathlessness, with tests and results explained in plain English.\nBook a consultation\nSee treatments\nHEART · LIVE 3D\nREGISTERED\nGMC number\nCLINICS\nYour hospitals\nINSURERS\nAll major insurers\nAPPOINTMENTS\nUsually within a week"
+  },
+  {
+   "id": "treatments",
+   "tag": "SECTION",
+   "text": "CONDITIONS AND TREATMENTS\nWhat I can help with.\n01\nChest pain assessment\n→\n02\nPalpitations and heart monitoring\n→\n03\nAtrial fibrillation\n→\n04\nCoronary angiography and stents\n→\n05\nHigh blood pressure\n→\n06\nHeart failure\n→"
+  },
+  {
+   "id": "films",
+   "tag": "SECTION",
+   "text": "PATIENT FILMS\nWatch before you decide.\nA short film for each procedure, so the consultation starts from understanding rather than from zero.\n▶\nChest pain: causes and when to act\n03:02 · WITH TRANSCRIPT"
+  },
+  {
+   "id": "about",
+   "tag": "SECTION",
+   "text": "YN\nABOUT\nYour Name, consultant cardiologist.\nYour story in your own words: where you trained, what you specialise in, and how you like to work with patients.\nTRAINING\nYour medical school and fellowships\nNHS POST\nYour trust and role\nMEMBERSHIPS\nYour royal college and societies"
+  },
+  {
+   "id": "questions",
+   "tag": "SECTION",
+   "text": "COMMON QUESTIONS\nAsked in every clinic.\nWhen is chest pain an emergency?\nYour answer, written with you in plain English and checked against NHS and NICE guidance.\nWhat happens at a first cardiology appointment?\nDo I need a referral from my GP?"
+  },
+  {
+   "id": "contact",
+   "tag": "SECTION",
+   "text": "Book a consultation.\nCLINIC ONE\nYour hospital\nYour address, London\nCLINIC TWO\nYour clinic\nYour address, London\nSECRETARY\n020 0000 0000\nyour@practice.co.uk\nMake this site yours"
+  }
+ ],
+ "forms": [],
+ "ld": []
+}

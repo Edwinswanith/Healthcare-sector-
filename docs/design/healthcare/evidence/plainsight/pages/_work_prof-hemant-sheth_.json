@@ -1,0 +1,37 @@
+{
+ "status": 200,
+ "title": "Case study: Prof. Hemant Sheth, robotic surgeon | Plainsight Medical",
+ "desc": "A 22-page website and 7 patient-education films for Prof. Hemant Sheth, Consultant Upper GI, Laparoscopic and Hepatobiliary Surgeon in London.",
+ "sections": [
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "HOME\n/\nWORK\n/\nCASE STUDY\nPROF. HEMANT SHETH, robotic surgeon.\nA website that explains what he does in the terms patients search for, and a set of films that explain the operations themselves."
+  },
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "CLIENT\nConsultant Upper GI, Laparoscopic & Hepatobiliary Surgeon, London and Hertfordshire\nSCOPE\nWebsite, 7 patient films, search and AI groundwork\nSITE\n22 pages\nLIVE AT\nlondonroboticsurgeon.co.uk\nlondonroboticsurgeon.co.uk"
+  },
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "WHAT WE BUILT\nTHREE PIECES THAT work together.\n01\nA site organised by operation\nA treatment directory in four groups: upper GI, hepatobiliary, hernia and appendicectomy.\nTen individual procedure guides written for patients, from gallbladder surgery to complex incisional hernia.\nA robotic surgery explainer with a comparison page for patients weighing up their options.\nA profile page carrying his appointments and affiliations, and a page for each clinic location.\n02\nBuilt to be read by machines too\nStructured data that tells search engines these are medical pages, who they are about and who published them.\nAn llms.txt file that gives AI assistants a plain summary of who he is and where to find each topic.\nCrawl rules that welcome Google, Bing and the AI crawlers rather than blocking them.\nAn XML sitemap covering all 22 pages.\n03\nA film for the operations he explains most\n7 films, 21 minutes in total, each two to three minutes long.\nScripts drafted from NHS, NICE and specialist guidance, in plain English and UK wording.\nAnatomy animation combined with scenes of a consistent patient through symptom, consultation and recovery.\nDelivered as 16:9 masters with narration and captions."
+  },
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "TREATMENT DIRECTORY\nROBOTIC SURGERY EXPLAINER"
+  },
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "THE FILMS\n7 OPERATIONS, EXPLAINED IN 21 minutes.\nWatch any of them in full. Each has its own page with the transcript and sources.\n03:00\nHEPATOBILIARY\nGallstones and robotic gallbladder removal\nMade for Prof. Hemant Sheth\n03:00\nHEPATOBILIARY\nRobotic bile duct exploration: what to expect\nMade for Prof. Hemant Sheth\n02:56\nHEPATOBILIARY\nLiver cyst deroofing: keyhole surgery for a simple liver cyst\nMade for Prof. Hemant Sheth\n03:07\nUPPER GI\nAnti-reflux surgery: repairing the valve\nMade for Prof. Hemant Sheth\n03:04\nPAEDIATRICS\nReflux in babies and children\nMade for Prof. Hemant Sheth\n02:50\nHERNIA\nHernias of the tummy wall: symptoms and robotic repair\nMade for Prof. Hemant Sheth\n02:38\nHERNIA\nComplex abdominal wall reconstruction: rebuilding the tummy wall\nMade for Prof. Hemant Sheth\nFilms and running times\nGallstones and robotic gallbladder removal\tHEPATOBILIARY\t03:00\nRobotic bile duct exploration: what to expect\tHEPATOBILIARY\t03:00\nLiver cyst deroofing: keyhole surgery for a simple liver cyst\tHEPATOBILIARY\t02:56\nAnti-reflux surgery: repairing the valve\tUPPER GI\t03:07\nReflux in babies and children\tPAEDIATRICS\t03:04\nHernias of the tummy wall: symptoms and robotic repair\tHERNIA\t02:50\nComplex abdominal wall reconstruction: rebuilding the tummy wall\tHERNIA\t02:38"
+  }
+ ],
+ "forms": [],
+ "ld": [
+  "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"@id\":\"https://www.plainsightmedical.co.uk/#organization\",\"name\":\"Plainsight Medical\",\"url\":\"https://www.plainsightmedical.co.uk/\",\"email\":\"raghul@cogniversetech.com\",\"description\":\"A media partner for UK private practice: GEO-friendly websites, patient-education films, AI presenters and social content for consultants and clinics.\",\"areaServed\":\"GB\",\"parentOrganization\":{\"@type\":\"Organization\",\"name\":\"COGNIVERSE LIMITED\",\"url\":\"https://cogniversetech.com\"}}",
+  "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.plainsightmedical.co.uk/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Work\",\"item\":\"https://www.plainsightmedical.co.uk/work/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Prof. Hemant Sheth\",\"item\":\"https://www.plainsightmedical.co.uk/work/prof-hemant-sheth/\"}]}"
+ ]
+}

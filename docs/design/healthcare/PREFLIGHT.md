@@ -25,16 +25,18 @@ Checked: 2026-10-05, cloud session, branch `claude/admiring-darwin-m2s4u3`.
 |---|---|---|
 | Design reference | https://landonorris.com/on-track | confirmed |
 | Content and order reference | https://plainsight-medical.vercel.app/ | confirmed |
-| Motion ambition | cinematic, scroll-driven | confirmed |
-| Preserve source section order | yes | confirmed |
+| Motion ambition | cinematic, scroll-driven, On Track level | confirmed |
+| Preserve source section order | yes, S00-S11 (CONTENT_MAP.md) | confirmed |
 | Builder skill | tech-cogniverse-healthcare-motion | confirmed (override) |
-| Public brand name | - | unresolved (pending source read) |
-| Enquiry destination | - | unresolved |
-| Generation budget | - | unresolved |
-| How source content reaches this session | - | **blocking** |
+| Market | UK private practice (source JSON-LD areaServed GB) | source-confirmed |
+| Public brand | Plainsight Medical, a studio of CogniVerse | proposed (retain) |
+| Enquiry mechanism | mailto composer to raghul@cogniversetech.com, nothing stored (as source) | proposed (retain) |
+| Route scope v1 | Home + /contact/ rebuilt; other nav targets link to the live Plainsight pages until rebuilt | proposed |
+| Media reuse | Plainsight's own films, posters, shorts, captures, body.bin | proposed, needs owner confirmation |
+| Visual direction | "One film, every frame" (STORYBOARD.md) | proposed |
+| Generation budget | sample USD 10, total USD 40 ceiling, prices unverified | proposed |
+| Rive | not used (no authoring tool); SVG + GSAP equivalents | proposed |
 
 ## Current milestone
 
-A (preflight). Blocked on reference access. No scaffolding, no paid generation.
-
-Browser TLS note: Playwright Chromium needs `--ignore-certificate-errors-spki-list=<SPKI of /root/.ccr/agent-proxy-ca.crt>` to trust the session proxy CA. This pins trust to that one CA; it does not disable verification.
+B: storyboard, signature moments, asset plan, architecture written. Awaiting one approval. No scaffolding, no generation.

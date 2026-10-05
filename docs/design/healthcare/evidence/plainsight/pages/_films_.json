@@ -1,0 +1,27 @@
+{
+ "status": 200,
+ "title": "Patient-education film library | Plainsight Medical",
+ "desc": "16 patient-education films across 7 specialties: gallstones, hernia repair, anti-reflux surgery, heart attack and more. Each with a full transcript and named sources.",
+ "sections": [
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "HOME\n/\nFILMS\nTHE FILM library.\n16 films, 46 minutes of plain-English explanation across 7 specialties. Every one has its own page with a full transcript and the sources it was scripted from."
+  },
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "All\n16\nHepatobiliary\n5\nUpper GI\n2\nHernia\n3\nGeneral surgery\n2\nCardiology\n2\nPaediatrics\n1\nScreening\n1\n03:00\nHEPATOBILIARY\nGallstones and robotic gallbladder removal\nMade for Prof. Hemant Sheth\n03:00\nHEPATOBILIARY\nRobotic bile duct exploration: what to expect\nMade for Prof. Hemant Sheth\n02:56\nHEPATOBILIARY\nLiver cyst deroofing: keyhole surgery for a simple liver cyst\nMade for Prof. Hemant Sheth\n03:07\nUPPER GI\nAnti-reflux surgery: repairing the valve\nMade for Prof. Hemant Sheth\n03:04\nPAEDIATRICS\nReflux in babies and children\nMade for Prof. Hemant Sheth\n02:50\nHERNIA\nHernias of the tummy wall: symptoms and robotic repair\nMade for Prof. Hemant Sheth\n02:38\nHERNIA\nComplex abdominal wall reconstruction: rebuilding the tummy wall\nMade for Prof. Hemant Sheth\n02:54\nHERNIA\nInguinal hernia: symptoms and robotic repair\n02:59\nUPPER GI\nLarge paraoesophageal hernia repair\n03:00\nGENERAL SURGERY\nAppendicitis and appendicectomy: what to expect\n03:01\nGENERAL SURGERY\nDiagnostic laparoscopy: a keyhole look inside the tummy\n02:50\nHEPATOBILIARY\nPancreatitis: know the signs\n02:22\nHEPATOBILIARY\nThe Whipple procedure: why and how it is done\n02:56\nSCREENING\nBowel cancer screening: the home test that could save your life\n03:02\nCARDIOLOGY\nChest pain: causes and when to act\n02:30\nCARDIOLOGY\nHeart attack: know the signs and act fast\nMade for HeartLink"
+  },
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "VERTICAL SHORTS\nTHE SAME FILM, CUT FOR the feed.\nThree shorts made from the heart attack film for HeartLink. Each opens with a hook, carries burned-in captions for silent viewing, and points back to the full film.\nSee the HeartLink case study\n00:35 · 9:16\nKnow the signs\n00:39 · 9:16\nInside a heart attack\n00:44 · 9:16\nReopening the artery\nHOVER TO PLAY · CLICK FOR SOUND"
+  }
+ ],
+ "forms": [],
+ "ld": [
+  "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"@id\":\"https://www.plainsightmedical.co.uk/#organization\",\"name\":\"Plainsight Medical\",\"url\":\"https://www.plainsightmedical.co.uk/\",\"email\":\"raghul@cogniversetech.com\",\"description\":\"A media partner for UK private practice: GEO-friendly websites, patient-education films, AI presenters and social content for consultants and clinics.\",\"areaServed\":\"GB\",\"parentOrganization\":{\"@type\":\"Organization\",\"name\":\"COGNIVERSE LIMITED\",\"url\":\"https://cogniversetech.com\"}}",
+  "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.plainsightmedical.co.uk/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Films\",\"item\":\"https://www.plainsightmedical.co.uk/films/\"}]}"
+ ]
+}

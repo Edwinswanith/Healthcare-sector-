@@ -1,0 +1,27 @@
+{
+ "status": 200,
+ "title": "Work and case studies | Plainsight Medical",
+ "desc": "Case studies: a website and seven patient films for Prof. Hemant Sheth, and a heart attack film presented by a cardiologist's AI clone for HeartLink.",
+ "sections": [
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "HOME\n/\nWORK\nWORK WE CAN show you.\nTwo clients, shown with their agreement. Everything here is live or delivered, and you can watch every film in full."
+  },
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "CASE STUDY 01\nProf. Hemant Sheth\nConsultant Upper GI, Laparoscopic & Hepatobiliary Surgeon\nA 22-page site organised around the operations he performs, and a film for each of the procedures he explains most often.\nWebsite\n7 patient films\nSearch and AI groundwork\nRead the case study\nCASE STUDY 02\nHeartLink\nDr Harmandeep Singh, Consultant Cardiologist\nA heart attack film presented by an AI clone of the cardiologist, in his own voice and with his consent, and cut into shorts for social.\nAI presenter film\n3 vertical shorts\nBranded for every platform\nRead the case study"
+  },
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "ALSO\n12 SPECIALTY WEBSITE concepts.\nLive template sites for twelve specialties, each with its own 3D anatomy and placeholder details.\nOPEN THE TEMPLATES"
+  }
+ ],
+ "forms": [],
+ "ld": [
+  "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"@id\":\"https://www.plainsightmedical.co.uk/#organization\",\"name\":\"Plainsight Medical\",\"url\":\"https://www.plainsightmedical.co.uk/\",\"email\":\"raghul@cogniversetech.com\",\"description\":\"A media partner for UK private practice: GEO-friendly websites, patient-education films, AI presenters and social content for consultants and clinics.\",\"areaServed\":\"GB\",\"parentOrganization\":{\"@type\":\"Organization\",\"name\":\"COGNIVERSE LIMITED\",\"url\":\"https://cogniversetech.com\"}}",
+  "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.plainsightmedical.co.uk/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Work\",\"item\":\"https://www.plainsightmedical.co.uk/work/\"}]}"
+ ]
+}

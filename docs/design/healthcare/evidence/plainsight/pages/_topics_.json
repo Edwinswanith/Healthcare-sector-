@@ -1,0 +1,27 @@
+{
+ "status": 200,
+ "title": "Topic catalogue: patient films you can commission | Plainsight Medical",
+ "desc": "75 patient-education film topics across 14 specialties, from gallstones to cataract surgery. 16 are already made and can be watched now.",
+ "sections": [
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "HOME\n/\nTOPICS\nTHE TOPIC catalogue.\n75 films across 14 specialties. 16 are in the library already. Tick the ones you would want under your name and send the list, or tell us a topic that is not here.\nIN THE LIBRARY, WATCH NOW\nAVAILABLE TO COMMISSION"
+  },
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "01\nUPPER GI\n7 TOPICS\nAnti-reflux surgery (fundoplication)\nWATCH · 03:07\nLarge paraoesophageal hernia repair\nWATCH · 02:59\nHiatus hernia explained\nGastroscopy: what to expect\nAchalasia and Heller’s myotomy\nBarrett’s oesophagus\nH. pylori and stomach ulcers\n02\nHEPATOBILIARY AND PANCREAS\n8 TOPICS\nGallstones and gallbladder removal\nWATCH · 03:00\nBile duct exploration\nWATCH · 03:00\nLiver cyst deroofing\nWATCH · 02:56\nPancreatitis\nWATCH · 02:50\nThe Whipple procedure\nWATCH · 02:22\nERCP: what to expect\nLiver resection\nJaundice: causes and tests\n03\nHERNIA\n6 TOPICS\nInguinal hernia repair\nWATCH · 02:54\nUmbilical, epigastric and incisional hernias\nWATCH · 02:50\nComplex abdominal wall reconstruction\nWATCH · 02:38\nFemoral hernia\nGroin pain in athletes\nRecovering after hernia repair\n04\nGENERAL SURGERY\n6 TOPICS\nAppendicitis and appendicectomy\nWATCH · 03:00\nDiagnostic laparoscopy\nWATCH · 03:01\nRobotic surgery: how it works\nHaving a general anaesthetic\nPreparing for keyhole surgery\nPilonidal sinus\n05\nCOLORECTAL\n7 TOPICS\nBowel cancer screening\nWATCH · 02:56\nColonoscopy: what to expect\nHaemorrhoids and treatment options\nAnal fissure\nDiverticular disease\nBowel resection\nLiving with a stoma\n06\nCARDIOLOGY\n9 TOPICS\nHeart attack: signs and treatment\nWATCH · 02:30\nChest pain: causes and when to act\nWATCH · 03:02\nAtrial fibrillation\nAngiogram and stent\nHigh blood pressure\nHeart failure\nHaving a pacemaker fitted\nEchocardiogram: what to expect\nCholesterol and statins\n07\nPAEDIATRICS\n4 TOPICS\nReflux in babies and children\nWATCH · 03:04\nInguinal hernia in children\nUndescended testicle\nTongue-tie\n08\nBARIATRIC\n4 TOPICS\nGastric sleeve\nGastric bypass\nGastric balloon\nLife after weight-loss surgery\n09\nORTHOPAEDICS\n6 TOPICS\nTotal hip replacement\nTotal knee replacement\nACL reconstruction\nCarpal tunnel release\nRotator cuff repair\nBunion surgery\n10\nUROLOGY\n4 TOPICS\nRobotic prostatectomy\nKidney stones\nEnlarged prostate: treatment options\nVasectomy\n11\nGYNAECOLOGY\n4 TOPICS\nEndometriosis\nHysterectomy\nFibroids\nHysteroscopy: what to expect\n12\nENT\n4 TOPICS\nTonsillectomy\nSinus surgery\nGrommets\nSeptoplasty\n13\nOPHTHALMOLOGY\n3 TOPICS\nCataract surgery\nGlaucoma\nEye injections for macular degeneration\n14\nSPINE AND PAIN\n3 TOPICS\nSlipped disc and microdiscectomy\nSciatica\nSpinal injections\n+\nNOT ON THE LIST?\nAny condition, test or procedure with published NHS, NICE or specialist-society guidance can be scripted. Tell us what you explain most often in clinic."
+  },
+  {
+   "id": "tray",
+   "tag": "DIV",
+   "text": "0 topics selected Clear Enquire about these"
+  }
+ ],
+ "forms": [],
+ "ld": [
+  "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"@id\":\"https://www.plainsightmedical.co.uk/#organization\",\"name\":\"Plainsight Medical\",\"url\":\"https://www.plainsightmedical.co.uk/\",\"email\":\"raghul@cogniversetech.com\",\"description\":\"A media partner for UK private practice: GEO-friendly websites, patient-education films, AI presenters and social content for consultants and clinics.\",\"areaServed\":\"GB\",\"parentOrganization\":{\"@type\":\"Organization\",\"name\":\"COGNIVERSE LIMITED\",\"url\":\"https://cogniversetech.com\"}}",
+  "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.plainsightmedical.co.uk/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Topics\",\"item\":\"https://www.plainsightmedical.co.uk/topics/\"}]}"
+ ]
+}

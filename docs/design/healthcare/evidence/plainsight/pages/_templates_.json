@@ -1,0 +1,37 @@
+{
+ "status": 200,
+ "title": "GEO-friendly websites by specialty | Plainsight Medical",
+ "desc": "12 live website concepts for UK consultants, from cardiology to urology, each built to be found on Google and named by AI assistants, with patient films embedded.",
+ "sections": [
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "HOME\n/\nWEBSITES\nA SITE FOR EVERY specialty.\n12 live concepts. Each has its own palette, typography and 3D anatomy, a film on the page that explains each procedure, and the groundwork that lets Google and AI assistants find it. The names and details are placeholders until they are yours."
+  },
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "01\nSERIF, CLASSIC\nCARDIOLOGY\nA calm, serious site that leads with urgency rules: when to call 999, when to book.\n02\nGROTESQUE, STRUCTURED\nORTHOPAEDICS\nA bright, structured site built around recovery timelines and return to sport.\n03\nSERIF, CLASSIC\nNEUROLOGY\nQuiet and unhurried, for patients who arrive anxious and need things explained slowly.\n04\nGROTESQUE, STRUCTURED\nOPHTHALMOLOGY\nLarge type, strong contrast and short pages, designed for people who cannot see well.\n05\nTINTED, EDITORIAL\nRESPIRATORY MEDICINE\nAiry and open, with room for breathing tests and results to be explained properly.\n06\nTINTED, EDITORIAL\nUPPER GI AND HPB SURGERY\nWarm and editorial, with a film on every procedure page. The format we built for Prof. Sheth.\n07\nSERIF, CLASSIC\nUROLOGY\nDiscreet and matter-of-fact, for topics people put off asking about.\n08\nGROTESQUE, STRUCTURED\nCOLORECTAL SURGERY\nPlain-spoken and reassuring, with screening and red-flag symptoms up front.\n09\nSERIF, CLASSIC\nSPINAL SURGERY\nMeasured and honest, because most back pain does not need an operation.\n10\nTINTED, EDITORIAL\nENT AND MAXILLOFACIAL\nFamily-friendly, with separate routes for adults and for parents of young children.\n11\nGROTESQUE, STRUCTURED\nHAND AND WRIST SURGERY\nCompact and practical: common conditions, day-case surgery, and therapy afterwards.\n12\nTINTED, EDITORIAL\nPRIVATE GP AND HEALTH SCREENING\nWelcoming and service-led: appointments, health checks and referral routes."
+  },
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "NOT LISTED\nGYNAECOLOGY, DERMATOLOGY, DENTISTRY, yours.\nThe system behind these adapts to any specialty. Tell us yours and we will show you a concept with your own anatomy, conditions and procedures.\nASK FOR YOUR SPECIALTY"
+  },
+  {
+   "id": "geo",
+   "tag": "SECTION",
+   "text": "GEO-FRIENDLY\nBUILT TO BE THE answer.\nPatients now ask an assistant as often as they search. It names the consultant it can read, check and quote, so that is what every site is built for.\nA PATIENT ASKS\nWhat does gallstone pain feel like?\nTHE ASSISTANT ANSWERS\nA sudden, severe pain in the middle of your tummy, or just under your ribs on the right. The pain is constant. It can last from half an hour to several hours.\n1\nyourname.co.uk\nGallstones: film and transcript\nIllustration. The answer is quoted from our film transcript.\n01\nReadable\nEvery film ships with its full transcript, so what you say on screen exists as text an assistant can read.\n02\nCheckable\nYour GMC number, appointments and hospitals stated once, consistently, with the sources behind each page named.\n03\nStructured\nMarkup that tells a machine this is a physician, this is a procedure, this is a film and how long it runs.\n04\nOpen\nCrawl rules and an llms.txt file that let AI assistants in, rather than blocking them by default.\n05\nWatched\nA regular check of what Google and the main assistants actually say when asked about you.\nGEO\nGENERATIVE ENGINE OPTIMISATION\n“Who does robotic bile duct surgery near Harrow?”\nChatGPT, Gemini or Perplexity names you, and cites your page.\nAEO\nANSWER ENGINE OPTIMISATION\n“How long is recovery after gallbladder removal?”\nYour wording is shown as the answer itself: the snippet, the voice reply.\nSEO\nSEARCH ENGINE OPTIMISATION\n“robotic hernia repair London”\nYour page appears in the results on Google and Bing.\nNobody can promise a mention or a ranking. What can be done is to remove every reason for a search engine or an assistant to overlook you, and then to check regularly what they actually say."
+  },
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "ANATOMY OF A FILM PAGE\nWHY A FILM MAKES YOU findable.\nAn assistant cannot watch a video. It reads the page around it. So every film on your site ships with the parts a machine can read, cite and trust.\n00:00 / 03:00 · CC\n01\nThe film\nTwo to three minutes, narrated in plain English, captioned, and light enough to start instantly on a phone.\nHEPATOBILIARY · PATIENT FILM\nGallstones and robotic gallbladder removal\nWhat gallstones are, the symptoms that need urgent help, and how the gallbladder is removed through keyhole cuts with robotic assistance, from diagnosis to recovery at home.\n02\nA title in the patient’s words\nWritten the way people ask the question, with a summary an assistant can lift as a direct answer.\nTRANSCRIPT\nYour gallbladder is a small, pear-shaped bag that sits just under your liver, on the right side of your tummy. Your liver makes bile, which helps you digest fat. Between meals, the gallbladder stores it and makes it more concentrated.\nWhen you eat, the gallbladder squeezes, and bile flows down the bile duct into your bowel. Sometimes, substances in the bile form tiny crystals. Over time, these can clump together and grow into gallstones.\n03\nThe full transcript\nEvery spoken word as text on the page. This is what Google indexes and what ChatGPT, Gemini and Perplexity read when they decide who to cite.\nSOURCES\nNHS (nhs.uk)\n04\nNamed sources\nThe guidance each script was drafted from, stated openly. Health content is judged on evidence of expertise.\n{\n  \"@type\": \"VideoObject\",\n  \"name\": \"Gallstones and robotic gallbladder removal\",\n  \"duration\": \"PT3M0S\",\n  \"uploadDate\": \"2026-09-18\",\n  \"inLanguage\": \"en-GB\",\n  \"transcript\": \"Your gallbladder is a small, pear-shaped bag that sits…\"\n}\n05\nStructured data\nMachine-readable markup that tells search engines what the film is, how long it runs, and who published it. It is on every film page of this site."
+  }
+ ],
+ "forms": [],
+ "ld": [
+  "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"@id\":\"https://www.plainsightmedical.co.uk/#organization\",\"name\":\"Plainsight Medical\",\"url\":\"https://www.plainsightmedical.co.uk/\",\"email\":\"raghul@cogniversetech.com\",\"description\":\"A media partner for UK private practice: GEO-friendly websites, patient-education films, AI presenters and social content for consultants and clinics.\",\"areaServed\":\"GB\",\"parentOrganization\":{\"@type\":\"Organization\",\"name\":\"COGNIVERSE LIMITED\",\"url\":\"https://cogniversetech.com\"}}",
+  "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.plainsightmedical.co.uk/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Websites\",\"item\":\"https://www.plainsightmedical.co.uk/templates/\"}]}"
+ ]
+}

@@ -1,0 +1,848 @@
+[
+ {
+  "n": "loader-0150",
+  "y": 0,
+  "t": 782,
+  "note": "ms after commit (headless, SwiftShader)"
+ },
+ {
+  "n": "loader-0500",
+  "y": 0,
+  "t": 1041,
+  "note": "ms after commit (headless, SwiftShader)"
+ },
+ {
+  "n": "loader-0900",
+  "y": 0,
+  "t": 1107,
+  "note": "ms after commit (headless, SwiftShader)"
+ },
+ {
+  "n": "loader-1300",
+  "y": 0,
+  "t": 1357,
+  "note": "ms after commit (headless, SwiftShader)"
+ },
+ {
+  "n": "loader-1800",
+  "y": 0,
+  "t": 2055,
+  "note": "ms after commit (headless, SwiftShader)"
+ },
+ {
+  "n": "loader-2400",
+  "y": 0,
+  "t": 2532,
+  "note": "ms after commit (headless, SwiftShader)"
+ },
+ {
+  "n": "loader-3200",
+  "y": 0,
+  "t": 10411,
+  "note": "ms after commit (headless, SwiftShader)"
+ },
+ {
+  "n": "loader-4500",
+  "y": 0,
+  "t": 15942,
+  "note": "ms after commit (headless, SwiftShader)"
+ },
+ {
+  "n": "fwd-001-mid",
+  "y": 447,
+  "t": 26510,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-001",
+  "y": 450,
+  "t": 31559,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-002-mid",
+  "y": 891,
+  "t": 38573,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-002",
+  "y": 900,
+  "t": 44959,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-003-mid",
+  "y": 1346,
+  "t": 52247,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-003",
+  "y": 1350,
+  "t": 58057,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-004-mid",
+  "y": 1797,
+  "t": 64691,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-004",
+  "y": 1800,
+  "t": 70186,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-005-mid",
+  "y": 2241,
+  "t": 76196,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-005",
+  "y": 2250,
+  "t": 81749,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-006-mid",
+  "y": 2691,
+  "t": 84123,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-006",
+  "y": 2700,
+  "t": 86152,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-007-mid",
+  "y": 3077,
+  "t": 87679,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-007",
+  "y": 3150,
+  "t": 89632,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-008-mid",
+  "y": 3495,
+  "t": 91080,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-008",
+  "y": 3600,
+  "t": 93209,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-009-mid",
+  "y": 3966,
+  "t": 94643,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-009",
+  "y": 4050,
+  "t": 96653,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-010-mid",
+  "y": 4400,
+  "t": 98162,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-010",
+  "y": 4500,
+  "t": 100180,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-011-mid",
+  "y": 4863,
+  "t": 101540,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-011",
+  "y": 4950,
+  "t": 103455,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-012-mid",
+  "y": 5327,
+  "t": 104901,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-012",
+  "y": 5400,
+  "t": 106827,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-013-mid",
+  "y": 5771,
+  "t": 108219,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-013",
+  "y": 5850,
+  "t": 110326,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-014-mid",
+  "y": 6218,
+  "t": 111750,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-014",
+  "y": 6300,
+  "t": 113753,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-015-mid",
+  "y": 6653,
+  "t": 115202,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-015",
+  "y": 6750,
+  "t": 117152,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-016-mid",
+  "y": 7130,
+  "t": 118791,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-016",
+  "y": 7200,
+  "t": 120750,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-017-mid",
+  "y": 7562,
+  "t": 122279,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-017",
+  "y": 7650,
+  "t": 124264,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-018-mid",
+  "y": 7926,
+  "t": 127647,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-018",
+  "y": 8100,
+  "t": 131126,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-019-mid",
+  "y": 8497,
+  "t": 134382,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-019",
+  "y": 8550,
+  "t": 138017,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-020-mid",
+  "y": 8966,
+  "t": 141685,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-020",
+  "y": 9000,
+  "t": 145361,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-021-mid",
+  "y": 9392,
+  "t": 148785,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-021",
+  "y": 9450,
+  "t": 152344,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-022-mid",
+  "y": 9845,
+  "t": 155607,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-022",
+  "y": 9900,
+  "t": 159167,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-023-mid",
+  "y": 10329,
+  "t": 161158,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-023",
+  "y": 10350,
+  "t": 163195,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-024-mid",
+  "y": 10709,
+  "t": 164826,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-024",
+  "y": 10800,
+  "t": 166854,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-025-mid",
+  "y": 11185,
+  "t": 168579,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-025",
+  "y": 11250,
+  "t": 170722,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-026-mid",
+  "y": 11619,
+  "t": 172200,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-026",
+  "y": 11700,
+  "t": 174324,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-027-mid",
+  "y": 12077,
+  "t": 175898,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-027",
+  "y": 12150,
+  "t": 178021,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-028-mid",
+  "y": 12534,
+  "t": 179654,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-028",
+  "y": 12600,
+  "t": 181596,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-029-mid",
+  "y": 12963,
+  "t": 183006,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-029",
+  "y": 13050,
+  "t": 185063,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-030-mid",
+  "y": 13409,
+  "t": 186556,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-030",
+  "y": 13500,
+  "t": 188726,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-031-mid",
+  "y": 13870,
+  "t": 190213,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-031",
+  "y": 13950,
+  "t": 192348,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-032-mid",
+  "y": 14218,
+  "t": 193453,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-032",
+  "y": 14400,
+  "t": 195606,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-033-mid",
+  "y": 14536,
+  "t": 197135,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-033",
+  "y": 14562,
+  "t": 199367,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-034-mid",
+  "y": 14562,
+  "t": 201022,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-034",
+  "y": 14562,
+  "t": 203094,
+  "note": "settled"
+ },
+ {
+  "n": "fwd-035-mid",
+  "y": 14562,
+  "t": 204566,
+  "note": "160ms after input"
+ },
+ {
+  "n": "fwd-035",
+  "y": 14562,
+  "t": 206713,
+  "note": "settled"
+ },
+ {
+  "n": "rev-001-mid",
+  "y": 13786,
+  "t": 208333,
+  "note": "reverse 160ms"
+ },
+ {
+  "n": "rev-001",
+  "y": 13662,
+  "t": 210390,
+  "note": "reverse settled"
+ },
+ {
+  "n": "rev-002-mid",
+  "y": 12891,
+  "t": 212098,
+  "note": "reverse 160ms"
+ },
+ {
+  "n": "rev-002",
+  "y": 12762,
+  "t": 214298,
+  "note": "reverse settled"
+ },
+ {
+  "n": "rev-003-mid",
+  "y": 11975,
+  "t": 215883,
+  "note": "reverse 160ms"
+ },
+ {
+  "n": "rev-003",
+  "y": 11862,
+  "t": 218087,
+  "note": "reverse settled"
+ },
+ {
+  "n": "rev-004-mid",
+  "y": 11335,
+  "t": 219645,
+  "note": "reverse 160ms"
+ },
+ {
+  "n": "rev-004",
+  "y": 10962,
+  "t": 221786,
+  "note": "reverse settled"
+ },
+ {
+  "n": "rev-005-mid",
+  "y": 10206,
+  "t": 224321,
+  "note": "reverse 160ms"
+ },
+ {
+  "n": "rev-005",
+  "y": 10062,
+  "t": 227874,
+  "note": "reverse settled"
+ },
+ {
+  "n": "rev-006-mid",
+  "y": 9233,
+  "t": 231358,
+  "note": "reverse 160ms"
+ },
+ {
+  "n": "rev-006",
+  "y": 9162,
+  "t": 234926,
+  "note": "reverse settled"
+ },
+ {
+  "n": "rev-007-mid",
+  "y": 8366,
+  "t": 238165,
+  "note": "reverse 160ms"
+ },
+ {
+  "n": "rev-007",
+  "y": 8262,
+  "t": 241571,
+  "note": "reverse settled"
+ },
+ {
+  "n": "rev-008-mid",
+  "y": 7419,
+  "t": 243397,
+  "note": "reverse 160ms"
+ },
+ {
+  "n": "rev-008",
+  "y": 7362,
+  "t": 245425,
+  "note": "reverse settled"
+ },
+ {
+  "n": "rev-009-mid",
+  "y": 6659,
+  "t": 246870,
+  "note": "reverse 160ms"
+ },
+ {
+  "n": "rev-009",
+  "y": 6462,
+  "t": 248874,
+  "note": "reverse settled"
+ },
+ {
+  "n": "rev-010-mid",
+  "y": 5725,
+  "t": 250410,
+  "note": "reverse 160ms"
+ },
+ {
+  "n": "rev-010",
+  "y": 5562,
+  "t": 252402,
+  "note": "reverse settled"
+ },
+ {
+  "n": "rev-011-mid",
+  "y": 4815,
+  "t": 253832,
+  "note": "reverse 160ms"
+ },
+ {
+  "n": "rev-011",
+  "y": 4662,
+  "t": 255879,
+  "note": "reverse settled"
+ },
+ {
+  "n": "rev-012-mid",
+  "y": 3919,
+  "t": 257340,
+  "note": "reverse 160ms"
+ },
+ {
+  "n": "rev-012",
+  "y": 3762,
+  "t": 259403,
+  "note": "reverse settled"
+ },
+ {
+  "n": "rev-013-mid",
+  "y": 3009,
+  "t": 260967,
+  "note": "reverse 160ms"
+ },
+ {
+  "n": "rev-013",
+  "y": 2862,
+  "t": 262879,
+  "note": "reverse settled"
+ },
+ {
+  "n": "rev-014-mid",
+  "y": 2392,
+  "t": 267742,
+  "note": "reverse 160ms"
+ },
+ {
+  "n": "rev-014",
+  "y": 1962,
+  "t": 273294,
+  "note": "reverse settled"
+ },
+ {
+  "n": "rev-015-mid",
+  "y": 1078,
+  "t": 279165,
+  "note": "reverse 160ms"
+ },
+ {
+  "n": "rev-015",
+  "y": 1062,
+  "t": 284412,
+  "note": "reverse settled"
+ },
+ {
+  "n": "rev-016-mid",
+  "y": 184,
+  "t": 290878,
+  "note": "reverse 160ms"
+ },
+ {
+  "n": "rev-016",
+  "y": 162,
+  "t": 296969,
+  "note": "reverse settled"
+ },
+ {
+  "n": "rev-017-mid",
+  "y": 1,
+  "t": 304766,
+  "note": "reverse 160ms"
+ },
+ {
+  "n": "rev-017",
+  "y": 0,
+  "t": 310775,
+  "note": "reverse settled"
+ },
+ {
+  "n": "rev-018-mid",
+  "y": 0,
+  "t": 317586,
+  "note": "reverse 160ms"
+ },
+ {
+  "n": "rev-018",
+  "y": 0,
+  "t": 323763,
+  "note": "reverse settled"
+ },
+ {
+  "n": "fast-0.3-immediate",
+  "y": 4639,
+  "t": 325666,
+  "note": "immediate jump +80ms"
+ },
+ {
+  "n": "fast-0.3-settled",
+  "y": 4639,
+  "t": 327932,
+  "note": "jump settled"
+ },
+ {
+  "n": "fast-0.6-immediate",
+  "y": 9277,
+  "t": 330598,
+  "note": "immediate jump +80ms"
+ },
+ {
+  "n": "fast-0.6-settled",
+  "y": 9277,
+  "t": 334118,
+  "note": "jump settled"
+ },
+ {
+  "n": "fast-0.15-immediate",
+  "y": 2319,
+  "t": 339198,
+  "note": "immediate jump +80ms"
+ },
+ {
+  "n": "fast-0.15-settled",
+  "y": 2319,
+  "t": 344507,
+  "note": "jump settled"
+ },
+ {
+  "n": "fast-0.9-immediate",
+  "y": 13916,
+  "t": 345967,
+  "note": "immediate jump +80ms"
+ },
+ {
+  "n": "fast-0.9-settled",
+  "y": 13916,
+  "t": 348102,
+  "note": "jump settled"
+ },
+ {
+  "n": "menu-open-60",
+  "y": 0,
+  "t": 370230,
+  "note": "ms after click"
+ },
+ {
+  "n": "menu-open-200",
+  "y": 0,
+  "t": 375456,
+  "note": "ms after click"
+ },
+ {
+  "n": "menu-open-400",
+  "y": 0,
+  "t": 381331,
+  "note": "ms after click"
+ },
+ {
+  "n": "menu-open-700",
+  "y": 0,
+  "t": 386922,
+  "note": "ms after click"
+ },
+ {
+  "n": "menu-open-1200",
+  "y": 0,
+  "t": 392393,
+  "note": "ms after click"
+ },
+ {
+  "menuLinks": 9
+ },
+ {
+  "n": "menu-hover-link2",
+  "y": 0,
+  "t": 429331,
+  "note": ""
+ },
+ {
+  "n": "menu-hover-link4",
+  "y": 0,
+  "t": 442377,
+  "note": ""
+ },
+ {
+  "n": "menu-after-escape",
+  "y": 0,
+  "t": 450515,
+  "note": "Escape pressed"
+ },
+ {
+  "afterEscapeNavClass": "nav"
+ },
+ {
+  "n": "menu-close-100",
+  "y": 0,
+  "t": 461807,
+  "note": ""
+ },
+ {
+  "n": "menu-close-400",
+  "y": 0,
+  "t": 467260,
+  "note": ""
+ },
+ {
+  "n": "menu-close-1000",
+  "y": 0,
+  "t": 473114,
+  "note": ""
+ },
+ {
+  "n": "hover-store",
+  "y": 0,
+  "t": 488693,
+  "note": ""
+ },
+ {
+  "tab": 1,
+  "focus": "A Go to home outline=solid 2px"
+ },
+ {
+  "n": "tab-1",
+  "y": 0,
+  "t": 497746,
+  "note": ""
+ },
+ {
+  "tab": 2,
+  "focus": "A full schedule & results\nFULL S outline=solid 2px"
+ },
+ {
+  "tab": 3,
+  "focus": "A next item outline=solid 2px"
+ },
+ {
+  "tab": 4,
+  "focus": "A previous item outline=solid 2px"
+ },
+ {
+  "n": "tab-4",
+  "y": 9115,
+  "t": 504622,
+  "note": ""
+ },
+ {
+  "tab": 5,
+  "focus": "A see full schedule\nSEE FULL SCH outline=solid 2px"
+ },
+ {
+  "tab": 6,
+  "focus": "A view full schedule\nVIEW FULL S outline=solid 2px"
+ }
+]

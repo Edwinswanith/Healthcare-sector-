@@ -1,0 +1,105 @@
+{
+ "status": 200,
+ "title": "Book a call | Plainsight Medical",
+ "desc": "Tell us your specialty and what you would like handled: website, patient films, an AI presenter or social content. We come back with a time for a short call.",
+ "sections": [
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "HOME\n/\nCONTACT\nSTART WITH A short call.\nTell us your specialty and what you would like handled. We come back with a time to talk, and after the call a suggested plan and a quote."
+  },
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "YOUR NAME\nSPECIALTY\nPRACTICE OR HOSPITAL WEBSITE, IF YOU HAVE ONE\nWHAT ARE YOU INTERESTED IN?\nA new website\nPatient films\nAn AI presenter\nSocial content\nWHEN IS A GOOD TIME FOR A CALL?\nANYTHING ELSE WE SHOULD KNOW\nWRITE THE EMAIL\nThis opens a ready-written email in your own mail app, so you can read it before it is sent. Nothing is stored on this site.\nOR EMAIL DIRECTLY\nraghul@cogniversetech.com\nWHAT HAPPENS NEXT\nA short call about your practice and patients.\nA suggested plan: pages, film topics and channels, with a quote.\nScripts and designs for your review before anything is produced.\nPLEASE DO NOT SEND PATIENT INFORMATION\nWe never need it, for an enquiry or for a film."
+  }
+ ],
+ "forms": [
+  {
+   "action": null,
+   "method": null,
+   "html": 2835,
+   "fields": [
+    {
+     "tag": "INPUT",
+     "type": "text",
+     "name": "name",
+     "req": true,
+     "label": "YOUR NAME"
+    },
+    {
+     "tag": "INPUT",
+     "type": "text",
+     "name": "specialty",
+     "req": false,
+     "label": "SPECIALTY"
+    },
+    {
+     "tag": "INPUT",
+     "type": "url",
+     "name": "website",
+     "req": false,
+     "label": "PRACTICE OR HOSPITAL WEBSITE, IF YOU HAVE ONE"
+    },
+    {
+     "tag": "FIELDSET",
+     "type": "fieldset",
+     "name": "",
+     "label": ""
+    },
+    {
+     "tag": "INPUT",
+     "type": "checkbox",
+     "name": "interest",
+     "req": false,
+     "label": "A new website"
+    },
+    {
+     "tag": "INPUT",
+     "type": "checkbox",
+     "name": "interest",
+     "req": false,
+     "label": "Patient films"
+    },
+    {
+     "tag": "INPUT",
+     "type": "checkbox",
+     "name": "interest",
+     "req": false,
+     "label": "An AI presenter"
+    },
+    {
+     "tag": "INPUT",
+     "type": "checkbox",
+     "name": "interest",
+     "req": false,
+     "label": "Social content"
+    },
+    {
+     "tag": "INPUT",
+     "type": "text",
+     "name": "when",
+     "req": false,
+     "label": "WHEN IS A GOOD TIME FOR A CALL?"
+    },
+    {
+     "tag": "TEXTAREA",
+     "type": "textarea",
+     "name": "message",
+     "req": false,
+     "label": "ANYTHING ELSE WE SHOULD KNOW"
+    },
+    {
+     "tag": "BUTTON",
+     "type": "submit",
+     "name": "",
+     "label": ""
+    }
+   ]
+  }
+ ],
+ "ld": [
+  "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"@id\":\"https://www.plainsightmedical.co.uk/#organization\",\"name\":\"Plainsight Medical\",\"url\":\"https://www.plainsightmedical.co.uk/\",\"email\":\"raghul@cogniversetech.com\",\"description\":\"A media partner for UK private practice: GEO-friendly websites, patient-education films, AI presenters and social content for consultants and clinics.\",\"areaServed\":\"GB\",\"parentOrganization\":{\"@type\":\"Organization\",\"name\":\"COGNIVERSE LIMITED\",\"url\":\"https://cogniversetech.com\"}}",
+  "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.plainsightmedical.co.uk/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Contact\",\"item\":\"https://www.plainsightmedical.co.uk/contact/\"}]}"
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "status": 200,
+ "title": "Approach: how films are made and checked | Plainsight Medical",
+ "desc": "How a patient-education film is made: sourced script, clinician review and sign-off, production, preview and delivery. Plus what AI is and is not used for.",
+ "sections": [
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "HOME\n/\nAPPROACH\nMADE QUICKLY. CHECKED slowly.\nThe films are produced with AI tools, which is why they are practical for a single consultant. The clinical content is controlled by a clinician, which is why they can be trusted."
+  },
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "STEP 01\nKICK-OFF\nWe agree the topics as one batch, who will review scripts, who gives final approval, and your logo and colours. For a film with an AI presenter, the clinician signs a consent form and completes a short recording session.\nSTEP 02\nSCRIPT\nWe draft each script from current NHS, NICE and specialist sources and list them. The script is written in plain English with UK wording, including when to call a GP, NHS 111 or 999.\nSTEP 03\nYOUR REVIEW\nYour reviewer sends one consolidated round of comments. We revise, and you sign off the script. Nothing is produced before that.\nSTEP 04\nPRODUCTION\nWe build the anatomy, the patient scenes, the narration or AI presenter, captions and music.\nSTEP 05\nPREVIEW\nYou receive a watermarked preview. Changes come back as one list.\nSTEP 06\nSIGN-OFF\nThe approving clinician signs off the final film.\nSTEP 07\nDELIVERY\nYou receive the finished files: the 16:9 master and, if ordered, the vertical version and shorts."
+  },
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "WHAT AI DOES, AND DOES NOT\nTHE TOOLS DRAW. A PERSON DECIDES WHAT IS true.\nAI generates the imagery, the motion and the narration voice. It does not decide what the film says, and it does not get the last look.\nFROM THE REVIEW LOG OF ONE FILM\nA clot drawn bulging out through the artery wall.\nRejected. Three new versions made, one chosen.\nA paramedic ECG with four electrodes, and the patient’s jumper had changed.\nRejected and redone.\nMonitors in the catheter lab that switched to an invented X-ray after four seconds.\nShot cut before the change.\nPieces of plaque sliding along with the balloon.\nRebuilt so only the device moves along the wire.\nGenerated pictures can look right and be wrong. Every shot is reviewed against the script before it goes into a film, and the film is reviewed again by you."
+  },
+  {
+   "id": "",
+   "tag": "SECTION",
+   "text": "SAFEGUARDS\nSIX RULES EVERY FILM follows.\n01\nSources are named\nEvery script lists the guidance it was drafted from. Figures we cannot source are left out rather than estimated.\n02\nYou approve twice\nOnce at script, once at final film. Clinical content and claims stay under your control.\n03\nEmergency wording follows the NHS\nWhen to call 999, NHS 111 or a GP is taken from NHS guidance, not paraphrased loosely.\n04\nNo promises about outcomes\nFilms explain what happens. They do not claim one technique or surgeon is better than another.\n05\nNo patient data\nPeople in the films are AI-generated. No real patient is filmed, and no patient information is used.\n06\nConsent for likeness\nAn AI clone of a clinician is made only with signed consent, used only for that client’s approved films, and deleted on request."
+  }
+ ],
+ "forms": [],
+ "ld": [
+  "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"@id\":\"https://www.plainsightmedical.co.uk/#organization\",\"name\":\"Plainsight Medical\",\"url\":\"https://www.plainsightmedical.co.uk/\",\"email\":\"raghul@cogniversetech.com\",\"description\":\"A media partner for UK private practice: GEO-friendly websites, patient-education films, AI presenters and social content for consultants and clinics.\",\"areaServed\":\"GB\",\"parentOrganization\":{\"@type\":\"Organization\",\"name\":\"COGNIVERSE LIMITED\",\"url\":\"https://cogniversetech.com\"}}",
+  "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.plainsightmedical.co.uk/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Approach\",\"item\":\"https://www.plainsightmedical.co.uk/approach/\"}]}"
+ ]
+}
