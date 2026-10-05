@@ -45,8 +45,8 @@ export function Social() {
             <p className="body-l">{social.body}</p>
           </div>
           <div className="fan" aria-hidden="true">
-            <div className="fan-phone fan-phone--l" data-fan="l"><ShortLayer active={false} caption={["Inside", "a heart", "attack"]} organ="chest" meta="00:39" /></div>
-            <div className="fan-phone fan-phone--r" data-fan="r"><ShortLayer active={false} caption={["Reopening", "the", "artery"]} organ="body" meta="00:44" /></div>
+            <div className="fan-phone fan-phone--l" data-fan="l"><ShortLayer active={false} caption={["Inside", "a heart", "attack"]} organ="chest" meta="00:39" video="v-presenter" /></div>
+            <div className="fan-phone fan-phone--r" data-fan="r"><ShortLayer active={false} caption={["Reopening", "the", "artery"]} organ="body" meta="00:44" video="v-film" /></div>
           </div>
           <div className="slot slot--short" data-frame-slot="short" data-frame-states="film,short" data-frame-radius="22">
             <FrameStatic state="short" />

@@ -3,6 +3,7 @@
 import { specialties, type FrameState } from "@/content/site";
 import { specialtyOrgan } from "@/lib/field/shapes";
 import { MiniField } from "./MiniField";
+import { VideoLoop } from "./VideoLoop";
 
 export { LAYER_SIZE, TAB_LABEL } from "@/lib/frame/layout";
 
@@ -73,8 +74,9 @@ export function BrowserLayer({ specialty, variant, active }: { specialty: string
 export function FilmLayer({ active }: { active: boolean }) {
   return (
     <div className="ly ly--film">
-      <div className="ly-film-art"><MiniField organ="gut" active={active} zoom={1.2} /></div>
-      <span className="ly-film-tag">Patient film · concept preview</span>
+      <VideoLoop src="v-film" active={active} className="ly-video" />
+      <div className="ly-film-grad" />
+      <span className="ly-film-tag">Patient film · AI-generated concept</span>
       <h3 className="ly-film-title">Gallstones and<br />gallbladder removal</h3>
       <p className="ly-caption">The gallbladder stores bile, which helps you digest fat.</p>
       <div className="ly-bar"><span className="ly-progress" /><span className="ly-time">01:12 / 03:00</span><span className="ly-cc">CC</span><span className="ly-cc">Transcript</span></div>
@@ -86,12 +88,12 @@ export function PresenterLayer({ active }: { active: boolean }) {
   return (
     <div className="ly ly--presenter">
       <div className="ly-half ly-half--ai">
-        <div className="ly-presenter-art"><MiniField organ="bust" active={active} zoom={1.15} /></div>
-        <span className="ly-disclose">Presented by an AI avatar, with consent</span>
+        <VideoLoop src="v-presenter" active={active} className="ly-video" />
+        <span className="ly-disclose">AI-generated example presenter</span>
         <div className="ly-lower"><b>Your Name</b><span>Consultant cardiologist</span></div>
       </div>
       <div className="ly-half ly-half--narrator">
-        <div className="ly-narr-art"><MiniField organ="heart" active={active} ink="#F3F0E8" zoom={1.25} /></div>
+        <VideoLoop src="v-film" active={active} className="ly-video ly-video--narr" />
         <span className="ly-disclose ly-disclose--n">House narrator</span>
         <div className="ly-wave">{Array.from({ length: 28 }, (_, i) => <i key={i} style={{ ["--h" as string]: `${20 + ((i * 37) % 60)}%` }} />)}</div>
       </div>
@@ -101,11 +103,11 @@ export function PresenterLayer({ active }: { active: boolean }) {
   );
 }
 
-export function ShortLayer({ active, caption = ["Know", "the", "signs"], organ = "heart", meta = "00:35" }: { active: boolean; caption?: string[]; organ?: "heart" | "chest" | "body"; meta?: string }) {
+export function ShortLayer({ active, caption = ["Know", "the", "signs"], organ = "heart", meta = "00:35", video = "v-short" }: { active: boolean; caption?: string[]; organ?: "heart" | "chest" | "body"; meta?: string; video?: string | null }) {
   return (
     <div className="ly ly--short">
       <div className="ly-segs"><i className="on" /><i /><i /></div>
-      <div className="ly-short-art"><MiniField organ={organ} active={active} zoom={1.3} /></div>
+      {video ? <VideoLoop src={video} active={active} className="ly-video" /> : <div className="ly-short-art"><MiniField organ={organ} active={active} zoom={1.3} /></div>}
       <p className="ly-burn">{caption.slice(0, -1).map((w) => <span key={w}>{w} </span>)}<em>{caption[caption.length - 1]}</em></p>
       <div className="ly-rail"><i /><i /><i /></div>
       <span className="ly-short-meta">{meta} · 9:16 · captions on</span>

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { films } from "@/content/site";
 import { MiniField } from "@/components/frame/MiniField";
+import { VideoLoop } from "@/components/frame/VideoLoop";
 import type { OrganKey } from "@/lib/field/shapes";
 
 /** Horizontal film strip. Hover or focus previews a card's study. */
@@ -20,7 +21,8 @@ export function FilmStrip() {
             onBlur={() => setActive(-1)}
           >
             <span className="film-art">
-              <MiniField organ={f.organ as OrganKey} active={active === i} zoom={1.55} />
+              <MiniField organ={f.organ as OrganKey} active={false} zoom={1.55} />
+              {active === i ? <VideoLoop src={f.organ === "heart" || f.organ === "chest" ? "v-short" : "v-film"} active className="film-video" /> : null}
               <span className="film-bar"><span /></span>
             </span>
             <span className="film-meta mono"><span>{f.duration}</span><span>{f.category}</span></span>

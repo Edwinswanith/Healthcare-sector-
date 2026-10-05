@@ -288,7 +288,7 @@ main:focus { outline: none; }
 .ly--film { background: radial-gradient(90% 120% at 70% 40%, #1d2a44, var(--ink) 70%); color: var(--paper); }
 .ly-film-art { position: absolute; right: 40px; top: 30px; width: 700px; height: 600px; }
 .ly-film-tag, .ly-example, .ly-disclose { position: absolute; left: 44px; top: 36px; font-family: var(--font-mono); font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.75; }
-.ly-film-title { position: absolute; left: 44px; top: 92px; font-size: 64px; font-weight: 800; line-height: 0.92; text-transform: uppercase; font-variation-settings: "wdth" 118; }
+.ly-film-title { position: absolute; left: 44px; top: 92px; font-size: 50px; font-weight: 800; line-height: 0.92; text-transform: uppercase; font-variation-settings: "wdth" 118; }
 .ly-caption { position: absolute; left: 50%; bottom: 96px; transform: translateX(-50%); background: rgba(0, 0, 0, 0.6); padding: 10px 18px; border-radius: 6px; font-size: 24px; white-space: nowrap; }
 .ly-bar { position: absolute; left: 44px; right: 44px; bottom: 36px; display: flex; align-items: center; gap: 16px; font-family: var(--font-mono); font-size: 13px; }
 .ly-progress { flex: 1; height: 3px; background: rgba(243, 240, 232, 0.2); position: relative; }
@@ -746,3 +746,18 @@ a:hover .roll-b, a:focus-visible .roll-b, button:hover .roll-b { transform: tran
 /* Footer glow */
 .s-footer { --glow: 0; }
 .s-footer::before { content: ""; position: absolute; left: -10%; right: -10%; bottom: -30vh; height: 80vh; background: radial-gradient(50% 60% at 50% 100%, rgba(229, 72, 47, calc(0.55 * var(--glow))), transparent 70%); pointer-events: none; z-index: 0; }
+
+/* ============ v5: Veo loops in the frame ============ */
+.vloop { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: var(--ink); }
+.ly-film-grad { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(13, 21, 36, 0.9) 0%, rgba(13, 21, 36, 0) 34%), linear-gradient(90deg, rgba(13, 21, 36, 0.8) 0%, rgba(13, 21, 36, 0) 60%), linear-gradient(0deg, rgba(13, 21, 36, 0.8), transparent 35%); }
+.ly--film > :not(.vloop):not(.ly-film-grad) { z-index: 1; }
+.ly-half--ai .ly-disclose { z-index: 2; background: rgba(13, 21, 36, 0.6); padding: 6px 10px; border-radius: 6px; }
+.ly-half--ai .ly-lower { z-index: 2; }
+.ly-video--narr { filter: saturate(1.1); }
+.ly--short .vloop + .ly-burn, .ly--short .ly-burn { z-index: 1; }
+.ly--short::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(13, 21, 36, 0.85), transparent 45%); pointer-events: none; }
+.ly--short > * { z-index: 1; }
+.ly--short > .vloop { z-index: 0; }
+.ly-burn, .ly-short-meta, .ly-segs, .ly-rail { z-index: 2; }
+.film-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; animation: film-in 0.5s var(--ease-out) both; }
+@keyframes film-in { from { opacity: 0; transform: scale(1.08); } to { opacity: 1; transform: none; } }

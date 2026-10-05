@@ -114,3 +114,15 @@ Model `gemini-3-pro-image`, 16:9, imageSize 2K, output 2752x1536 JPEG. Script `s
 
 Calls: 7 successful generations + 1 failed unauthenticated request (HTTP 403, no image, not billed). Cost: **not verified** (pricing page blocked). Rough estimate from the recalled published rate (about USD 0.13 per 1K-2K image): about USD 0.95. Check actual spend in Google Cloud billing. Remaining sample ceiling well above zero; total ceiling USD 40 unchanged.
 All six are labelled "Generated illustration" on the page. No real people, clients or patients depicted.
+
+## H. Generation batch 2: Veo (approved by user 2026-10-05)
+Model `veo-3.1-fast-generate-preview`, 8 s each, `predictLongRunning`, parameters `aspectRatio`, `durationSeconds`, `negativePrompt`. Script `scripts/media/generate-video.mjs` (bounded polling, no automatic resubmits); operations, prompts and sizes logged in `ASSET_LOG.json`.
+
+| ID | Used in | Aspect | Attempts | Status | Notes |
+|---|---|---|---|---|---|
+| v-film | Film frame state, narrator half of presenter split, "Reopening" phone, non-cardiac film-card hover | 16:9 | 1 | final | Top 44 px cropped (light band), audio removed |
+| v-presenter | AI presenter half, "Inside a heart attack" phone | 16:9 | 1 | final | **Generated person**, labelled on screen "AI-generated example presenter"; not a real clinician or client |
+| v-short | Short frame state, cardiology film-card hover | 9:16 | 1 | final | Audio removed |
+
+Delivery: muted loops, VP9 WebM first (334 KB-968 KB), H.264 MP4 fallback (480 KB-965 KB), WebP posters (15-60 KB). `preload="none"`; a clip loads and plays only while its frame state is active, pauses otherwise; reduced motion shows posters only.
+Cost: **not verified** (pricing page blocked). Rough estimate at the recalled Veo 3.1 Fast rate (about USD 0.15 per second): 24 s ≈ USD 3.6. Running total estimate ≈ USD 4.6 of the USD 40 ceiling. Confirm in Google Cloud billing.
