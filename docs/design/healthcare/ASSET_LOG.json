@@ -647,5 +647,153 @@
   "filtered": null,
   "file": "media-src/gen/v-heart360-1.mp4",
   "bytes": 1823714
+ },
+ {
+  "id": "h-portrait",
+  "attempt": 1,
+  "model": "gemini-3-pro-image",
+  "status": 200,
+  "ms": 20466,
+  "at": "2026-10-05T11:59:21.350Z",
+  "aspect": "16:9",
+  "size": "2K",
+  "prompt": "A calm, trustworthy clinician in their forties, wearing a dark navy blazer over a white shirt, facing the camera directly with a gentle confident expression. Head and shoulders bust, perfectly centred, the head in the upper-middle of the frame and the shoulders cut off by the bottom edge, filling about 80% of the frame height. Isolated on a perfectly flat, uniform warm off-white background (#F3F0E8), no shadow on the background, no props. Photoreal editorial portrait photography, 85mm, soft studio light. No text, no logos, no watermark.",
+  "input": null,
+  "usage": {
+   "promptTokenCount": 123,
+   "candidatesTokenCount": 1264,
+   "totalTokenCount": 1625,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 123
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 238,
+   "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-pro-image",
+  "responseId": "BZHDapSLKdq6sOIPqfeq6QY",
+  "file": "media-src/gen/h-portrait-1.jpg"
+ },
+ {
+  "id": "h-matte",
+  "attempt": 1,
+  "model": "gemini-3-pro-image",
+  "status": 200,
+  "ms": 22282,
+  "at": "2026-10-05T11:59:56.534Z",
+  "aspect": "16:9",
+  "size": "2K",
+  "prompt": "Create a clean segmentation matte of this image: the person (including hair and clothing) pure white, the background pure black. No grey except soft anti-aliased edges. No other content. Keep the exact same framing, camera, pose, proportions and position of every element so the result aligns pixel-for-pixel with the input image.",
+  "input": "media-src/gen/h-portrait-1.jpg",
+  "usage": {
+   "promptTokenCount": 328,
+   "candidatesTokenCount": 1233,
+   "totalTokenCount": 1721,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 70
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 160,
+   "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-pro-image",
+  "responseId": "J5HDasuyC4GwsOIP6LG0gQk",
+  "file": "media-src/gen/h-matte-1.jpg"
+ },
+ {
+  "id": "h-depth",
+  "attempt": 1,
+  "model": "gemini-3-pro-image",
+  "status": 200,
+  "ms": 19751,
+  "at": "2026-10-05T12:00:16.435Z",
+  "aspect": "16:9",
+  "size": "2K",
+  "prompt": "Create a smooth grayscale depth map of this image: nearest points (nose, face) white, further points darker, background pure black. Soft gradients, no texture, no text. Keep the exact same framing, camera, pose, proportions and position of every element so the result aligns pixel-for-pixel with the input image.",
+  "input": "media-src/gen/h-portrait-1.jpg",
+  "usage": {
+   "promptTokenCount": 325,
+   "candidatesTokenCount": 1271,
+   "totalTokenCount": 1775,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 67
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 179,
+   "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-pro-image",
+  "responseId": "PZHDaq_HCLDo-8YPo8H3sAc",
+  "file": "media-src/gen/h-depth-1.jpg"
+ },
+ {
+  "id": "h-anatomy",
+  "attempt": 1,
+  "model": "gemini-3-pro-image",
+  "status": 200,
+  "ms": 20190,
+  "at": "2026-10-05T12:00:36.756Z",
+  "aspect": "16:9",
+  "size": "2K",
+  "prompt": "Render the same person as a translucent anatomical medical hologram: skin and clothing become frosted cream glass with soft edges, inside the chest a glowing red-orange anatomical heart with the great vessels and branching blood vessels, faint elegant ribcage and collarbone lines, subtle network of vessels in the neck, calm and beautiful, not gory. Same off-white background (#F3F0E8). Keep the exact same framing, camera, pose, proportions and position of every element so the result aligns pixel-for-pixel with the input image.",
+  "input": "media-src/gen/h-portrait-1.jpg",
+  "usage": {
+   "promptTokenCount": 367,
+   "candidatesTokenCount": 1297,
+   "totalTokenCount": 1804,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 109
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 140,
+   "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-pro-image",
+  "responseId": "UZHDauGbB8C6sOIPyNXkoQc",
+  "file": "media-src/gen/h-anatomy-1.jpg"
  }
 ]

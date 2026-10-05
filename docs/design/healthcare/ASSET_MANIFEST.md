@@ -151,3 +151,12 @@ Cost: **not verified**. Estimate: 8 images ≈ USD 1.05 + 16 s Veo Fast ≈ USD 
 Gemini and Veo do not output 3D model files, so the object is a turntable: `g-heart3d` (gemini-3-pro-image, 1 attempt) → `v-heart360` (veo-3.1-fast, image-to-video from that still, 1 attempt, ~180° orbit in 8 s) → 48 square frames (640 px WebP, 788 KB total) in `public/media/heart/`.
 Played by `components/motion/HeartSpin.tsx`: ping-pong frame index driven by scroll position, pointer drag, arrow keys and a slow idle drift; frames load only when the footer is within ~2 viewports; reduced motion shows frame 1. Labelled as an AI-generated illustration (aria-label). Replaces the ray-marched shader heart.
 Cost: not verified; estimate ≈ USD 0.13 + 8 s Veo Fast ≈ USD 1.20. Running total ≈ USD 9.4 of USD 40.
+
+## Batch K: homepage-style hero (Gemini 3 Pro Image, 4 jobs, attempt 1 each, no retries)
+
+| Asset | Source | Use | Notes |
+|---|---|---|---|
+| `public/media/hero/portrait*.webp` | `h-portrait-1` generated | Hero presenter, WebGL base layer | Fictional AI-generated clinician. Labelled on page "AI-generated presenter · not a real clinician". Not a client, not a testimonial. |
+| `public/media/hero/portrait-cut.webp` | portrait + matte alpha | Reduced motion / no-WebGL still | |
+| `public/media/hero/anatomy*.webp` | `h-anatomy-1` (edit of portrait) | X-ray reveal layer | Illustrative anatomy, not clinical imagery. |
+| `public/media/hero/dm.webp` | `h-depth-1` (R) + `h-matte-1` (G) | Depth parallax + matte | Alignment verified: bounding boxes within 6px, 50% overlay shows no ghosting. |

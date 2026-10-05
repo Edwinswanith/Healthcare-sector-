@@ -10,7 +10,13 @@ const STYLE =
 
 const LETTER = "Pure black ink on a pure white background, nothing else in the image: no paper texture, no shadow, no other marks, no border. Centered with generous margins. Very high contrast.";
 
+const EDIT = "Keep the exact same framing, camera, pose, proportions and position of every element so the result aligns pixel-for-pixel with the input image.";
+
 export const BRIEFS = {
+  "h-portrait": { aspect: "16:9", style: "Photoreal editorial portrait photography, 85mm, soft studio light. No text, no logos, no watermark.", prompt: "A calm, trustworthy clinician in their forties, wearing a dark navy blazer over a white shirt, facing the camera directly with a gentle confident expression. Head and shoulders bust, perfectly centred, the head in the upper-middle of the frame and the shoulders cut off by the bottom edge, filling about 80% of the frame height. Isolated on a perfectly flat, uniform warm off-white background (#F3F0E8), no shadow on the background, no props." },
+  "h-matte": { aspect: "16:9", input: "media-src/gen/h-portrait-1.jpg", style: EDIT, prompt: "Create a clean segmentation matte of this image: the person (including hair and clothing) pure white, the background pure black. No grey except soft anti-aliased edges. No other content." },
+  "h-depth": { aspect: "16:9", input: "media-src/gen/h-portrait-1.jpg", style: EDIT, prompt: "Create a smooth grayscale depth map of this image: nearest points (nose, face) white, further points darker, background pure black. Soft gradients, no texture, no text." },
+  "h-anatomy": { aspect: "16:9", input: "media-src/gen/h-portrait-1.jpg", style: EDIT, prompt: "Render the same person as a translucent anatomical medical hologram: skin and clothing become frosted cream glass with soft edges, inside the chest a glowing red-orange anatomical heart with the great vessels and branching blood vessels, faint elegant ribcage and collarbone lines, subtle network of vessels in the neck, calm and beautiful, not gory. Same off-white background (#F3F0E8)." },
   "g-heart3d": { aspect: "16:9", style: "Photoreal medical visualisation, studio product photography lighting. No text, no labels, no logos, no watermark.", prompt: "A photoreal anatomical human heart, medical-illustration accuracy: aorta and aortic arch, pulmonary trunk, superior vena cava, clearly visible coronary arteries and veins on the surface, glossy moist tissue with subtle subsurface glow. Seen from the front, perfectly centred, occupying about 55% of the frame height, isolated on a perfectly uniform flat deep navy background (#0D1524), no floor, no shadow, no reflection, no particles. Warm key light from upper left, a red-orange rim light from behind." },
   "l-madeclear": { aspect: "21:9", style: LETTER, prompt: "Confident hand lettering of the words \"made clear\" in flowing connected brush-pen script, lowercase, expressive thick-and-thin strokes, slight forward slant, one continuous signature-like flourish underlining the words." },
   "l-plainenglish": { aspect: "21:9", style: LETTER, prompt: "Hand lettering of the words \"in plain English\" in fast, loose connected brush-pen script, lowercase except the E, energetic thick-and-thin strokes." },
@@ -32,8 +38,10 @@ async function run(id, attempt = 1) {
   const b = BRIEFS[id];
   if (!b) throw new Error(`unknown id ${id}`);
   const fullPrompt = `${b.prompt} ${b.style ?? STYLE}`;
+  const parts = [{ text: fullPrompt }];
+  if (b.input) parts.push({ inlineData: { mimeType: "image/jpeg", data: fs.readFileSync(b.input).toString("base64") } });
   const body = {
-    contents: [{ role: "user", parts: [{ text: fullPrompt }] }],
+    contents: [{ role: "user", parts }],
     generationConfig: { responseModalities: ["IMAGE"], imageConfig: { aspectRatio: b.aspect, imageSize: "2K" } },
   };
   const headers = { "content-type": "application/json" };
@@ -41,7 +49,7 @@ async function run(id, attempt = 1) {
   const t0 = Date.now();
   const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`, { method: "POST", headers, body: JSON.stringify(body), signal: AbortSignal.timeout(180000) });
   const json = await res.json();
-  const entry = { id, attempt, model: MODEL, status: res.status, ms: Date.now() - t0, at: new Date().toISOString(), aspect: b.aspect, size: "2K", prompt: fullPrompt, usage: json.usageMetadata ?? null, modelVersion: json.modelVersion ?? null, responseId: json.responseId ?? null };
+  const entry = { id, attempt, model: MODEL, status: res.status, ms: Date.now() - t0, at: new Date().toISOString(), aspect: b.aspect, size: "2K", prompt: fullPrompt, input: b.input ?? null, usage: json.usageMetadata ?? null, modelVersion: json.modelVersion ?? null, responseId: json.responseId ?? null };
   let saved = null;
   const part = json.candidates?.[0]?.content?.parts?.find((p) => p.inlineData);
   if (res.ok && part) {

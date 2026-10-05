@@ -137,6 +137,7 @@ export function Choreography() {
         .to(assemble, { v: 1, duration: first ? 2.1 : 0.9, ease: "power3.inOut" }, 0)
         .to(lines, { yPercent: 0, "--wdth": 125, duration: 1.25, ease: "expo.out", stagger: 0.09 }, first ? 0.75 : 0.1)
         .to(stroke, { drawSVG: "100%", duration: 0.9, ease: "power2.inOut" }, ">-0.6")
+        .fromTo(".hero-accent", { yPercent: 60, rotate: -6, autoAlpha: 0 }, { yPercent: 0, rotate: 0, autoAlpha: 1, duration: 1.1, ease: "expo.out" }, "<-0.35")
         .fromTo(".script--hero", { clipPath: "inset(-10% 100% -10% 0%)", rotate: -12, autoAlpha: 1 }, { clipPath: "inset(-10% 0% -10% 0%)", rotate: -7, duration: 1.3, ease: "power2.inOut" }, "<-0.2")
         .to(fades, { autoAlpha: 1, y: 0, duration: 0.9, ease: "power3.out", stagger: 0.07 }, "<-0.4")
         .add(() => {
@@ -185,6 +186,20 @@ export function Choreography() {
         intro.play(0);
       }
       void hero;
+
+      // ---------- Hero scroll: X-ray opens, type parts, portrait pushes in ----------
+      const portrait = document.querySelector<HTMLElement>(".hero-portrait");
+      if (portrait) {
+        gsap.set(portrait, { "--reveal": 0, "--zoom": 1 });
+        gsap.timeline({ scrollTrigger: { trigger: ".hero-wrap", start: "top top", end: "bottom bottom", scrub: 0.6 } })
+          .to(portrait, { "--reveal": 1, duration: 0.65, ease: "power1.inOut" }, 0)
+          .to(portrait, { "--zoom": 1.16, duration: 1, ease: "none" }, 0)
+          .to(".s-hero .hl-line--a", { xPercent: -14, autoAlpha: 0.15, duration: 1, ease: "none" }, 0)
+          .to(".s-hero .hl-line--b", { scale: 1.12, yPercent: -6, duration: 1, ease: "none" }, 0)
+          .to(".s-hero .hero-accent", { yPercent: -120, duration: 1, ease: "none" }, 0)
+          .to(".hero-hint, .hero-ai", { autoAlpha: 0, duration: 0.2 }, 0.05)
+          .to(".hero-sign", { autoAlpha: 0, y: -30, duration: 0.25 }, 0.72);
+      }
 
       const mm = gsap.matchMedia();
 
