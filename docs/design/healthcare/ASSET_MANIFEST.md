@@ -88,3 +88,14 @@ I will check actual usage after each job, never resubmit before checking job sta
 - Video: hero loop ≤ 1 MB; films stream on demand (preload=none) with posters.
 - Frame sequence: desktop 96 frames at 1600 px wide AVIF ≈ 4-6 MB total, streamed; decoded buffer ≤ 25 frames ≈ 25 x 1600x900x4 B ≈ 144 MB worst case, so cap at 12 buffered (≈ 70 MB) desktop and use 960 px / 48 frames on mobile (≈ 12 x 960x1706x4 ≈ 79 MB, cap 8 ≈ 52 MB).
 - WebGL: DPR cap 1.5, ≤ 30k points, pause when tab hidden or canvas offscreen.
+
+## F. What the vertical slice actually ships (2026-10-05)
+| Asset | Source | Status |
+|---|---|---|
+| Anatomy Field (body, heart, ECG drift, scatter) | P01 procedural, `lib/field/shapes.ts` (original geometry) | in use |
+| Organ studies in frame/concepts/film cards (12 organs + bust) | procedural, same generator, 2D canvas | in use |
+| Concept clinic sites (12 palettes) | code-rendered, labelled "Concept" | in use |
+| Film / presenter / short frame layers | code-rendered, labelled "concept preview" / "Example layout" | in use |
+| Plainsight films, posters, captures, `body.bin`, client names | not used (permission unconfirmed) | held |
+| Generated media (Gemini / Veo / Higgsfield) | none generated, USD 0 spent | not started |
+| Favicon | `app/icon.svg`, original | in use |

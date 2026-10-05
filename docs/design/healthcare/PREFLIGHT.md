@@ -29,7 +29,8 @@ Checked: 2026-10-05, cloud session, branch `claude/admiring-darwin-m2s4u3`.
 | Preserve source section order | yes, S00-S11 (CONTENT_MAP.md) | confirmed |
 | Builder skill | tech-cogniverse-healthcare-motion | confirmed (override) |
 | Market | UK private practice (source JSON-LD areaServed GB) | source-confirmed |
-| Public brand | Plainsight is the content/structure reference only; new site represents broader healthcare capability | **unresolved, asking** |
+| Public brand | **Tech Cogniverse** (exact spelling). Descriptor: "Healthcare websites, films and digital experiences". Creative + technology partner to doctors, clinics and hospitals; not a care provider. No "Tech Cogniverse Medical". No Plainsight legal entity, registration, email, address or ownership statements | confirmed 2026-10-05 |
+| Business contact details | none confirmed (no email, address, company number) | unresolved; contact form runs in honest draft mode |
 | Enquiry mechanism | Swappable submission adapter; mailto composer as the safe fallback until a real destination is confirmed; never a fake success | confirmed |
 | Route scope v1 | Home + /contact/. Other nav targets: only to approved pages that still fit the final brand; no broken links | confirmed |
 | Media reuse | Only assets with confirmed reuse; explicit per-asset permission status; unconfirmed = labelled placeholder or original concept, section kept in place | confirmed rule |
@@ -40,4 +41,4 @@ Checked: 2026-10-05, cloud session, branch `claude/admiring-darwin-m2s4u3`.
 
 ## Current milestone
 
-B approved with adjustments (2026-10-05). Blocked only on the public brand name. Next: vertical slice (nav, preloader/hero SM1, SM2, one content section, one media/portfolio interaction).
+B approved with adjustments (2026-10-05). Brand confirmed. Building vertical slice (nav, preloader/hero SM1, SM2, one content section, one media/portfolio interaction).
